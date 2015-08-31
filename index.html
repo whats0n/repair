@@ -37,16 +37,16 @@
 	<main class="main">
 		<!-- begin sidebar  -->
 		<aside class="sidebar">
-			<div class="sidebar__box">
-				<a href="#" class="sidebar__title">Work Orders</a>
-				<ul class="sidebar__list">
+			<div class="sidebar__box js-side">
+				<a href="#" class="sidebar__title js-side-link is-active">Work Orders</a>
+				<ul class="sidebar__list js-side-block">
 					<li><a href="#" class="is-active">All Work Orders</a></li>
 					<li><a href="#">My Work Orders</a></li>
 				</ul>
 			</div>
-			<div class="sidebar__box">
-				<a href="#" class="sidebar__title">Setting</a>
-				<ul class="sidebar__list">
+			<div class="sidebar__box js-side">
+				<a href="#" class="sidebar__title js-side-link">Setting</a>
+				<ul class="sidebar__list js-side-block">
 					<li><a href="#">Manufacturers</a></li>
 					<li><a href="#">Models</a></li>
 					<li><a href="#">Device Types</a></li>
@@ -62,135 +62,148 @@
 		<!-- begin container  -->
 		<section class="container">
 			<!-- begin top-bar  -->
-			<div class="top-bar">
-				<div class="filter">
-					<span class="filter__label">Filter by:</span>
-					<div class="select-check is-small">
-						<div class="select-check__visible">
-							<span class="select-check__label">Status:</span>
-							<span class="select-check__choice">All</span>
-						</div>
-						<ul class="select-check__list">
-							<li>
-								<label class="checkbox">
-									<input type="checkbox">
-									<span>New</span>
-								</label>
-							</li>
-							<li>
-								<label class="checkbox">
-									<input type="checkbox">
-									<span>On Hold</span>
-								</label>
-							</li>
-							<li>
-								<label class="checkbox">
-									<input type="checkbox">
-									<span>In Progress</span>
-								</label>
-							</li>
-							<li>
-								<label class="checkbox">
-									<input type="checkbox">
-									<span>Done</span>
-								</label>
-							</li>
-						</ul>
-					</div>
-					<div class="select-check is-small">
-						<div class="select-check__visible">
-							<span class="select-check__label">Priority:</span>
-							<span class="select-check__choice">All</span>
-						</div>
-						<ul class="select-check__list">
-							<li>
-								<label class="checkbox">
-									<input type="checkbox">
-									<span>High</span>
-								</label>
-							</li>
-							<li>
-								<label class="checkbox">
-									<input type="checkbox">
-									<span>Normal</span>
-								</label>
-							</li>
-							<li>
-								<label class="checkbox">
-									<input type="checkbox">
-									<span>Low</span>
-								</label>
-							</li>
-						</ul>
-					</div>
-					<div class="select-check is-big">
-						<div class="select-check__visible">
-							<span class="select-check__label">Technician:</span>
-							<span class="select-check__choice">Marks John</span>
-						</div>
-						<ul class="select-check__list">
-							<li>
-								<label class="checkbox">
-									<input type="checkbox">
-									<span>Name Name</span>
-								</label>
-							</li>
-							<li>
-								<label class="checkbox">
-									<input type="checkbox">
-									<span>Name Name Name</span>
-								</label>
-							</li>
-							<li>
-								<label class="checkbox">
-									<input type="checkbox">
-									<span>Name Name</span>
-								</label>
-							</li>
-						</ul>
-					</div>
-					<div class="select-date js-calendar-parent is-med">
-						<div class="select-date__visible">
-							<span class="select-date__label js-calendar-label">More</span>
-						</div>
-						<ul class="select-date__list">
-							<li class="is-date">Due Date</li>
-							<li>
-								<label class="checkbox">
-									<input type="checkbox">
-									<span>Model</span>
-								</label>
-								<ul class="select-date__sublist">
-									<li>
-										<label class="checkbox">
-											<input type="checkbox">
-											<span>Name Name</span>
-										</label>
-									</li>
-									<li>
-										<label class="checkbox">
-											<input type="checkbox">
-											<span>Name Name Name</span>
-										</label>
-									</li>
-									<li>
-										<label class="checkbox">
-											<input type="checkbox">
-											<span>Name Name</span>
-										</label>
-									</li>
-								</ul>
-							</li>
-							<li class="is-date js-calendar-btn">
-								<span>Created Date</span>
-								<div class="js-calendar datepicker"></div>
-							</li>
-						</ul>
-					</div>
-				</div>
-				<div class="search">
-					<input type="text" class="search__input" placeholder="Search item by ID, customer, phone or model...">
+			<div class="top-bar">				
+				<div class="search js-search">
+					<input type="text" class="search__input js-search-input" placeholder="Search item by ID, customer, phone or model...">
 					<button class="search__btn icon icon-search"></button>
+				</div>
+				<div class="filter">					
+					<div class="filter__box">
+						<span class="filter__label">Filter by:</span>
+					</div>
+					<div class="filter__box is-small">
+						<div class="select-check">
+							<div class="select-check__visible">
+								<span class="select-check__label">Status:</span>
+								<span class="select-check__choice">All</span>
+							</div>
+							<ul class="select-check__list">
+								<li>
+									<label class="checkbox">
+										<input type="checkbox">
+										<span>New</span>
+									</label>
+								</li>
+								<li>
+									<label class="checkbox">
+										<input type="checkbox">
+										<span>On Hold</span>
+									</label>
+								</li>
+								<li>
+									<label class="checkbox">
+										<input type="checkbox">
+										<span>In Progress</span>
+									</label>
+								</li>
+								<li>
+									<label class="checkbox">
+										<input type="checkbox">
+										<span>Done</span>
+									</label>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="filter__box is-small">
+						<div class="select-check">
+							<div class="select-check__visible">
+								<span class="select-check__label">Priority:</span>
+								<span class="select-check__choice">All</span>
+							</div>
+							<ul class="select-check__list">
+								<li>
+									<label class="checkbox">
+										<input type="checkbox">
+										<span>High</span>
+									</label>
+								</li>
+								<li>
+									<label class="checkbox">
+										<input type="checkbox">
+										<span>Normal</span>
+									</label>
+								</li>
+								<li>
+									<label class="checkbox">
+										<input type="checkbox">
+										<span>Low</span>
+									</label>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="filter__box is-big">
+						<div class="select-check">
+							<div class="select-check__visible">
+								<span class="select-check__label">Technician:</span>
+								<span class="select-check__choice">Marks John</span>
+							</div>
+							<ul class="select-check__list">
+								<li>
+									<label class="checkbox">
+										<input type="checkbox">
+										<span>Name Name</span>
+									</label>
+								</li>
+								<li>
+									<label class="checkbox">
+										<input type="checkbox">
+										<span>Name Name Name</span>
+									</label>
+								</li>
+								<li>
+									<label class="checkbox">
+										<input type="checkbox">
+										<span>Name Name</span>
+									</label>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="filter__box is-med">
+						<div class="select-date js-calendar-parent">
+							<div class="select-date__visible">
+								<span class="select-date__label js-calendar-label">More</span>
+							</div>
+							<ul class="select-date__list">
+								<li class="is-date js-calendar-btn">
+									<span>Due Date</span>
+									<div class="js-calendar datepicker"></div>
+								</li>
+								<li>
+									<label class="checkbox">
+										<input type="checkbox">
+										<span>Model</span>
+									</label>
+									<ul class="select-date__sublist">
+										<li>
+											<label class="checkbox">
+												<input type="checkbox">
+												<span>Name Name</span>
+											</label>
+										</li>
+										<li>
+											<label class="checkbox">
+												<input type="checkbox">
+												<span>Name Name Name</span>
+											</label>
+										</li>
+										<li>
+											<label class="checkbox">
+												<input type="checkbox">
+												<span>Name Name</span>
+											</label>
+										</li>
+									</ul>
+								</li>
+								<li class="is-date js-calendar-btn">
+									<span>Created Date</span>
+									<div class="js-calendar datepicker"></div>
+								</li>
+							</ul>
+						</div>
+					</div>					
 				</div>
 			</div>
 			<!-- end top-bar -->

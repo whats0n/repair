@@ -19,7 +19,7 @@ head.ready(function() {
 	$('.js-calendar').hide();
 
 	$('.js-calendar-btn').click(function(){	    
-		$('.js-calendar').toggle();
+		$(this).children('.js-calendar').toggle();
 	});
 
 	$('.js-calendar').datepicker({
@@ -28,6 +28,44 @@ head.ready(function() {
 			$('.js-calendar').hide(); 
 		} 
 	});
+
+	//select
+
+	//multi start
+
+	$('.js-multi-select').each(function() {
+		var select = $(this),
+			placeholder = select.attr('placeholder');
+
+		select.multipleSelect({
+			single: false,
+			placeholder: placeholder,
+			onOpen: function() {
+				if (select.hasClass('is-active')) {
+					select.removeClass('is-active');
+				}
+				else {
+					select.addClass('is-active')
+				}
+				$(this).toggleClass('is-active');
+				console.log($(this));
+				
+			},
+			onClose: function() {
+				if (select.hasClass('is-active')) {
+					select.removeClass('is-active');
+				}
+				else {
+					select.addClass('is-active')
+				}
+				$(this).toggleClass('is-active');
+				console.log($(this));
+				
+			}
+		});
+	});
+
+	//multi end
 
 	$(document).click(function() {
 		$(".js-select").removeClass("is-active");
@@ -66,5 +104,23 @@ head.ready(function() {
 		selectList.slideUp(100);
 		return false;
 		
+	});
+
+	//sidebar-menu
+	$('.js-side-link').click(function() {
+		$(this).parents('.js-side').find('.js-side-block').slideToggle('fast');
+		return false;
+	});
+	$('.js-accordion-link').click(function() {
+		$(this).toggleClass('is-active');
+		$(this).parents('.js-accordion').find('.js-accordion-block').slideToggle('fast');
+		return false;
+	});
+	//search
+	$('.js-search-input').focusin(function() {
+		$('.js-search').addClass('is-active');
+	});
+	$('.js-search-input').focusout(function() {
+		$('.js-search').removeClass('is-active');
 	});
 });
