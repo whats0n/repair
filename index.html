@@ -1,0 +1,435 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Template</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="format-detection" content="telephone=no">
+	<!-- theme color for android 5.0 -->
+	<meta name="theme-color" content="#fff"> 
+	<!-- <meta name="viewport" content="width=1200"> -->
+	<!-- <meta name="viewport" content="initial-scale=1, user-scalable=no"> -->
+	<link rel="stylesheet" media="all" href="css/icomoon.css" >
+	<link rel="stylesheet" media="all" href="css/screen.css" >
+	<!--[if IE]><script src="js/html5shiv.js"></script><![endif]-->
+</head>
+<body>
+
+	<!-- begin header  -->
+	<header class="header">
+		<div class="header__left">
+			<a href="#" class="logo">Repair</a>
+		</div>
+		<div class="header__right">
+			<button class="btn-big">New Work Order</button>
+			<div class="breadcrumbs">
+				<span class="breadcrumbs__icon"><i></i></span>
+				<ul>
+					<li><a href="#">Work Orders</a></li>
+					<li><a href="#" class="is-active">All Work Orders</a></li>
+				</ul>				
+			</div>
+		</div>
+	</header>
+	<!-- end header -->
+
+	<!-- begin main  -->
+	<main class="main">
+		<!-- begin sidebar  -->
+		<aside class="sidebar">
+			<div class="sidebar__box">
+				<a href="#" class="sidebar__title">Work Orders</a>
+				<ul class="sidebar__list">
+					<li><a href="#" class="is-active">All Work Orders</a></li>
+					<li><a href="#">My Work Orders</a></li>
+				</ul>
+			</div>
+			<div class="sidebar__box">
+				<a href="#" class="sidebar__title">Setting</a>
+				<ul class="sidebar__list">
+					<li><a href="#">Manufacturers</a></li>
+					<li><a href="#">Models</a></li>
+					<li><a href="#">Device Types</a></li>
+					<li><a href="#">Colors</a></li>
+					<li><a href="#">Carriers</a></li>
+					<li><a href="#">Categories</a></li>
+					<li><a href="#">Customize</a></li>
+					<li><a href="#">Declaimer</a></li>
+				</ul>
+			</div>
+		</aside>
+		<!-- end sidebar -->
+		<!-- begin container  -->
+		<section class="container">
+			<!-- begin top-bar  -->
+			<div class="top-bar">
+				<div class="filter">
+					<span class="filter__label">Filter by:</span>
+					<div class="select-check is-small">
+						<div class="select-check__visible">
+							<span class="select-check__label">Status:</span>
+							<span class="select-check__choice">All</span>
+						</div>
+						<ul class="select-check__list">
+							<li>
+								<label class="checkbox">
+									<input type="checkbox">
+									<span>New</span>
+								</label>
+							</li>
+							<li>
+								<label class="checkbox">
+									<input type="checkbox">
+									<span>On Hold</span>
+								</label>
+							</li>
+							<li>
+								<label class="checkbox">
+									<input type="checkbox">
+									<span>In Progress</span>
+								</label>
+							</li>
+							<li>
+								<label class="checkbox">
+									<input type="checkbox">
+									<span>Done</span>
+								</label>
+							</li>
+						</ul>
+					</div>
+					<div class="select-check is-small">
+						<div class="select-check__visible">
+							<span class="select-check__label">Priority:</span>
+							<span class="select-check__choice">All</span>
+						</div>
+						<ul class="select-check__list">
+							<li>
+								<label class="checkbox">
+									<input type="checkbox">
+									<span>High</span>
+								</label>
+							</li>
+							<li>
+								<label class="checkbox">
+									<input type="checkbox">
+									<span>Normal</span>
+								</label>
+							</li>
+							<li>
+								<label class="checkbox">
+									<input type="checkbox">
+									<span>Low</span>
+								</label>
+							</li>
+						</ul>
+					</div>
+					<div class="select-check is-big">
+						<div class="select-check__visible">
+							<span class="select-check__label">Technician:</span>
+							<span class="select-check__choice">Marks John</span>
+						</div>
+						<ul class="select-check__list">
+							<li>
+								<label class="checkbox">
+									<input type="checkbox">
+									<span>Name Name</span>
+								</label>
+							</li>
+							<li>
+								<label class="checkbox">
+									<input type="checkbox">
+									<span>Name Name Name</span>
+								</label>
+							</li>
+							<li>
+								<label class="checkbox">
+									<input type="checkbox">
+									<span>Name Name</span>
+								</label>
+							</li>
+						</ul>
+					</div>
+					<div class="select-date js-calendar-parent is-med">
+						<div class="select-date__visible">
+							<span class="select-date__label js-calendar-label">More</span>
+						</div>
+						<ul class="select-date__list">
+							<li class="is-date">Due Date</li>
+							<li>
+								<label class="checkbox">
+									<input type="checkbox">
+									<span>Model</span>
+								</label>
+								<ul class="select-date__sublist">
+									<li>
+										<label class="checkbox">
+											<input type="checkbox">
+											<span>Name Name</span>
+										</label>
+									</li>
+									<li>
+										<label class="checkbox">
+											<input type="checkbox">
+											<span>Name Name Name</span>
+										</label>
+									</li>
+									<li>
+										<label class="checkbox">
+											<input type="checkbox">
+											<span>Name Name</span>
+										</label>
+									</li>
+								</ul>
+							</li>
+							<li class="is-date js-calendar-btn">
+								<span>Created Date</span>
+								<div class="js-calendar datepicker"></div>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="search">
+					<input type="text" class="search__input" placeholder="Search item by ID, customer, phone or model...">
+					<button class="search__btn icon icon-search"></button>
+				</div>
+			</div>
+			<!-- end top-bar -->
+
+			<!-- begin order-table  -->
+			<div class="order-table">
+				<div class="table-wrapper">
+					<table class="table">
+						<thead>
+							<tr>
+								<th class="table__number"><span>WO #</span></th>
+								<th class="table__summary"><span class="is-active">Summary</span></th>
+								<th class="table__customer"><span>Customer</span></th>
+								<th class="table__model"><span>Model</span></th>
+								<th class="table__technician"><span>Technician</span></th>
+								<th class="table__due-date"><span>Due Date</span></th>
+								<th class="table__store"><span>Store</span></th>
+								<th class="table__create-date"><span>Created Date</span></th>
+								<th class="table__create-by"><span>Created By</span></th>
+								<th class="table__priority"><span>Priority</span></th>
+								<th class="table__status"><span>Status</span></th>
+							</tr>						
+						</thead>
+						<tbody>
+							<tr>
+								<td class="table__number">
+									<a href="#">1</a>
+								</td>
+								<td class="table__summary"><span>Broken home button</span></td>
+								<td class="table__customer"><span>Smith, Linda</span></td>
+								<td class="table__model"><span>iPhone 5S 64GB</span></td>
+								<td class="table__technician"><span>Jackson, Eric</span></td>
+								<td class="table__due-date"><span>5/7/2015</span></td>
+								<td class="table__store"><span>Retail 1</span></td>
+								<td class="table__create-date"><span>5/7/15</span> <span>12:45 PM</span></td>
+								<td class="table__create-by"><span>Harrelson, Debby</span></td>
+								<td class="table__priority"><span>High</span></td>
+								<td class="table__status">
+									<a href="#" class="btn-status btn-status_green">Done</a>
+								</td>
+							</tr>
+							<tr>
+								<td class="table__number">
+									<a href="#">2</a>
+								</td>
+								<td class="table__summary"><span>Client reported a low 
+	battery level</span></td>
+								<td class="table__customer"><span>Smith, Linda</span></td>
+								<td class="table__model"><span>iPhone 6S</span></td>
+								<td class="table__technician"><span>Marks, John</span></td>
+								<td class="table__due-date"><span>3/3/2015</span></td>
+								<td class="table__store"><span>San Diego</span></td>
+								<td class="table__create-date"><span>5/7/15</span> <span>12:45 PM</span></td>
+								<td class="table__create-by"><span>O'Brien, Simon</span></td>
+								<td class="table__priority"><span>Normal</span></td>
+								<td class="table__status">
+									<a href="#" class="btn-status btn-status_yellow">In Progress</a>
+								</td>
+							</tr>
+							<tr>
+								<td class="table__number">
+									<a href="#">3</a>
+								</td>
+								<td class="table__summary"><span>Blocked iPhone 6</span></td>
+								<td class="table__customer"><span>Wu, Don</span></td>
+								<td class="table__model"><span>iPhone 5S 64GB</span></td>
+								<td class="table__technician"><span>Marks, John</span></td>
+								<td class="table__due-date"><span>3/4/2015</span></td>
+								<td class="table__store"><span>Berkeley Store 1</span></td>
+								<td class="table__create-date"><span>5/7/15</span> <span>12:45 PM</span></td>
+								<td class="table__create-by"><span>Harrelson, Debby</span></td>
+								<td class="table__priority"><span>Low</span></td>
+								<td class="table__status">
+									<a href="#" class="btn-status btn-status_gray">On Hold</a>
+								</td>
+							</tr>
+							<tr>
+								<td class="table__number">
+									<a href="#">4</a>
+								</td>
+								<td class="table__summary"><span>Blocked iPhone 6</span></td>
+								<td class="table__customer"><span>Wu, Don</span></td>
+								<td class="table__model"><span>iPhone 5S 64GB</span></td>
+								<td class="table__technician"><span>Marks, John</span></td>
+								<td class="table__due-date"><span>3/4/2015</span></td>
+								<td class="table__store"><span>Berkeley Store 1</span></td>
+								<td class="table__create-date"><span>5/7/15</span> <span>12:45 PM</span></td>
+								<td class="table__create-by"><span>Harrelson, Debby</span></td>
+								<td class="table__priority"><span>Low</span></td>
+								<td class="table__status">
+									<a href="#" class="btn-status btn-status_gray">On Hold</a>
+								</td>
+							</tr>
+							<tr>
+								<td class="table__number">
+									<a href="#">5</a>
+								</td>
+								<td class="table__summary"><span>Blocked iPhone 6</span></td>
+								<td class="table__customer"><span>Wu, Don</span></td>
+								<td class="table__model"><span>iPhone 5S 64GB</span></td>
+								<td class="table__technician"><span>Marks, John</span></td>
+								<td class="table__due-date"><span>3/4/2015</span></td>
+								<td class="table__store"><span>Berkeley Store 1</span></td>
+								<td class="table__create-date"><span>5/7/15</span> <span>12:45 PM</span></td>
+								<td class="table__create-by"><span>Harrelson, Debby</span></td>
+								<td class="table__priority"><span>Normal</span></td>
+								<td class="table__status">
+									<a href="#" class="btn-status btn-status_blue">New</a>
+								</td>
+							</tr>
+							<tr>
+								<td class="table__number">
+									<a href="#">6</a>
+								</td>
+								<td class="table__summary"><span>Blocked iPhone 6</span></td>
+								<td class="table__customer"><span>Wu, Don</span></td>
+								<td class="table__model"><span>iPhone 5S 64GB</span></td>
+								<td class="table__technician"><span>Marks, John</span></td>
+								<td class="table__due-date"><span>3/4/2015</span></td>
+								<td class="table__store"><span>Berkeley Store 1</span></td>
+								<td class="table__create-date"><span>5/7/15</span> <span>12:45 PM</span></td>
+								<td class="table__create-by"><span>Harrelson, Debby</span></td>
+								<td class="table__priority"><span>Low</span></td>
+								<td class="table__status">
+									<a href="#" class="btn-status btn-status_gray">On Hold</a>
+								</td>
+							</tr>
+							<tr>
+								<td class="table__number">
+									<a href="#">7</a>
+								</td>
+								<td class="table__summary"><span>Blocked iPhone 6</span></td>
+								<td class="table__customer"><span>Wu, Don</span></td>
+								<td class="table__model"><span>iPhone 5S 64GB</span></td>
+								<td class="table__technician"><span>Marks, John</span></td>
+								<td class="table__due-date"><span>3/4/2015</span></td>
+								<td class="table__store"><span>Berkeley Store 1</span></td>
+								<td class="table__create-date"><span>5/7/15</span> <span>12:45 PM</span></td>
+								<td class="table__create-by"><span>Harrelson, Debby</span></td>
+								<td class="table__priority"><span>Low</span></td>
+								<td class="table__status">
+									<a href="#" class="btn-status btn-status_gray">On Hold</a>
+								</td>
+							</tr>
+							<tr>
+								<td class="table__number">
+									<a href="#">8</a>
+								</td>
+								<td class="table__summary"><span>Blocked iPhone 6</span></td>
+								<td class="table__customer"><span>Wu, Don</span></td>
+								<td class="table__model"><span>iPhone 5S 64GB</span></td>
+								<td class="table__technician"><span>Marks, John</span></td>
+								<td class="table__due-date"><span>3/4/2015</span></td>
+								<td class="table__store"><span>Berkeley Store 1</span></td>
+								<td class="table__create-date"><span>5/7/15</span> <span>12:45 PM</span></td>
+								<td class="table__create-by"><span>Harrelson, Debby</span></td>
+								<td class="table__priority"><span>Low</span></td>
+								<td class="table__status">
+									<a href="#" class="btn-status btn-status_gray">On Hold</a>
+								</td>
+							</tr>
+							<tr>
+								<td class="table__number">
+									<a href="#">9</a>
+								</td>
+								<td class="table__summary"><span>Blocked iPhone 6</span></td>
+								<td class="table__customer"><span>Wu, Don</span></td>
+								<td class="table__model"><span>iPhone 5S 64GB</span></td>
+								<td class="table__technician"><span>Marks, John</span></td>
+								<td class="table__due-date"><span>3/4/2015</span></td>
+								<td class="table__store"><span>Berkeley Store 1</span></td>
+								<td class="table__create-date"><span>5/7/15</span> <span>12:45 PM</span></td>
+								<td class="table__create-by"><span>Harrelson, Debby</span></td>
+								<td class="table__priority"><span>Low</span></td>
+								<td class="table__status">
+									<a href="#" class="btn-status btn-status_gray">On Hold</a>
+								</td>
+							</tr>
+							<tr>
+								<td class="table__number">
+									<a href="#">10</a>
+								</td>
+								<td class="table__summary"><span>Blocked iPhone 6</span></td>
+								<td class="table__customer"><span>Wu, Don</span></td>
+								<td class="table__model"><span>iPhone 5S 64GB</span></td>
+								<td class="table__technician"><span>Marks, John</span></td>
+								<td class="table__due-date"><span>3/4/2015</span></td>
+								<td class="table__store"><span>Berkeley Store 1</span></td>
+								<td class="table__create-date"><span>5/7/15</span> <span>12:45 PM</span></td>
+								<td class="table__create-by"><span>Harrelson, Debby</span></td>
+								<td class="table__priority"><span>Low</span></td>
+								<td class="table__status">
+									<a href="#" class="btn-status btn-status_gray">On Hold</a>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>	
+				<div class="bottom">
+					<div class="pages">
+						<span class="pages__text">Page 1 of 3 (24 items)</span>
+						<a href="#" class="pages__prev"><i class="icon icon-left"></i></a>
+						<a href="#" class="pages__prev-mod"><i class="icon icon-left-mod"></i></a>
+						<ul class="pages__list">
+							<li><a href="#">1</a></li>
+							<li><a href="#">2</a></li>
+							<li><a href="#">3</a></li>
+						</ul>
+						<a href="#" class="pages__next"><i class="icon icon-right"></i></a>
+						<a href="#" class="pages__next-mod"><i class="icon icon-right-mod"></i></a>
+					</div>
+					<div class="size">
+						<span class="size__text">Page size</span>
+						<div class="select-size js-select">
+							<span class="select-size__text js-select-text">10</span>
+							<ul class="select-size__list js-select-list">
+								<li data-val="10">10</li>
+								<li data-val="20">20</li>
+								<li data-val="50">50</li>
+								<li data-val="100">100</li>
+							</ul>
+							<select>
+								<option value="10">10</option>
+								<option value="20">20</option>
+								<option value="50">50</option>
+								<option value="100">100</option>
+							</select>
+						</div>
+					</div>
+				</div>			
+			</div>
+			<!-- end order-table -->
+
+		</section>
+		<!-- end container -->
+	</main>
+	<!-- end main -->
+
+<!-- load scripts -->
+<script src="js/lib/head.js" data-headjs-load="js/init.js"></script>
+</body>
+</html>

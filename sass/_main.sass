@@ -1,0 +1,364 @@
+html, body
+	height: 100%
+
+body
+	padding: 52px 0 0
+	position: relative 	
+	min-width: 960px
+
+
+.header
+	+clr
+	background-color: #5F7583
+	position: absolute
+	top: 0
+	left: 0
+	right: 0
+	&__left, &__right
+		float: left
+		position: relative
+	&__left
+		width: 20%
+		padding: 8px 16px 7px
+		&:after
+			content: "" 
+			position: absolute
+			top: 5px
+			bottom: 5px
+			right: 0
+			border-right: 1px solid rgba(0, 0, 0, 0.14) 
+	&__right
+		width: 80%
+		padding: 4px 20px 
+	.btn-big
+		float: right
+		margin: 3px 0 
+
+.logo
+	font-size: 22px
+	color: #fff
+	display: inline-block
+	vertical-align: top
+	padding: 0 0 0 46px 
+	position: relative
+	line-height: 37px
+	&:before
+		content: "" 
+		position: absolute
+		top: 0
+		left: 0
+		+s(b2bsoft) 
+
+.breadcrumbs
+	font-size: 0
+	position: relative
+	padding: 0 0 0 65px 
+	overflow: hidden
+	&__icon
+		width: 46px
+		height: 44px
+		position: absolute
+		top: 0
+		left: 0
+		&:before, &:after
+			content: "" 
+			position: absolute
+			+border-radius(50%)
+			+opacity(0.5)
+		&:before
+			+box-shadow(3px 0 1px rgba(0, 0, 0, 0.65))
+			background: #5F7583 
+			top: 0
+			left: 0
+			right: 0
+			bottom: 0
+		&:after
+			top: 4px
+			left: 4px
+			right: 4px
+			bottom: 4px
+			background-color: #546874
+			background-image: -moz-linear-gradient(bottom, rgba(0, 0, 0, 0.25) 0%, rgba(0, 0, 0, 0.25) 100%)
+			background-image: -o-linear-gradient(bottom, rgba(0, 0, 0, 0.25) 0%, rgba(0, 0, 0, 0.25) 100%)
+			background-image: -webkit-linear-gradient(bottom, rgba(0, 0, 0, 0.25) 0%, rgba(0, 0, 0, 0.25) 100%)
+			background-image: linear-gradient(to top, rgba(0, 0, 0, 0.25) 0%, rgba(0, 0, 0, 0.25) 100%)
+			+box-shadow(inset 3px 0 3px rgba(0, 0, 0, 0.5))
+		i
+			position: absolute
+			top: 12px
+			left: 20px
+			+s(bc-arr)
+			z-index: 2
+	li
+		display: inline-block
+		vertical-align: top
+		padding: 7px 28px 7px 0 
+		position: relative
+		&:last-child
+			&:before
+				display: none
+		&:before
+			position: absolute
+			top: 50%
+			right: 10px
+			+s(bc-deco)
+			margin-top: -6px
+			content: ""
+		a
+			font-size: 22px
+			color: #FFF
+			
+		
+.main
+	+clr
+	display: table
+	width: 100%
+	min-height: 100% 
+	height: 100%
+	table-layout: fixed
+
+.sidebar
+	width: 20%
+	display: table-cell
+	background-color: #424B53
+	vertical-align: top
+	&__title
+		display: block
+		font-size: 16px
+		color: #CACCCE
+		line-height: 48px
+		background-color: #2F363F
+		background-image: -moz-linear-gradient(bottom, #2F363F 0%, #414C56 100%)
+		background-image: -o-linear-gradient(bottom, #2F363F 0%, #414C56 100%)
+		background-image: -webkit-linear-gradient(bottom, #2F363F 0%, #414C56 100%)
+		background-image: linear-gradient(to top, #2F363F 0%, #414C56 100%)
+		border-bottom: 1px solid #4F606C
+		padding: 0 50px 0 20px 
+		position: relative
+		&:hover, &.is-active
+			background: #2F363F
+		&:before
+			content: "" 
+			position: absolute
+			top: 50%
+			right: 21px
+			+arr(12, 6, #caccce, b)
+			margin-top: -3px
+	&__list
+		a
+			display: block
+			font-size: 16px
+			color: #999
+			line-height: 38px
+			border-bottom: 1px solid #4F606C
+			padding: 0 20px 
+			&:hover, &.is-active
+				color: #CACCCE
+				background: #5F7583
+				
+.container
+	width: 80%
+	display: table-cell
+	background-color: #EEE
+	vertical-align: top
+	padding: 20px 
+
+.top-bar
+	background-color: #F8F8F8
+	border-bottom: 1px solid #cacbd3
+	+border-radius(10px 10px 0 0)
+	padding: 14px 4px 14px 14px
+	+r(1200)
+		padding: 14px 
+
+.search
+	position: relative
+	overflow: hidden
+	&__input
+		width: 100%
+		padding: 7px 35px 7px 10px 
+		font-size: 14px
+		color: #373F46
+		background-color: #FFF
+		border: 1px solid #CACBD3
+		+border-radius(5px)
+		+placeholder-color(#999)
+		+transition(border-color 0.25s)
+		&:hover, &:active, &:focus
+			border-color: #373F46
+	&__btn
+		position: absolute
+		top: 0
+		right: 0
+		bottom: 0
+		width: 36px
+		font-size: 16px
+		background: none
+		color: #CACBD3
+
+.filter
+	float: right
+	font-size: 0
+	+r(1200)
+		float: none
+		margin: 0 0 10px 
+	&__label, .select-check, .select-date
+		display: inline-block
+		vertical-align: middle
+		margin: 0 0 0 8px 
+	&__label
+		font-size: 14px
+		color: #999
+		+r(1200)
+			margin: 0 
+
+//order-table
+.order-table
+	background: #fff
+	+border-radius(0 0 5px 5px)
+
+//table
+.table-wrapper	
+	border-bottom: 1px solid #CACBD3
+	overflow: auto
+	width: 100%
+	.table
+		min-width: 980px
+.table
+	background-color: #FFF
+	border-collapse: collapse
+	thead
+		background-color: #EEE
+		border-bottom: 1px solid #CACBD3
+	tr
+		&:hover
+			background-color: #F8F8F8
+			a
+				text-decoration: underline
+			.btn-status
+				text-decoration: none
+		&:last-child
+			td
+				border-bottom: none
+	td, th
+		text-align: left
+		font-weight: normal
+		color: #373F46
+		font-size: 12px
+		line-height: 16px
+		vertical-align: top
+		&.table__number			
+			padding-left: 15px 
+		&.table__status		
+			padding-right: 17px
+		span
+			display: block
+	th
+		padding: 11px 0 11px 0  
+		border-bottom: 1px solid #CACBD3
+		span
+			display: inline-block
+			padding: 0 12px 0 0
+			position: relative
+			&:hover, &.is-active
+				&:before
+					+arr(8, 4, #373F46, b)
+					+rotate(-180)
+			&:before
+				+arr(8, 4, #cacbd3, b)
+				content: "" 
+				position: absolute
+				top: 50%
+				right: 0
+				margin-top: -2px
+				+transition(all 0.2s)
+	td
+		padding: 9px 11px 2px 0
+		border-bottom: 1px solid #eeeeee
+		&.table__status		
+			padding: 5px 17px 2px 0
+	&__number
+		width: 6.6%
+		a
+			color: #2D6F95
+	&__summary
+		width: 15.2%
+	&__customer
+		width: 11%
+	&__model
+		width: 10.6%
+	&__technician
+		width: 9.1%
+	&__due-date
+		width: 7.3%
+	&__store
+		width: 6.2%
+	&__create-date
+		width: 9.6%
+	&__create-by
+		width: 8.4%
+	&__priority
+		width: 6.5%
+	&__status
+		width: 9.5%
+		
+//bottom
+.bottom
+	+clr
+	padding: 20px 15px 15px 
+.pages
+	float: left
+	font-size: 0
+	&__text, &__list, &__prev, &__prev-mod, &__next, &__next-mod
+		display: inline-block
+		vertical-align: middle
+	&__text
+		color: #373F46
+		font-size: 12px
+		margin-right: 5px
+	&__list
+		padding: 0 3px 
+		li
+			display: inline-block
+			vertical-align: top
+			padding: 0 2px 
+		a
+			font-size: 12px
+			color: #373F46
+			font-family: "Verdana"
+			+border-radius(5px)
+			width: 20px
+			line-height: 20px
+			text-align: center
+			display: inline-block
+			&:hover, &.is-active
+				color: #fff
+				background-color: #007098
+	&__prev, &__prev-mod, &__next, &__next-mod
+		font-size: 8px
+		color: #CACBD3
+		text-align: center
+		width: 20px
+		height: 20px
+		line-height: 20px
+		border: 2px solid #CACBD3
+		+border-radius(50%)
+		margin: 0 5px 
+		display: inline-block
+		vertical-align: middle
+		&:hover
+			border-color: #007098
+			color: #007098 
+		&:active
+			color: #999
+			border-color: #999 
+
+.size
+	float: right
+	font-size: 0
+	&__text
+		display: inline-block
+		vertical-align: middle
+		color: #373F46
+		font-size: 12px
+		margin-right: 10px
