@@ -59,6 +59,31 @@ a
 	text-decoration: none
 	
 //mod
+.btn-simple
+	font-size: 14px
+	color: #FFF
+	padding: 8px 20px
+	+border-radius(5px)
+	line-height: 1.2
+	&_blue
+		background-color: #2D6F95
+		&:hover
+			background-color: #215D7F
+		&:active
+			background-color: #1A4964
+		&:disabled
+			color: #999
+			background-color: #EEE
+	&_red
+		background-color: #CB222E
+		&:hover
+			background-color: #A41C25
+		&:active
+			background-color: #87171E
+		&:disabled
+			color: #999
+			background-color: #EEE
+			
 .btn-big
 	font-size: 14px
 	color: #373F46
@@ -74,6 +99,48 @@ a
 		color: #fff 
 	&:active
 		background-color: #20252c 
+		color: #fff 
+		&:disabled
+			color: #999
+			background-color: #EEE
+	&_green
+		color: #FFF
+		background-color: #389877
+		&:hover
+			background-color: #257B5D
+		&:active
+			background-color: #1D6149
+		&:disabled
+			color: #999
+			background-color: #EEE
+
+.btn-link
+	font-size: 14px
+	color: #2D6F95
+	text-decoration: underline
+	line-height: 16px
+	&:hover
+		color: #215D7F
+	&:active
+		color: #1A4964
+		&:disabled
+			color: #999
+	&_green
+		color: #389877
+		&:hover
+			color: #257B5D
+		&:active
+			color: #1D6149
+			&:disabled
+				color: #999
+	&_red
+		color: #CB2227
+		&:hover
+			color: #A41C25
+		&:active
+			color: #87171E
+			&:disabled
+				color: #999
 
 .btn-status
 	font-size: 12px
@@ -101,11 +168,23 @@ a
 	vertical-align: middle
 .ok
 	font-size: 0
+	&:hover
+		.icon
+			color: #257B5D
+	&:active
+		.icon
+			color: #1D6149
 	.icon
 		font-size: 12px
 		color: #389877
 .delete
 	font-size: 0
+	&:hover
+		.icon
+			color: #A41C25
+	&:active
+		.icon
+			color: #87171E
 	.icon
 		font-size: 13px
 		color: #CB2227
@@ -162,6 +241,8 @@ a
 	&:hover
 		span
 			color: #373F46
+			&:before
+				border-color: #2F3C45 
 	input
 		position: absolute
 		top: 0
@@ -174,6 +255,12 @@ a
 				visibility: visible
 				+opacity(1)
 				top: 5px
+		&:disabled + span
+			&:before
+				border-color: #EEE 
+				background-color: #EEE
+			&:after
+				color: #999
 	span
 		color: #999
 		font-size: 12px
@@ -252,6 +339,15 @@ a
 				visibility: visible
 				+opacity(1)
 				+scale(1)
+		&:disabled + span
+			&:before
+				border-color: #EEE 
+				background-color: #EEE
+			&:after
+				background-color: #EEE
+		&:checked:disabled + span
+			&:before
+				background: none
 	span
 		color: #999
 		font-size: 12px
@@ -746,3 +842,107 @@ a
 				color: #fff
 			&.is-active
 				display: none
+				
+//color
+.color
+	&__icon
+		float: left
+		width: 20px
+		height: 20px
+		+border-radius(5px)
+		margin: 0 10px 0 0 
+		&.is-white
+			border: 1px solid #CACBD3
+	span
+		color: #373F46
+		font-size: 14px
+		display: block
+		overflow: hidden
+		line-height: 20px
+		
+//input
+.input
+	position: relative
+	font-size: 14px
+	color: #373F46
+	display: inline-block
+	vertical-align: middle
+	max-width: 190px
+	width: 100%
+	border: 1px solid #CACBD3
+	background-color: #FFF
+	+border-radius(5px)
+	padding: 7px 10px 
+	&:hover, &:focus
+		border-color: #373F46 
+	&:disabled
+		background-color: #CACBD3
+		border-color: #CACBD3 
+	&.is-error
+		border-color: #CB2429
+	
+.field
+	position: relative
+	display: inline-block
+	label
+		display: inline-block
+		vertical-align: middle
+
+.error
+	position: absolute
+	top: 100%
+	right: 0
+	color: #CB2227
+	font-size: 14px
+	line-height: 1.2
+	
+//select2
+.select2
+	select
+		max-width: 566px
+	.select2-selection
+		border: 1px solid #CACBD3
+		+border-radius(5px)
+		background-color: #FFF
+		line-height: 1
+		font-size: 0
+	.select2-container--default 
+		.select2-selection--multiple 
+			.select2-selection__choice
+				font-size: 12px
+				color: #373F46
+				line-height: 22px
+				background-color: #EEE
+				border: none
+				+border-radius(5px)
+				margin: 4px 10px 4px 0 
+				padding: 0 30px 0 10px
+				position: relative
+			.select2-selection__choice__remove
+				font-family: 'icomoon'
+				speak: none
+				font-style: normal
+				font-weight: normal
+				font-variant: normal
+				text-transform: none
+				line-height: 1
+				-webkit-font-smoothing: antialiased
+				-moz-osx-font-smoothing: grayscale
+				font-size: 0
+				position: absolute
+				right: 10px
+				top: 5px
+				margin: 0
+				&:before
+					content: "\e609"
+					font-size: 12px
+					color: #CB2227
+
+			.select2-selection__rendered
+				padding: 0 10px 
+	.select2-container 
+		.select2-search--inline 
+			.select2-search__field
+				padding: 4px 0 
+				font-size: 12px
+				margin: 4px 0 

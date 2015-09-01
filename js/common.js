@@ -123,4 +123,9 @@ head.ready(function() {
 	$('.js-search-input').focusout(function() {
 		$('.js-search').removeClass('is-active');
 	});
+
+	//chosen
+	$(".js-select-tags").select2({
+	  tags: true
+	})
 });

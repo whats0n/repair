@@ -1,0 +1,462 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Template</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="format-detection" content="telephone=no">
+	<!-- theme color for android 5.0 -->
+	<meta name="theme-color" content="#fff"> 
+	<!-- <meta name="viewport" content="width=1200"> -->
+	<!-- <meta name="viewport" content="initial-scale=1, user-scalable=no"> -->
+	<link rel="stylesheet" media="all" href="css/icomoon.css" >
+	<link rel="stylesheet" media="all" href="css/select2.min.css" >
+	<link rel="stylesheet" media="all" href="css/screen.css" >
+	<!--[if IE]><script src="js/html5shiv.js"></script><![endif]-->
+</head>
+<body>
+
+	<!-- begin header  -->
+	<header class="header">
+		<div class="header__left">
+			<a href="#" class="logo">Repair</a>
+		</div>
+		<div class="header__right">
+			<div class="breadcrumbs">
+				<span class="breadcrumbs__icon"><i></i></span>
+				<ul>
+					<li><a href="#">Settings</a></li>
+					<li><a href="#" class="is-active">Customize</a></li>
+				</ul>				
+			</div>
+		</div>
+	</header>
+	<!-- end header -->
+
+	<!-- begin main  -->
+	<main class="main">
+		<!-- begin sidebar  -->
+		<aside class="sidebar">
+			<div class="sidebar__box js-side">
+				<a href="#" class="sidebar__title js-side-link">Work Orders</a>
+				<ul class="sidebar__list js-side-block">
+					<li><a href="#">All Work Orders</a></li>
+					<li><a href="#">My Work Orders</a></li>
+				</ul>
+			</div>
+			<div class="sidebar__box js-side">
+				<a href="#" class="sidebar__title js-side-link is-active">Setting</a>
+				<ul class="sidebar__list js-side-block">
+					<li><a href="#">Manufacturers</a></li>
+					<li><a href="#">Models</a></li>
+					<li><a href="#">Device Types</a></li>
+					<li><a href="#">Colors</a></li>
+					<li><a href="#">Carriers</a></li>
+					<li><a href="#">Categories</a></li>
+					<li><a href="#" class="is-active">Customize</a></li>
+					<li><a href="#">Declaimer</a></li>
+				</ul>
+			</div>
+		</aside>
+		<!-- end sidebar -->
+		<!-- begin container  -->
+		<section class="container">
+			
+			<!-- begin categories  -->
+			<div class="categories">
+				
+				<div class="categories__block js-accordion">
+					<div class="categories__title js-accordion-link">Statuses</div>
+					<div class="categories__box js-accordion-block">
+						<div class="customize-table">
+							<table class="table">
+								<tr>
+									<th class="is-first"></th>
+									<th class="is-second">Status Name</th>
+									<th class="is-third">Status Color</th>
+									<th class="is-fourth"></th>
+								</tr>
+								<tr>
+									<td class="is-first">
+										<i class="icon icon-customize"></i>
+									</td>
+									<td class="is-second">
+										<span>New</span>
+									</td>
+									<td class="is-third">
+										<div class="color">
+											<i class="color__icon" style="background: #6cbdea;"></i>
+											<span>#6cbdea</span>
+										</div>
+									</td>
+									<td class="is-fourth">
+										<label class="radio radio_big">
+											<input type="radio" name="radio2">
+											<span>Default</span>
+										</label>
+										<button class="delete"><i class="icon icon-delete"></i></button>
+									</td>
+								</tr>
+								<tr>
+									<td class="is-first">
+										<i class="icon icon-customize"></i>
+									</td>
+									<td class="is-second">
+										<span>In Progress</span>
+									</td>
+									<td class="is-third">
+										<div class="color">
+											<i class="color__icon" style="background: #fef689;"></i>
+											<span>#fef689</span>
+										</div>
+									</td>
+									<td class="is-fourth">
+										<label class="radio radio_big">
+											<input type="radio" name="radio2">
+											<span>Default</span>
+										</label>
+										<button class="delete"><i class="icon icon-delete"></i></button>
+									</td>
+								</tr>
+								<tr>
+									<td class="is-first">
+										<i class="icon icon-customize"></i>
+									</td>
+									<td class="is-second">
+										<span>On Hold</span>
+									</td>
+									<td class="is-third">
+										<div class="color">
+											<i class="color__icon" style="background: #999999;"></i>
+											<span>#999999</span>
+										</div>
+									</td>
+									<td class="is-fourth">
+										<label class="radio radio_big">
+											<input type="radio" name="radio2">
+											<span>Default</span>
+										</label>
+										<button class="delete"><i class="icon icon-delete"></i></button>
+									</td>
+								</tr>
+								<tr>
+									<td class="is-first">
+										<i class="icon icon-customize"></i>
+									</td>
+									<td class="is-second">
+										<span class="table__text">Done</span>
+									</td>
+									<td class="is-third">
+										<div class="color">
+											<i class="color__icon" style="background: #21c684;"></i>
+											<span>#21c684</span>
+										</div>
+									</td>
+									<td class="is-fourth">
+										<label class="radio radio_big">
+											<input type="radio" name="radio2">
+											<span>Default</span>
+										</label>
+									</td>
+								</tr>
+								<tr>
+									<td class="is-first">
+									</td>
+									<td class="is-second">
+										<div class="field">
+											<label>
+												<input type="text" class="input" placeholder="Type Status Name...">
+											</label>	
+										</div>
+									</td>
+									<td class="is-third">
+										<div class="color">
+											<i class="color__icon is-white" style="background: #ffffff;"></i>
+											<span>#ffffff</span>
+										</div>
+									</td>
+									<td class="is-fourth">
+										<label class="radio radio_big">
+											<input type="radio" name="radio2">
+											<span>Default</span>
+										</label>
+										<button class="delete"><i class="icon icon-delete"></i></button>
+									</td>
+								</tr>
+								<tr>
+									<td class="is-first">										
+										<div class="add-block">
+											<button class="add-link">Add New</button>
+										</div>
+									</td>
+									<td class="is-second">
+									</td>
+									<td class="is-third">
+									</td>
+									<td class="is-fourth">
+									</td>
+								</tr>
+							</table>
+						</div>
+					</div>
+				</div>
+				<div class="categories__block js-accordion">
+					<div class="categories__title js-accordion-link">Priorities</div>
+					<div class="categories__box js-accordion-block">
+						<div class="customize-table">
+							<table class="table">
+								<tr>
+									<th class="is-first"></th>
+									<th class="is-second">Priority Name</th>
+									<th class="is-third"></th>
+									<th class="is-fourth"></th>
+								</tr>
+								<tr>
+									<td class="is-first">
+										<i class="icon icon-customize"></i>
+									</td>
+									<td class="is-second">
+										<span>Low</span>
+									</td>
+									<td class="is-third">
+									</td>
+									<td class="is-fourth">
+										<label class="radio radio_big">
+											<input type="radio" name="radio2">
+											<span>Default</span>
+										</label>
+										<button class="delete"><i class="icon icon-delete"></i></button>
+									</td>
+								</tr>
+								<tr>
+									<td class="is-first">
+										<i class="icon icon-customize"></i>
+									</td>
+									<td class="is-second">
+										<span>Medium</span>
+									</td>
+									<td class="is-third">
+									</td>
+									<td class="is-fourth">
+										<label class="radio radio_big">
+											<input type="radio" name="radio2">
+											<span>Default</span>
+										</label>
+										<button class="delete"><i class="icon icon-delete"></i></button>
+									</td>
+								</tr>
+								<tr>
+									<td class="is-first">
+										<i class="icon icon-customize"></i>
+									</td>
+									<td class="is-second">
+										<span>High</span>
+									</td>
+									<td class="is-third">
+									</td>
+									<td class="is-fourth">
+										<label class="radio radio_big">
+											<input type="radio" name="radio2">
+											<span>Default</span>
+										</label>
+										<button class="delete"><i class="icon icon-delete"></i></button>
+									</td>
+								</tr>
+								<tr>
+									<td class="is-first">
+										<i class="icon icon-customize"></i>
+									</td>
+									<td class="is-second">
+										<span class="table__text">Urgent</span>
+									</td>
+									<td class="is-third">
+									</td>
+									<td class="is-fourth">
+										<label class="radio radio_big">
+											<input type="radio" name="radio2">
+											<span>Default</span>
+										</label>
+									</td>
+								</tr>
+								<tr>
+									<td class="is-first">
+									</td>
+									<td class="is-second">
+										<div class="field">										
+											<label>
+												<input type="text" class="input is-error">
+												<span class="error">This field is required.</span>
+											</label>
+										</div>
+									</td>
+									<td class="is-third">
+									</td>
+									<td class="is-fourth">
+										<label class="radio radio_big">
+											<input type="radio" name="radio2">
+											<span>Default</span>
+										</label>
+										<button class="delete"><i class="icon icon-delete"></i></button>
+									</td>
+								</tr>
+								<tr>
+									<td class="is-first">										
+										<div class="add-block">
+											<button class="add-link" disabled>Add New</button>
+										</div>
+									</td>
+									<td class="is-second">
+									</td>
+									<td class="is-third">
+									</td>
+									<td class="is-fourth">
+									</td>
+								</tr>
+							</table>
+						</div>
+					</div>
+				</div>
+				<div class="categories__block js-accordion">
+					<div class="categories__title js-accordion-link">Service Types</div>
+					<div class="categories__box js-accordion-block">
+						<div class="customize-table">
+							<table class="table">
+								<tr>
+									<th class="is-first"></th>
+									<th class="is-second">Service Type Name</th>
+									<th class="is-third"></th>
+									<th class="is-fourth"></th>
+								</tr>
+								<tr>
+									<td class="is-first">
+										<i class="icon icon-customize"></i>
+									</td>
+									<td class="is-second">
+										<span>Software Update</span>
+									</td>
+									<td class="is-third">
+									</td>
+									<td class="is-fourth">
+										<label class="radio radio_big">
+											<input type="radio" name="radio2">
+											<span>Default</span>
+										</label>
+										<button class="delete"><i class="icon icon-delete"></i></button>
+									</td>
+								</tr>
+								<tr>
+									<td class="is-first">
+										<i class="icon icon-customize"></i>
+									</td>
+									<td class="is-second">
+										<span>Screen Replacement</span>
+									</td>
+									<td class="is-third">
+									</td>
+									<td class="is-fourth">
+										<label class="radio radio_big">
+											<input type="radio" name="radio2">
+											<span>Default</span>
+										</label>
+										<button class="delete"><i class="icon icon-delete"></i></button>
+									</td>
+								</tr>
+								<tr>
+									<td class="is-first">
+										<i class="icon icon-customize"></i>
+									</td>
+									<td class="is-second">
+										<span>Battery Replacement</span>
+									</td>
+									<td class="is-third">
+									</td>
+									<td class="is-fourth">
+										<label class="radio radio_big">
+											<input type="radio" name="radio2">
+											<span>Default</span>
+										</label>
+										<button class="delete"><i class="icon icon-delete"></i></button>
+									</td>
+								</tr>
+								<tr>
+									<td class="is-first">
+										<i class="icon icon-customize"></i>
+									</td>
+									<td class="is-second">
+										<span class="table__text">Diagnosis</span>
+									</td>
+									<td class="is-third">
+									</td>
+									<td class="is-fourth">
+										<label class="radio radio_big">
+											<input type="radio" name="radio2">
+											<span>Default</span>
+										</label>
+									</td>
+								</tr>
+								<tr>
+									<td class="is-first">
+									</td>
+									<td class="is-second">
+										<div class="field">
+											<label>
+												<input type="text" class="input" placeholder="Type Status Name...">
+											</label>			
+										</div>
+									</td>
+									<td class="is-third">
+									</td>
+									<td class="is-fourth">
+										<label class="radio radio_big">
+											<input type="radio" name="radio2">
+											<span>Default</span>
+										</label>
+										<button class="delete"><i class="icon icon-delete"></i></button>
+									</td>
+								</tr>
+								<tr>
+									<td class="is-first">										
+										<div class="add-block">
+											<button class="add-link">Add New</button>
+										</div>
+									</td>
+									<td class="is-second">
+									</td>
+									<td class="is-third">
+									</td>
+									<td class="is-fourth">
+									</td>
+								</tr>
+							</table>
+						</div>
+					</div>
+				</div>
+				<div class="categories__block js-accordion">
+					<div class="categories__title js-accordion-link">Service Item Conditions</div>
+					<div class="categories__box js-accordion-block">
+						<div class="choice">
+							<p>Set up and customize service item conditions. Add or delete.</p>
+							<small>Type a word then hit enter</small>
+							<div class="select2">
+								<select class="js-select-tags" multiple style="width: 60%;">
+									<option value="Water Inside">Water Inside</option>
+									<option value="Broken Screen">Broken Screen</option>
+									<option value="Scratched back cover">Scratched back cover</option>
+								</select>
+							</div>
+						</div>
+					</div>
+				</div>
+
+			</div>
+			<!-- end categories -->
+
+		</section>
+		<!-- end container -->
+	</main>
+	<!-- end main -->
+
+<!-- load scripts -->
+<script src="js/lib/head.js" data-headjs-load="js/init.js"></script>
+</body>
+</html>

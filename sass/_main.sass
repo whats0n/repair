@@ -161,7 +161,7 @@ body
 	display: table-cell
 	background-color: #EEE
 	vertical-align: top
-	padding: 20px 
+	padding: 20px 20px 80px
 
 .top-bar
 	background-color: #F8F8F8
@@ -328,6 +328,17 @@ body
 		width: 32%
 	&__category
 		width: 68%
+	.icon-customize
+		font-size: 30px
+		color: #CACBD3
+		vertical-align: middle
+	.color
+		display: inline-block
+		vertical-align: middle
+	.radio
+		vertical-align: middle
+	.add-block
+		text-align: left
 		
 //bottom
 .bottom
@@ -466,3 +477,97 @@ body
 				padding: 5px 30px 0
 				li
 					padding: 10px 0 0 
+
+.customize
+	&-table
+		border: 1px solid #CACBD3
+		+border-radius(5px)
+		background: #fff 
+		overflow: hidden
+		.table
+			width: 100%
+			table-layout: fixed
+			background: none
+			td, th
+				line-height: 45px
+				color: #373F46
+				font-size: 14px
+				border-bottom: 1px solid #CACBD3
+				padding: 0 15px 
+				vertical-align: middle
+				position: relative
+				&.is-first
+					width: 14%
+				&.is-second
+					width: 34%
+				&.is-third
+					width: 32%
+				&.is-fourth
+					width: 20%
+			th
+				background-color: #EEE
+			td
+				&.is-first
+					text-align: center
+			tr
+				&:hover
+					.icon-customize
+						color: #373F46
+			.delete
+				position: absolute
+				top: 50%
+				right: 15px
+				margin-top: -7px
+				
+.choice
+	line-height: 16px
+	p, small
+		font-size: 14px
+		margin-bottom: 10px
+		display: block
+	p
+		color: #414141
+	small
+		color: #999
+		
+//disclaimer
+.disclaimer
+	background-color: #FFF
+	+border-radius(5px)
+	padding: 15px 0 0
+	&__label
+		color: #999
+		font-size: 14px
+		line-height: 1.2
+		display: block
+		margin-bottom: 15px
+	&__body
+		padding: 12px 15px 15px 
+
+.text
+	background-color: #F8F8F8
+	+border-radius(5px)
+	border: 1px solid #EEE
+	padding: 0 10px 
+	margin-bottom: 14px
+	p
+		color: #373F46
+		font-size: 14px
+		line-height: 22px
+		padding: 10px 0 
+	
+.title
+	font-size: 16px
+	color: #373F46
+	line-height: 35px
+	border: 1px solid #CACBD3
+	border-left: none
+	border-right: none
+	background-color: #EFEFEF
+	padding: 0 15px 0 
+	
+.btns
+	font-size: 0
+	text-align: left
+	.btn-simple
+		margin: 0 10px 0 0 
