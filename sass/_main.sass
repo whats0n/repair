@@ -3,7 +3,7 @@ html, body
 
 body
 	padding: 52px 0 0
-	position: relative 	
+	position: relative
 	min-width: 960px
 
 
@@ -21,38 +21,38 @@ body
 		width: 20%
 		padding: 8px 16px 7px
 		&:after
-			content: "" 
+			content: ""
 			position: absolute
 			top: 5px
 			bottom: 5px
 			right: 0
-			border-right: 1px solid rgba(0, 0, 0, 0.14) 
+			border-right: 1px solid rgba(0, 0, 0, 0.14)
 	&__right
 		width: 80%
-		padding: 4px 20px 
+		padding: 4px 20px
 	.btn-big
 		float: right
-		margin: 3px 0 
+		margin: 3px 0
 
 .logo
 	font-size: 22px
 	color: #fff
 	display: inline-block
 	vertical-align: top
-	padding: 0 0 0 46px 
+	padding: 0 0 0 46px
 	position: relative
 	line-height: 37px
 	&:before
-		content: "" 
+		content: ""
 		position: absolute
 		top: 0
 		left: 0
-		+s(b2bsoft) 
+		+s(b2bsoft)
 
 .breadcrumbs
 	font-size: 0
 	position: relative
-	padding: 0 0 0 65px 
+	padding: 0 0 0 65px
 	overflow: hidden
 	&__icon
 		width: 46px
@@ -61,13 +61,13 @@ body
 		top: 0
 		left: 0
 		&:before, &:after
-			content: "" 
+			content: ""
 			position: absolute
 			+border-radius(50%)
 			+opacity(0.5)
 		&:before
 			+box-shadow(3px 0 1px rgba(0, 0, 0, 0.65))
-			background: #5F7583 
+			background: #5F7583
 			top: 0
 			left: 0
 			right: 0
@@ -92,7 +92,7 @@ body
 	li
 		display: inline-block
 		vertical-align: top
-		padding: 7px 28px 7px 0 
+		padding: 7px 28px 7px 0
 		position: relative
 		&:last-child
 			&:before
@@ -107,13 +107,13 @@ body
 		a
 			font-size: 22px
 			color: #FFF
-			
-		
+
+
 .main
 	+clr
 	display: table
 	width: 100%
-	min-height: 100% 
+	min-height: 100%
 	height: 100%
 	table-layout: fixed
 
@@ -133,12 +133,12 @@ body
 		background-image: -webkit-linear-gradient(bottom, #2F363F 0%, #414C56 100%)
 		background-image: linear-gradient(to top, #2F363F 0%, #414C56 100%)
 		border-bottom: 1px solid #4F606C
-		padding: 0 50px 0 20px 
+		padding: 0 50px 0 20px
 		position: relative
 		&:hover, &.is-active
 			background: #2F363F
 		&:before
-			content: "" 
+			content: ""
 			position: absolute
 			top: 50%
 			right: 21px
@@ -151,11 +151,11 @@ body
 			color: #999
 			line-height: 38px
 			border-bottom: 1px solid #4F606C
-			padding: 0 20px 
+			padding: 0 20px
 			&:hover, &.is-active
 				color: #CACCCE
 				background: #5F7583
-				
+
 .container
 	width: 80%
 	display: table-cell
@@ -170,7 +170,7 @@ body
 	padding: 14px 4px 14px 14px
 	+clr
 	+r(1200)
-		padding: 14px 
+		padding: 14px
 	&_small
 		.search
 			+r(1200)
@@ -187,10 +187,10 @@ body
 		.search__btn
 			color: #373F46
 		.search__input
-			border-color: #373F46 
+			border-color: #373F46
 	&__input
 		width: 100%
-		padding: 7px 35px 7px 10px 
+		padding: 7px 35px 7px 10px
 		font-size: 14px
 		color: #373F46
 		background-color: #FFF
@@ -218,13 +218,13 @@ body
 	+r(1200)
 		float: none
 		padding: 10px 0 0
-		width: 100% 
+		width: 100%
 	&__label, .select-check, .select-date
 		display: inline-block
 		vertical-align: top
 	&__box
-		padding: 0 0 0 8px 
-		max-width: 20% 
+		padding: 0 0 0 8px
+		max-width: 20%
 		display: inline-block
 		vertical-align: middle
 		&.is-small
@@ -237,7 +237,7 @@ body
 		font-size: 14px
 		color: #999
 		+r(1200)
-			margin: 0 
+			margin: 0
 
 //order-table
 .order-table
@@ -245,7 +245,7 @@ body
 	+border-radius(0 0 5px 5px)
 
 //table
-.table-wrapper	
+.table-wrapper
 	border-bottom: 1px solid #CACBD3
 	overflow: auto
 	width: 100%
@@ -274,17 +274,17 @@ body
 		font-size: 12px
 		line-height: 16px
 		vertical-align: top
-		&.table__number			
-			padding-left: 15px 
-		&.table__status		
+		&.table__number
+			padding-left: 15px
+		&.table__status
 			padding-right: 17px
 		span
 			display: block
 	th
-		padding: 11px 0 11px 0  
+		padding: 11px 0 11px 0
 		border-bottom: 1px solid #CACBD3
 		&.table__col
-			padding: 11px 15px 
+			padding: 11px 15px
 		span
 			display: inline-block
 			padding: 0 12px 0 0
@@ -295,7 +295,7 @@ body
 					+rotate(-180)
 			&:before
 				+arr(8, 4, #cacbd3, b)
-				content: "" 
+				content: ""
 				position: absolute
 				top: 50%
 				right: 0
@@ -303,7 +303,7 @@ body
 				+transition(all 0.2s)
 	td
 		border-bottom: 1px solid #eeeeee
-		&.table__status		
+		&.table__status
 			padding: 5px 17px 2px 0
 	&__number, &__summary, &__customer, &__model, &__technician, &__due-date, &__store, &__create-date, &__create-by, &__priority, &__status
 		padding: 9px 11px 2px 0
@@ -337,7 +337,7 @@ body
 		width: 68%
 	&__col
 		width: 25%
-		padding: 11px 15px 
+		padding: 11px 15px
 	.icon-customize
 		font-size: 30px
 		color: #CACBD3
@@ -354,7 +354,7 @@ body
 		color: #373F46
 		line-height: 16px
 		&.not-active
-			color: #999 
+			color: #999
 		a
 			color: #2D6F95
 			&:hover
@@ -362,7 +362,7 @@ body
 //bottom
 .bottom
 	+clr
-	padding: 20px 15px 15px 
+	padding: 20px 15px 15px
 .pages
 	float: left
 	font-size: 0
@@ -374,11 +374,11 @@ body
 		font-size: 12px
 		margin-right: 5px
 	&__list
-		padding: 0 3px 
+		padding: 0 3px
 		li
 			display: inline-block
 			vertical-align: top
-			padding: 0 2px 
+			padding: 0 2px
 		a
 			font-size: 12px
 			color: #373F46
@@ -400,15 +400,15 @@ body
 		line-height: 20px
 		border: 2px solid #CACBD3
 		+border-radius(50%)
-		margin: 0 5px 
+		margin: 0 5px
 		display: inline-block
 		vertical-align: middle
 		&:hover
 			border-color: #007098
-			color: #007098 
+			color: #007098
 		&:active
 			color: #999
-			border-color: #999 
+			border-color: #999
 
 .size
 	float: right
@@ -419,7 +419,7 @@ body
 		color: #373F46
 		font-size: 12px
 		margin-right: 10px
-		
+
 //categories
 .categories
 	background-color: #F8F8F8
@@ -427,13 +427,13 @@ body
 	+border-radius(5px)
 	padding: 15px 0 15px
 	&__title
-		background: #fff 
+		background: #fff
 		color: #373F46
 		font-size: 16px
-		padding: 0 37px 
+		padding: 0 37px
 		line-height: 34px
 		position: relative
-		border-top: 1px solid #CACBD3 
+		border-top: 1px solid #CACBD3
 		+user-select(none)
 		cursor: pointer
 		&.is-active
@@ -442,26 +442,26 @@ body
 				+rotate(90)
 				+arr(6, 12, #373F46, r)
 		&:before
-			content: "" 
+			content: ""
 			+arr(6, 12, #CACBD3, r)
 			position: absolute
 			top: 50%
 			margin-top: -6px
 			left: 15px
-			-webkit-transform-origin: center center 
-			-moz-transform-origin: center center 
-			-ms-transform-origin: center center 
-			-o-transform-origin: center center 
-			transform-origin: center center 
+			-webkit-transform-origin: center center
+			-moz-transform-origin: center center
+			-ms-transform-origin: center center
+			-o-transform-origin: center center
+			transform-origin: center center
 			+transition(all 0.2s)
 	&__box
-		padding: 14px 11px 14px 15px 
-		border-top: 1px solid #CACBD3 
+		padding: 14px 11px 14px 15px
+		border-top: 1px solid #CACBD3
 		display: none
 	&__table
 		border: 1px solid #CACBD3
 		+border-radius(5px)
-		background: #fff 
+		background: #fff
 		overflow: hidden
 		.table
 			width: 100%
@@ -472,13 +472,13 @@ body
 				color: #373F46
 				font-size: 14px
 				border-bottom: 1px solid #CACBD3
-				padding: 0 15px 
+				padding: 0 15px
 				vertical-align: middle
 				position: relative
 			th
 				background-color: #EEE
 			&__text
-				margin: 0 30px 0 0 
+				margin: 0 30px 0 0
 			.delete
 				position: absolute
 				top: 50%
@@ -487,7 +487,7 @@ body
 			&__mod
 				font-size: 0
 				.ok, .delete
-					margin: 0 0 0 10px 
+					margin: 0 0 0 10px
 					position: static
 					float: none
 	&__check
@@ -495,13 +495,13 @@ body
 			ul
 				padding: 5px 30px 0
 				li
-					padding: 10px 0 0 
+					padding: 10px 0 0
 
 .customize
 	&-table
 		border: 1px solid #CACBD3
 		+border-radius(5px)
-		background: #fff 
+		background: #fff
 		overflow: hidden
 		.table
 			width: 100%
@@ -512,7 +512,7 @@ body
 				color: #373F46
 				font-size: 14px
 				border-bottom: 1px solid #CACBD3
-				padding: 0 15px 
+				padding: 0 15px
 				vertical-align: middle
 				position: relative
 				&.is-first
@@ -537,7 +537,7 @@ body
 				top: 50%
 				right: 15px
 				margin-top: -7px
-				
+
 .choice
 	line-height: 16px
 	p, small
@@ -548,7 +548,7 @@ body
 		color: #414141
 	small
 		color: #999
-		
+
 //disclaimer
 .disclaimer
 	background-color: #FFF
@@ -561,20 +561,20 @@ body
 		display: block
 		margin-bottom: 15px
 	&__body
-		padding: 12px 15px 15px 
+		padding: 12px 15px 15px
 
 .text
 	background-color: #F8F8F8
 	+border-radius(5px)
 	border: 1px solid #EEE
-	padding: 0 10px 
+	padding: 0 10px
 	margin-bottom: 14px
 	p
 		color: #373F46
 		font-size: 14px
 		line-height: 22px
-		padding: 10px 0 
-	
+		padding: 10px 0
+
 .title
 	font-size: 16px
 	color: #373F46
@@ -583,7 +583,7 @@ body
 	border-left: none
 	border-right: none
 	background-color: #EFEFEF
-	padding: 0 15px 0 
+	padding: 0 15px 0
 	position: relative
 	&_accordion
 		font-size: 0
@@ -593,22 +593,22 @@ body
 				+rotate(90)
 				+arr(6, 12, #373F46, r)
 		&:before
-			content: "" 
+			content: ""
 			+arr(6, 12, #CACBD3, r)
 			position: absolute
 			top: 50%
 			margin-top: -6px
 			left: 15px
-			-webkit-transform-origin: center center 
-			-moz-transform-origin: center center 
-			-ms-transform-origin: center center 
-			-o-transform-origin: center center 
-			transform-origin: center center 
+			-webkit-transform-origin: center center
+			-moz-transform-origin: center center
+			-ms-transform-origin: center center
+			-o-transform-origin: center center
+			transform-origin: center center
 			+transition(all 0.2s)
 	&__btns
 		float: right
 		.btn-link
-			margin: 0 0 0 15px 
+			margin: 0 0 0 15px
 	&__text
 		overflow: hidden
 		padding: 0 22px
@@ -616,44 +616,44 @@ body
 		span
 			display: inline-block
 			vertical-align: middle
-			margin: 0 10px 0 0 
+			margin: 0 10px 0 0
 			font-size: 14px
 			cursor: pointer
 			+user-select(none)
 	.btn-edit, .btn-link
 		vertical-align: middle
-	
+
 .btns
 	font-size: 0
 	text-align: left
 	.btn-simple
-		margin: 0 10px 0 0 
-		
+		margin: 0 10px 0 0
+
 .facturer-table
-	border-bottom: 1px solid #cacbd3 
+	border-bottom: 1px solid #cacbd3
 	.table
 		td, th
 			padding: 10px 15px 18px
-			
+
 .edit
 	background-color: #F8F8F8
 	padding: 15px 0 0
-	+border-radius(5px) 
+	+border-radius(5px)
 	&_mod
-		padding: 0 
-		.select, 
-		.input, 
+		padding: 0
+		.select,
+		.input,
 		.label, .select2.select2-container .select2-selection--single .select2-selection__rendered
 			font-size: 12px
 		.label
 			margin-bottom: 6px
 
 .block
-	padding: 14px 15px 
+	padding: 14px 15px
 	&_accordion
 		display: none
 		border-top: 1px solid #CACBD3
-		
+
 .label
 	display: block
 	color: #999
@@ -664,24 +664,25 @@ body
 .form
 	&__row
 		+clr
-	&__field
+	&__col
 		width: 33.3%
 		float: left
-		margin-bottom: 13px
+	&__field
+		padding-bottom: 13px
 
 .models-table
-	border-bottom: 1px solid #cacbd3 
+	border-bottom: 1px solid #cacbd3
 	.table
 		td, th
 			padding: 10px 15px 18px
-			
+
 .info
 	background-color: #FFF
 	+border-radius(5px 5px 0 0)
 	&__row
 		display: table
 		table-layout: fixed
-		padding: 11px 0 5px 
+		padding: 11px 0 5px
 		width: 100%
 	&__col
 		width: 25%
@@ -693,7 +694,7 @@ body
 		li
 			font-size: 12px
 			line-height: 22px
-			padding: 0 0 2px 
+			padding: 0 0 2px
 	&__label
 		color: #999
 	&__text
@@ -702,28 +703,28 @@ body
 			color: #CB2227
 	&__block
 		border-top: 1px solid #cacbd3
-		padding: 5px 0 4px  
+		padding: 5px 0 4px
 		.print
 			float: right
-			margin: 5px 0 
+			margin: 5px 0
 		.links
 			overflow: hidden
-			
+
 .links
 	font-size: 0
-	padding: 0 3px 
+	padding: 0 3px
 	ul
 		padding: 0 10px 0 0
-		border-right: 1px solid #eeeeee  
+		border-right: 1px solid #eeeeee
 		display: inline-block
 		vertical-align: top
-		margin: 0 10px 0 0 
+		margin: 0 10px 0 0
 		&:last-child
 			border: none
 	li
 		display: inline-block
 		vertical-align: top
-		padding: 8px 10px 
+		padding: 8px 10px
 		a
 			color: #999
 			text-decoration: underline
@@ -732,3 +733,95 @@ body
 			display: inline-block
 			&:hover, &.is-active
 				color: #2D6F95
+
+.order
+	border: 1px solid #cacbd3
+	overflow: hidden
+	+border-radius(5px)
+	.table
+		td, th
+			padding: 5px 15px
+			vertical-align: middle
+			position: relative
+			&.is-id
+				width: 9.5%
+			&.is-description
+				width: 25%
+			&.is-serial
+				width: 13%
+			&.is-qty
+				width: 13.5%
+			&.is-price
+				width: 14.5%
+			&.is-extprice
+				width: 24.5%
+		th
+			line-height: 29px
+		td
+			line-height: 34px
+		&__mod
+			font-size: 0
+			.ok, .delete
+				margin: 0 0 0 10px
+		.delete
+			&.is-delete
+				position: absolute
+				top: 50%
+				right: 15px
+				margin-top: -7px
+		.table-text
+			line-height: 1.2
+			display: inline-block
+	.order__label
+		font-size: 14px
+		display: inline-block
+		vertical-align: middle
+		padding: 3px 0
+		margin: 0 15px 0 0
+		span
+			color: #cb2227
+			display: inline-block
+	&__taken
+		line-height: 16px
+		small
+			font-size: 12px
+			color: #999
+			display: block
+			padding: 4px 0
+	&__taken-row
+		.input-small
+			margin: 2px 0
+			vertical-align: middle
+			width: 64px
+			margin: 0 10px 0 0
+		.checkbox
+			margin: 2px 0
+			display: inline-block
+			vertical-align: middle
+
+.tabs
+	padding: 14px 0
+	&__btns
+		margin: 0 -2px
+		font-size: 0
+		li
+			width: 33.3%
+			padding: 0 2px
+			display: inline-block
+			vertical-align: top
+			&:first-child
+				width: 33.4%
+.tab-link
+	background-color: #cacbd3
+	border: 1px solid #cacbd3
+	+border-radius(5px 5px 0 0)
+	font-size: 16px
+	line-height: 40px
+	padding: 0 20px
+	text-align: center
+	color: #fff
+	display: block
+	&.is-active
+		background-color: #fff
+		color: #373f46
+		border-bottom-color: #fff

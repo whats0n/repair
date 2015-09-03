@@ -6,7 +6,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta name="format-detection" content="telephone=no">
 	<!-- theme color for android 5.0 -->
-	<meta name="theme-color" content="#fff"> 
+	<meta name="theme-color" content="#fff">
 	<!-- <meta name="viewport" content="width=1200"> -->
 	<!-- <meta name="viewport" content="initial-scale=1, user-scalable=no"> -->
 	<link rel="stylesheet" media="all" href="css/icomoon.css" >
@@ -28,7 +28,7 @@
 				<ul>
 					<li><a href="#">Settings</a></li>
 					<li><a href="#" class="is-active">Manufacturers</a></li>
-				</ul>				
+				</ul>
 			</div>
 		</div>
 	</header>
@@ -70,31 +70,35 @@
 					<div class="form">
 						<form action="">
 							<div class="form__row">
-								<div class="form__field">
-									<span class="label">Name</span>
-									<input type="text" class="input">
-								</div>
-								<div class="form__field">
-									<span class="label">Status</span>
-									<div class="select select_mod js-select">
-										<i class="icon icon-arr-bot"></i>
-										<span class="select__text js-select-text">Active</span>
-										<ul class="select__list js-select-list">
-											<li data-val="Active" class="is-active">Active</li>
-											<li data-val="Not Active">Not Active</li>
-										</ul>
-										<select>
-											<option value="Active" selected>Active</option>
-											<option value="Not Active">Not Active</option>
-										</select>
+								<div class="form__col">
+									<div class="form__field">
+										<span class="label">Name</span>
+										<input type="text" class="input">
 									</div>
 								</div>
-							</div>							
+								<div class="form__col">
+									<div class="form__field">
+										<span class="label">Status</span>
+										<div class="select select_mod js-select">
+											<i class="icon icon-arr-bot"></i>
+											<span class="select__text js-select-text">Active</span>
+											<ul class="select__list js-select-list">
+												<li data-val="Active" class="is-active">Active</li>
+												<li data-val="Not Active">Not Active</li>
+											</ul>
+											<select>
+												<option value="Active" selected>Active</option>
+												<option value="Not Active">Not Active</option>
+											</select>
+										</div>
+									</div>
+								</div>
+							</div>
 							<div class="btns">
 								<button class="btn-simple btn-simple_blue">Done</button>
 								<button class="btn-simple btn-simple_red">Cancel</button>
-							</div>	
-						</form>						
+							</div>
+						</form>
 					</div>
 				</div>
 			</div>

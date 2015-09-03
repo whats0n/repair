@@ -18,19 +18,19 @@ head.ready(function() {
 	// console.log($('body').html());
 	$('.js-calendar').hide();
 
-	$('.js-calendar-btn').click(function(){	    
+	$('.js-calendar-btn').click(function(){
 		$(this).children('.js-calendar').toggle();
 	});
 
 	$('.js-calendar').datepicker({
-		onSelect: function(value, date) { 
+		onSelect: function(value, date) {
 			$(this).parents('.js-calendar-parent').find('.js-calendar-label').text(value)
-			$('.js-calendar').hide(); 
-		} 
+			$('.js-calendar').hide();
+		}
 	});
 
 	$('.js-datepicker-due').datepicker({
-		beforeShow: function() { 
+		beforeShow: function() {
 			setTimeout(function() {
 				$('.ui-datepicker').addClass('ui-datepicker_mod');
 				$('.ui-datepicker').append('<div class="ui-datepicker__bottom"><label><span>Time</span><input class="ui-datepicker__input"></label><button class="button ui-datepicker-btn">Done</button></div>');
@@ -58,7 +58,7 @@ head.ready(function() {
 	// 			}
 	// 			$(this).toggleClass('is-active');
 	// 			console.log($(this));
-				
+
 	// 		},
 	// 		onClose: function() {
 	// 			if (select.hasClass('is-active')) {
@@ -69,7 +69,7 @@ head.ready(function() {
 	// 			}
 	// 			$(this).toggleClass('is-active');
 	// 			console.log($(this));
-				
+
 	// 		}
 	// 	});
 	// });
@@ -80,7 +80,7 @@ head.ready(function() {
 		$(".js-select").removeClass("is-active");
 		  $(".js-select-list").slideUp(100);
 	});
-	
+
 	// select list
 	$("body").on("click",".js-select",function(event) {
 		event.stopPropagation();
@@ -96,7 +96,7 @@ head.ready(function() {
 			$(".js-select-list").slideUp(100);
 			select.toggleClass("is-active").find(".js-select-list").slideToggle(100);
 		}
-	   
+
 	});
 
 	$("body").on("click",".js-select-list li",function() {
@@ -112,7 +112,7 @@ head.ready(function() {
 		select.removeClass("is-active");
 		selectList.slideUp(100);
 		return false;
-		
+
 	});
 
 	//sidebar-menu
@@ -185,15 +185,15 @@ head.ready(function() {
 				$(this).parents(".js-status").removeClass("is-active");
 				event.stopPropagation();
 			});
-		}  
-		
+		}
+
 		selectList();
 		$("body").on("click", ".js-status", function(event){
 			event.stopPropagation();
 		});
-		
-	});
-	
 
-	
+	});
+
+
+
 });
