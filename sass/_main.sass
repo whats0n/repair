@@ -171,6 +171,10 @@ body
 	+clr
 	+r(1200)
 		padding: 14px 
+	&_small
+		.search
+			+r(1200)
+				float: left
 
 .search
 	position: relative
@@ -279,6 +283,8 @@ body
 	th
 		padding: 11px 0 11px 0  
 		border-bottom: 1px solid #CACBD3
+		&.table__col
+			padding: 11px 15px 
 		span
 			display: inline-block
 			padding: 0 12px 0 0
@@ -296,10 +302,11 @@ body
 				margin-top: -2px
 				+transition(all 0.2s)
 	td
-		padding: 9px 11px 2px 0
 		border-bottom: 1px solid #eeeeee
 		&.table__status		
 			padding: 5px 17px 2px 0
+	&__number, &__summary, &__customer, &__model, &__technician, &__due-date, &__store, &__create-date, &__create-by, &__priority, &__status
+		padding: 9px 11px 2px 0
 	&__number
 		width: 6.6%
 		a
@@ -328,6 +335,9 @@ body
 		width: 32%
 	&__category
 		width: 68%
+	&__col
+		width: 25%
+		padding: 11px 15px 
 	.icon-customize
 		font-size: 30px
 		color: #CACBD3
@@ -339,7 +349,16 @@ body
 		vertical-align: middle
 	.add-block
 		text-align: left
-		
+	p
+		font-size: 12px
+		color: #373F46
+		line-height: 16px
+		&.not-active
+			color: #999 
+		a
+			color: #2D6F95
+			&:hover
+				text-decoration: underline
 //bottom
 .bottom
 	+clr
@@ -565,9 +584,151 @@ body
 	border-right: none
 	background-color: #EFEFEF
 	padding: 0 15px 0 
+	position: relative
+	&_accordion
+		font-size: 0
+		border-bottom: none
+		&.is-active
+			&:before
+				+rotate(90)
+				+arr(6, 12, #373F46, r)
+		&:before
+			content: "" 
+			+arr(6, 12, #CACBD3, r)
+			position: absolute
+			top: 50%
+			margin-top: -6px
+			left: 15px
+			-webkit-transform-origin: center center 
+			-moz-transform-origin: center center 
+			-ms-transform-origin: center center 
+			-o-transform-origin: center center 
+			transform-origin: center center 
+			+transition(all 0.2s)
+	&__btns
+		float: right
+		.btn-link
+			margin: 0 0 0 15px 
+	&__text
+		overflow: hidden
+		padding: 0 22px
+		position: relative
+		span
+			display: inline-block
+			vertical-align: middle
+			margin: 0 10px 0 0 
+			font-size: 14px
+			cursor: pointer
+			+user-select(none)
+	.btn-edit, .btn-link
+		vertical-align: middle
 	
 .btns
 	font-size: 0
 	text-align: left
 	.btn-simple
 		margin: 0 10px 0 0 
+		
+.facturer-table
+	border-bottom: 1px solid #cacbd3 
+	.table
+		td, th
+			padding: 10px 15px 18px
+			
+.edit
+	background-color: #F8F8F8
+	padding: 15px 0 0
+	+border-radius(5px) 
+	&_mod
+		padding: 0 
+		.select, 
+		.input, 
+		.label, .select2.select2-container .select2-selection--single .select2-selection__rendered
+			font-size: 12px
+		.label
+			margin-bottom: 6px
+
+.block
+	padding: 14px 15px 
+	&_accordion
+		display: none
+		border-top: 1px solid #CACBD3
+		
+.label
+	display: block
+	color: #999
+	font-size: 14px
+	line-height: 16px
+	margin-bottom: 10px
+
+.form
+	&__row
+		+clr
+	&__field
+		width: 33.3%
+		float: left
+		margin-bottom: 13px
+
+.models-table
+	border-bottom: 1px solid #cacbd3 
+	.table
+		td, th
+			padding: 10px 15px 18px
+			
+.info
+	background-color: #FFF
+	+border-radius(5px 5px 0 0)
+	&__row
+		display: table
+		table-layout: fixed
+		padding: 11px 0 5px 
+		width: 100%
+	&__col
+		width: 25%
+		display: table-cell
+		padding: 3px 13px
+		border-left: 1px solid #EEE
+		&:first-child
+			border: none
+		li
+			font-size: 12px
+			line-height: 22px
+			padding: 0 0 2px 
+	&__label
+		color: #999
+	&__text
+		color: #424B53
+		&.is-red
+			color: #CB2227
+	&__block
+		border-top: 1px solid #cacbd3
+		padding: 5px 0 4px  
+		.print
+			float: right
+			margin: 5px 0 
+		.links
+			overflow: hidden
+			
+.links
+	font-size: 0
+	padding: 0 3px 
+	ul
+		padding: 0 10px 0 0
+		border-right: 1px solid #eeeeee  
+		display: inline-block
+		vertical-align: top
+		margin: 0 10px 0 0 
+		&:last-child
+			border: none
+	li
+		display: inline-block
+		vertical-align: top
+		padding: 8px 10px 
+		a
+			color: #999
+			text-decoration: underline
+			font-size: 12px
+			line-height: 16px
+			display: inline-block
+			&:hover, &.is-active
+				color: #2D6F95

@@ -1,0 +1,861 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Template</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="format-detection" content="telephone=no">
+	<!-- theme color for android 5.0 -->
+	<meta name="theme-color" content="#fff"> 
+	<!-- <meta name="viewport" content="width=1200"> -->
+	<!-- <meta name="viewport" content="initial-scale=1, user-scalable=no"> -->
+	<link rel="stylesheet" media="all" href="css/icomoon.css" >
+	<link rel="stylesheet" media="all" href="css/select2.min.css" >
+	<link rel="stylesheet" media="all" href="css/screen.css" >
+	<!--[if IE]><script src="js/html5shiv.js"></script><![endif]-->
+</head>
+<body>
+
+	<!-- begin header  -->
+	<header class="header">
+		<div class="header__left">
+			<a href="#" class="logo">Repair</a>
+		</div>
+		<div class="header__right">
+			<button class="btn-big">New Work Order</button>
+			<div class="breadcrumbs">
+				<span class="breadcrumbs__icon"><i></i></span>
+				<ul>
+					<li><a href="#">All Work Orders</a></li>
+					<li><a href="#" class="is-active">Work Order #120</a></li>
+				</ul>				
+			</div>
+		</div>
+	</header>
+	<!-- end header -->
+
+	<!-- begin main  -->
+	<main class="main">
+		<!-- begin sidebar  -->
+		<aside class="sidebar">
+			<div class="sidebar__box js-side">
+				<a href="#" class="sidebar__title js-side-link is-active">Work Orders</a>
+				<ul class="sidebar__list js-side-block">
+					<li><a href="# is-active">All Work Orders</a></li>
+					<li><a href="#">My Work Orders</a></li>
+				</ul>
+			</div>
+			<div class="sidebar__box js-side">
+				<a href="#" class="sidebar__title js-side-link">Setting</a>
+				<ul class="sidebar__list js-side-block">
+					<li><a href="#">Manufacturers</a></li>
+					<li><a href="#">Models</a></li>
+					<li><a href="#">Device Types</a></li>
+					<li><a href="#">Colors</a></li>
+					<li><a href="#">Carriers</a></li>
+					<li><a href="#">Categories</a></li>
+					<li><a href="#">Customize</a></li>
+					<li><a href="#">Declaimer</a></li>
+				</ul>
+			</div>
+		</aside>
+		<!-- end sidebar -->
+		<!-- begin container  -->
+		<section class="container">
+			<!-- begin edit  -->
+			<div class="edit edit_mod">
+				<div class="info">
+					<div class="info__row">
+						<div class="info__col">
+							<ul>
+								<li>
+									<span class="info__label">Status</span>
+									<a href="#" class="btn-status btn-status_yellow">In Progress</a>
+								</li>
+								<li>
+									<span class="info__label">Priority:</span>
+									<span class="info__text">High</span>
+								</li>
+								<li>
+									<span class="info__label">Service Type:</span>
+									<span class="info__text">Screen Replacement</span>
+								</li>
+							</ul>
+						</div>
+						<div class="info__col">
+							<ul>
+								<li>
+									<span class="info__label">Technician:</span>
+									<span class="info__text">Matk John</span>
+								</li>
+								<li>
+									<span class="info__label">Created Date:</span>
+									<span class="info__text">05/05/2015</span>
+								</li>
+								<li>
+									<span class="info__label">Due Date:</span>
+									<span class="info__text">12/05/2015</span>
+								</li>
+							</ul>
+						</div>
+						<div class="info__col">
+							<ul>
+								<li>
+									<span class="info__label">Customer:</span>
+									<span class="info__text">Aurora Khulud Al-Rekavi</span>
+								</li>
+								<li>
+									<span class="info__label">Phone:</span>
+									<span class="info__text">+38000000000</span>
+								</li>
+								<li>
+									<span class="info__label">E-mail:</span>
+									<span class="info__text">example@gmail.com</span>
+								</li>
+							</ul>
+						</div>
+						<div class="info__col">
+							<ul>
+								<li>
+									<span class="info__label">Subtotal:</span>
+									<span class="info__text">$120.00</span>
+								</li>
+								<li>
+									<span class="info__label">Balance:</span>
+									<span class="info__text is-red">$0.00</span>
+								</li>
+							</ul>
+						</div>
+					</div>	
+					<div class="info__block">
+						<div class="print">
+							<button class="btn-print">Print<i class="icon icon-print"></i></button>
+							<div class="select-print js-select">								
+								<i class="icon icon-arr-bot"></i>
+								<span class="select-print__text js-select-text"></span>
+								<ul class="select-print__list js-select-list">
+									<li data-val="Work Order">Work Order</li>
+									<li data-val="Service Item">Service Item</li>
+								</ul>
+								<select>
+									<option value="Work Order">Work Order</option>
+									<option value="Service Item">Service Item</option>
+								</select>
+							</div>
+						</div>	
+						<div class="links">
+							<ul>
+								<li><a href="#">Customer</a></li>
+								<li><a href="#">Service Item</a></li>
+								<li><a href="#">Work Order</a></li>
+								<li><a href="#">Parts</a></li>
+								<li><a href="#">Labor</a></li>
+								<li><a href="#">Loaner</a></li>
+								<li><a href="#">Payment</a></li>
+							</ul>
+							<ul>
+								<li><a href="#">Comments</a></li>
+								<li><a href="#">Transactions</a></li>
+								<li><a href="#">History</a></li>
+							</ul>
+						</div>
+					</div>								
+				</div>
+				<div class="js-accordion">
+					<div class="title title_accordion js-accordion-arr">
+						<div class="title__btns">
+							<button class="btn-link">Save</button>
+							<button class="btn-link btn-link_red">Cancel</button>
+						</div>
+						<div class="title__text">
+							<span class="js-accordion-link">Customer</span>
+							<button class="btn-edit"><i class="icon icon-edit"></i></button>
+						</div>
+					</div>
+					<div class="block block_accordion js-accordion-block">
+						<div class="form">
+							<form action="">
+								<div class="form__row">
+									<div class="form__field">
+										<span class="label">Account</span>
+										<div class="select select_mod js-select">
+											<i class="icon icon-arr-bot"></i>
+											<span class="select__text js-select-text">Personal</span>
+											<ul class="select__list js-select-list">
+												<li data-val="Personal" class="is-active">Personal</li>
+												<li data-val="Business">Business</li>
+											</ul>
+											<select>
+												<option value="Personal">Personal</option>
+												<option value="Business">Business</option>
+											</select>
+										</div>
+									</div>
+									<div class="form__field">
+										<span class="label">Address</span>
+										<input type="text" class="input">						
+									</div>
+									<div class="form__field">
+										<span class="label">Primary Phone</span>
+										<input type="text" class="input">
+									</div>
+								</div>	
+								<div class="form__row">
+									<div class="form__field">
+										<span class="label">First Name</span>
+										<input type="text" class="input">
+									</div>
+									<div class="form__field">
+										<span class="label">State</span>
+										<div class="select2-search">
+											<select class="js-select-search" placeholder="Choose State..." style="width: 190px;">
+												<option value=""></option>
+												<option value="UT">UT</option>
+												<option value="State">State</option>
+												<option value="State State State">State State State</option>
+												<option value="State State State">State State State</option>
+											</select>
+										</div>									
+									</div>
+									<div class="form__field">
+										<span class="label">Mobile Phone</span>
+										<input type="text" class="input">
+									</div>
+								</div>	
+								<div class="form__row">
+									<div class="form__field">
+										<span class="label">Last Name</span>
+										<input type="text" class="input">
+									</div>
+									<div class="form__field">
+										<span class="label">City</span>
+										<div class="select2-search">
+											<select class="js-select-search" placeholder="Choose City..." style="width: 190px;">
+												<option value=""></option>
+												<option value="City">City</option>
+												<option value="City">City</option>
+												<option value="City City City">City City City</option>
+												<option value="City City City">City City City</option>
+											</select>
+										</div>	
+									</div>
+									<div class="form__field">
+										<span class="label">Email</span>
+										<input type="text" class="input">
+									</div>
+								</div>
+								<div class="form__row">
+									<div class="form__field">
+									</div>
+									<div class="form__field">
+										<span class="label">ZIP</span>
+										<input type="text" class="input">
+									</div>
+									<div class="form__field">
+									</div>
+								</div>
+							</form>						
+						</div>
+					</div>
+				</div>		
+				<div class="js-accordion">
+					<div class="title title_accordion js-accordion-arr">
+						<div class="title__btns">
+							<button class="btn-link">Save</button>
+							<button class="btn-link btn-link_red">Cancel</button>
+						</div>
+						<div class="title__text">
+							<span class="js-accordion-link">Service Item</span>
+							<button class="btn-edit"><i class="icon icon-edit"></i></button>
+						</div>
+					</div>
+					<div class="block block_accordion js-accordion-block">
+						<div class="form">
+							<form action="">
+								<div class="form__row">
+									<div class="form__field">
+										<span class="label">Manufacturer</span>
+										<div class="select2-search">
+											<select class="js-select-search" placeholder="Choose Manufacturer..." style="width: 190px;">
+												<option value=""></option>
+												<option value="Apple">Apple</option>
+												<option value="HTC">HTC</option>
+												<option value="BlackBerry">BlackBerry</option>
+												<option value="LG">LG</option>
+											</select>
+										</div>	
+									</div>
+									<div class="form__field">
+										<span class="label">Carrier</span>
+										<input type="text" class="input">						
+									</div>
+									<div class="form__field">
+										<span class="label">Conditions</span>
+										<div class="select2-search">
+											<select class="js-select-search" placeholder="Choose Conditions..." style="width: 190px;">
+												<option value=""></option>
+												<option value="Conditions">Conditions</option>
+												<option value="Conditions">Conditions</option>
+												<option value="Conditions">Conditions</option>
+												<option value="Conditions">Conditions</option>
+											</select>
+										</div>	
+									</div>
+								</div>	
+								<div class="form__row">
+									<div class="form__field">
+										<span class="label">Model</span>
+										<div class="select2-search">
+											<select class="js-select-search" placeholder="Choose Model..." style="width: 190px;">
+												<option value=""></option>
+												<option value="iPhone 5">iPhone 5</option>
+												<option value="iPhone 5">iPhone 5</option>
+												<option value="iPhone 5">iPhone 5</option>
+												<option value="iPhone 5">iPhone 5</option>
+											</select>
+										</div>
+									</div>
+									<div class="form__field">
+										<span class="label">Serial Number</span>
+										<input type="text" class="input">	
+									</div>
+									<div class="form__field">
+										<div class="form__field-check">
+											<label class="checkbox">
+												<input type="checkbox">
+												<span>Device Under Warranty Services</span>
+											</label>
+										</div>
+									</div>
+								</div>	
+								<div class="form__row">
+									<div class="form__field">
+										<span class="label">Device Type</span>
+										<div class="select2-search">
+											<select class="js-select-search" placeholder="Choose Device Type..." style="width: 190px;">
+												<option value=""></option>
+												<option value="City">City</option>
+												<option value="City">City</option>
+												<option value="City City City">City City City</option>
+												<option value="City City City">City City City</option>
+											</select>
+										</div>	
+									</div>
+									<div class="form__field">
+										<span class="label">Password</span>
+										<input type="text" class="input">
+									</div>
+								</div>
+								<div class="form__row">
+									<div class="form__field">
+										<span class="label">Color</span>
+										<input type="text" class="input">
+									</div>
+									<div class="form__field">
+									</div>
+									<div class="form__field">
+									</div>
+								</div>
+							</form>						
+						</div>
+					</div>
+				</div>		
+				<div class="js-accordion">
+					<div class="title title_accordion js-accordion-arr">
+						<div class="title__btns">
+							<button class="btn-link">Save</button>
+							<button class="btn-link btn-link_red">Cancel</button>
+						</div>
+						<div class="title__text">
+							<span class="js-accordion-link">Work Order</span>
+							<button class="btn-edit"><i class="icon icon-edit"></i></button>
+						</div>
+					</div>
+					<div class="block block_accordion js-accordion-block">
+						<div class="form">
+							<form action="">
+								<div class="form__row">
+									<div class="form__field">
+										<span class="label">Status</span>
+										<div class="select select_status js-status">
+											<i class="icon icon-arr-bot"></i>
+											<span class="select__text js-status-text">Personal</span>
+											<ul class="select__list js-status-list">
+												<li data-val="new"><span class="btn-status btn-status_blue">New</span></li>
+												<li data-val="on hold"><span class="btn-status btn-status_gray">On Hold</span></li>
+												<li data-val="in progress"><span class="btn-status btn-status_yellow">In Progress</span></li>
+												<li data-val="done"><span class="btn-status btn-status_green">Done</span></li>
+											</ul>
+											<select>
+												<option value="new">new</option>
+												<option value="on hold">on hold</option>
+												<option value="in progress">in progress</option>
+												<option value="done">done</option>
+											</select>
+										</div>									
+									</div>
+									<div class="form__field">
+										<span class="label">Priority</span>
+										<input type="text" class="input">						
+									</div>
+									<div class="form__field">
+										<span class="label">Created date</span>
+										<input type="text" class="input input_mod" value="Tue 06/23/2015 06:50 PM" disabled>
+									</div>
+								</div>	
+								<div class="form__row">
+									<div class="form__field">
+										<span class="label">Summary</span>
+										<input type="text" class="input">
+									</div>
+									<div class="form__field">
+										<span class="label">Due Date</span>
+										<input type="text" class="js-datepicker-due input">
+									</div>
+									<div class="form__field">
+										<span class="label">Created by</span>
+										<input type="text" class="input input_mod" value="N/A" disabled>
+									</div>
+								</div>	
+								<div class="form__row">
+									<div class="form__field">
+										<span class="label">Description</span>
+										<input type="text" class="input">
+									</div>
+									<div class="form__field">
+										<span class="label">Technician</span>
+										<input type="text" class="input" value="N/A">
+									</div>
+									<div class="form__field">
+										<span class="label">Store</span>
+										<input type="text" class="input input_mod" value="N/A" disabled>
+									</div>
+								</div>
+								<div class="form__row">
+									<div class="form__field">
+										<span class="label">Referral</span>
+										<input type="text" class="input" value="N/A">
+									</div>
+									<div class="form__field">
+										<span class="label">Secondary Phone</span>
+										<input type="text" class="input" value="N/A">
+									</div>
+									<div class="form__field">
+									</div>
+								</div>
+								<div class="form__row">
+									<div class="form__field">
+										<span class="label">Service Type</span>
+										<input type="text" class="input">
+									</div>
+									<div class="form__field">
+										<span class="label">Secondary Email</span>
+										<input type="text" class="input" value="N/A">
+									</div>
+									<div class="form__field">
+									</div>
+								</div>
+							</form>						
+						</div>
+					</div>
+				</div>		
+				<div class="js-accordion">
+					<div class="title title_accordion js-accordion-arr">
+						<div class="title__btns">
+							<button class="btn-link">Save</button>
+							<button class="btn-link btn-link_red">Cancel</button>
+						</div>
+						<div class="title__text">
+							<span class="js-accordion-link">Customer</span>
+							<button class="btn-edit"><i class="icon icon-edit"></i></button>
+						</div>
+					</div>
+					<div class="block block_accordion js-accordion-block">
+						<div class="form">
+							<form action="">
+								<div class="form__row">
+									<div class="form__field">
+										<span class="label">Account</span>
+										<div class="select select_mod js-select">
+											<i class="icon icon-arr-bot"></i>
+											<span class="select__text js-select-text">Personal</span>
+											<ul class="select__list js-select-list">
+												<li data-val="Personal" class="is-active">Personal</li>
+												<li data-val="Business">Business</li>
+											</ul>
+											<select>
+												<option value="Personal">Personal</option>
+												<option value="Business">Business</option>
+											</select>
+										</div>
+									</div>
+									<div class="form__field">
+										<span class="label">Address</span>
+										<input type="text" class="input">						
+									</div>
+									<div class="form__field">
+										<span class="label">Primary Phone</span>
+										<input type="text" class="input">
+									</div>
+								</div>	
+								<div class="form__row">
+									<div class="form__field">
+										<span class="label">First Name</span>
+										<input type="text" class="input">
+									</div>
+									<div class="form__field">
+										<span class="label">State</span>
+										<div class="select2-search">
+											<select class="js-select-search" placeholder="Choose State..." style="width: 190px;">
+												<option value=""></option>
+												<option value="UT">UT</option>
+												<option value="State">State</option>
+												<option value="State State State">State State State</option>
+												<option value="State State State">State State State</option>
+											</select>
+										</div>									
+									</div>
+									<div class="form__field">
+										<span class="label">Mobile Phone</span>
+										<input type="text" class="input">
+									</div>
+								</div>	
+								<div class="form__row">
+									<div class="form__field">
+										<span class="label">Last Name</span>
+										<input type="text" class="input">
+									</div>
+									<div class="form__field">
+										<span class="label">City</span>
+										<div class="select2-search">
+											<select class="js-select-search" placeholder="Choose City..." style="width: 190px;">
+												<option value=""></option>
+												<option value="City">City</option>
+												<option value="City">City</option>
+												<option value="City City City">City City City</option>
+												<option value="City City City">City City City</option>
+											</select>
+										</div>	
+									</div>
+									<div class="form__field">
+										<span class="label">Email</span>
+										<input type="text" class="input">
+									</div>
+								</div>
+								<div class="form__row">
+									<div class="form__field">
+									</div>
+									<div class="form__field">
+										<span class="label">ZIP</span>
+										<input type="text" class="input">
+									</div>
+									<div class="form__field">
+									</div>
+								</div>
+							</form>						
+						</div>
+					</div>
+				</div>		
+				<div class="js-accordion">
+					<div class="title title_accordion js-accordion-arr">
+						<div class="title__btns">
+							<button class="btn-link">Save</button>
+							<button class="btn-link btn-link_red">Cancel</button>
+						</div>
+						<div class="title__text">
+							<span class="js-accordion-link">Customer</span>
+							<button class="btn-edit"><i class="icon icon-edit"></i></button>
+						</div>
+					</div>
+					<div class="block block_accordion js-accordion-block">
+						<div class="form">
+							<form action="">
+								<div class="form__row">
+									<div class="form__field">
+										<span class="label">Account</span>
+										<div class="select select_mod js-select">
+											<i class="icon icon-arr-bot"></i>
+											<span class="select__text js-select-text">Personal</span>
+											<ul class="select__list js-select-list">
+												<li data-val="Personal" class="is-active">Personal</li>
+												<li data-val="Business">Business</li>
+											</ul>
+											<select>
+												<option value="Personal">Personal</option>
+												<option value="Business">Business</option>
+											</select>
+										</div>
+									</div>
+									<div class="form__field">
+										<span class="label">Address</span>
+										<input type="text" class="input">						
+									</div>
+									<div class="form__field">
+										<span class="label">Primary Phone</span>
+										<input type="text" class="input">
+									</div>
+								</div>	
+								<div class="form__row">
+									<div class="form__field">
+										<span class="label">First Name</span>
+										<input type="text" class="input">
+									</div>
+									<div class="form__field">
+										<span class="label">State</span>
+										<div class="select2-search">
+											<select class="js-select-search" placeholder="Choose State..." style="width: 190px;">
+												<option value=""></option>
+												<option value="UT">UT</option>
+												<option value="State">State</option>
+												<option value="State State State">State State State</option>
+												<option value="State State State">State State State</option>
+											</select>
+										</div>									
+									</div>
+									<div class="form__field">
+										<span class="label">Mobile Phone</span>
+										<input type="text" class="input">
+									</div>
+								</div>	
+								<div class="form__row">
+									<div class="form__field">
+										<span class="label">Last Name</span>
+										<input type="text" class="input">
+									</div>
+									<div class="form__field">
+										<span class="label">City</span>
+										<div class="select2-search">
+											<select class="js-select-search" placeholder="Choose City..." style="width: 190px;">
+												<option value=""></option>
+												<option value="City">City</option>
+												<option value="City">City</option>
+												<option value="City City City">City City City</option>
+												<option value="City City City">City City City</option>
+											</select>
+										</div>	
+									</div>
+									<div class="form__field">
+										<span class="label">Email</span>
+										<input type="text" class="input">
+									</div>
+								</div>
+								<div class="form__row">
+									<div class="form__field">
+									</div>
+									<div class="form__field">
+										<span class="label">ZIP</span>
+										<input type="text" class="input">
+									</div>
+									<div class="form__field">
+									</div>
+								</div>
+							</form>						
+						</div>
+					</div>
+				</div>		
+				<div class="js-accordion">
+					<div class="title title_accordion js-accordion-arr">
+						<div class="title__btns">
+							<button class="btn-link">Save</button>
+							<button class="btn-link btn-link_red">Cancel</button>
+						</div>
+						<div class="title__text">
+							<span class="js-accordion-link">Customer</span>
+							<button class="btn-edit"><i class="icon icon-edit"></i></button>
+						</div>
+					</div>
+					<div class="block block_accordion js-accordion-block">
+						<div class="form">
+							<form action="">
+								<div class="form__row">
+									<div class="form__field">
+										<span class="label">Account</span>
+										<div class="select select_mod js-select">
+											<i class="icon icon-arr-bot"></i>
+											<span class="select__text js-select-text">Personal</span>
+											<ul class="select__list js-select-list">
+												<li data-val="Personal" class="is-active">Personal</li>
+												<li data-val="Business">Business</li>
+											</ul>
+											<select>
+												<option value="Personal">Personal</option>
+												<option value="Business">Business</option>
+											</select>
+										</div>
+									</div>
+									<div class="form__field">
+										<span class="label">Address</span>
+										<input type="text" class="input">						
+									</div>
+									<div class="form__field">
+										<span class="label">Primary Phone</span>
+										<input type="text" class="input">
+									</div>
+								</div>	
+								<div class="form__row">
+									<div class="form__field">
+										<span class="label">First Name</span>
+										<input type="text" class="input">
+									</div>
+									<div class="form__field">
+										<span class="label">State</span>
+										<div class="select2-search">
+											<select class="js-select-search" placeholder="Choose State..." style="width: 190px;">
+												<option value=""></option>
+												<option value="UT">UT</option>
+												<option value="State">State</option>
+												<option value="State State State">State State State</option>
+												<option value="State State State">State State State</option>
+											</select>
+										</div>									
+									</div>
+									<div class="form__field">
+										<span class="label">Mobile Phone</span>
+										<input type="text" class="input">
+									</div>
+								</div>	
+								<div class="form__row">
+									<div class="form__field">
+										<span class="label">Last Name</span>
+										<input type="text" class="input">
+									</div>
+									<div class="form__field">
+										<span class="label">City</span>
+										<div class="select2-search">
+											<select class="js-select-search" placeholder="Choose City..." style="width: 190px;">
+												<option value=""></option>
+												<option value="City">City</option>
+												<option value="City">City</option>
+												<option value="City City City">City City City</option>
+												<option value="City City City">City City City</option>
+											</select>
+										</div>	
+									</div>
+									<div class="form__field">
+										<span class="label">Email</span>
+										<input type="text" class="input">
+									</div>
+								</div>
+								<div class="form__row">
+									<div class="form__field">
+									</div>
+									<div class="form__field">
+										<span class="label">ZIP</span>
+										<input type="text" class="input">
+									</div>
+									<div class="form__field">
+									</div>
+								</div>
+							</form>						
+						</div>
+					</div>
+				</div>		
+				<div class="js-accordion">
+					<div class="title title_accordion js-accordion-arr">
+						<div class="title__btns">
+							<button class="btn-link">Save</button>
+							<button class="btn-link btn-link_red">Cancel</button>
+						</div>
+						<div class="title__text">
+							<span class="js-accordion-link">Customer</span>
+							<button class="btn-edit"><i class="icon icon-edit"></i></button>
+						</div>
+					</div>
+					<div class="block block_accordion js-accordion-block">
+						<div class="form">
+							<form action="">
+								<div class="form__row">
+									<div class="form__field">
+										<span class="label">Account</span>
+										<div class="select select_mod js-select">
+											<i class="icon icon-arr-bot"></i>
+											<span class="select__text js-select-text">Personal</span>
+											<ul class="select__list js-select-list">
+												<li data-val="Personal" class="is-active">Personal</li>
+												<li data-val="Business">Business</li>
+											</ul>
+											<select>
+												<option value="Personal">Personal</option>
+												<option value="Business">Business</option>
+											</select>
+										</div>
+									</div>
+									<div class="form__field">
+										<span class="label">Address</span>
+										<input type="text" class="input">						
+									</div>
+									<div class="form__field">
+										<span class="label">Primary Phone</span>
+										<input type="text" class="input">
+									</div>
+								</div>	
+								<div class="form__row">
+									<div class="form__field">
+										<span class="label">First Name</span>
+										<input type="text" class="input">
+									</div>
+									<div class="form__field">
+										<span class="label">State</span>
+										<div class="select2-search">
+											<select class="js-select-search" placeholder="Choose State..." style="width: 190px;">
+												<option value=""></option>
+												<option value="UT">UT</option>
+												<option value="State">State</option>
+												<option value="State State State">State State State</option>
+												<option value="State State State">State State State</option>
+											</select>
+										</div>									
+									</div>
+									<div class="form__field">
+										<span class="label">Mobile Phone</span>
+										<input type="text" class="input">
+									</div>
+								</div>	
+								<div class="form__row">
+									<div class="form__field">
+										<span class="label">Last Name</span>
+										<input type="text" class="input">
+									</div>
+									<div class="form__field">
+										<span class="label">City</span>
+										<div class="select2-search">
+											<select class="js-select-search" placeholder="Choose City..." style="width: 190px;">
+												<option value=""></option>
+												<option value="City">City</option>
+												<option value="City">City</option>
+												<option value="City City City">City City City</option>
+												<option value="City City City">City City City</option>
+											</select>
+										</div>	
+									</div>
+									<div class="form__field">
+										<span class="label">Email</span>
+										<input type="text" class="input">
+									</div>
+								</div>
+								<div class="form__row">
+									<div class="form__field">
+									</div>
+									<div class="form__field">
+										<span class="label">ZIP</span>
+										<input type="text" class="input">
+									</div>
+									<div class="form__field">
+									</div>
+								</div>
+							</form>						
+						</div>
+					</div>
+				</div>				
+			</div>
+			<!-- end edit -->
+
+		</section>
+		<!-- end container -->
+	</main>
+	<!-- end main -->
+
+<!-- load scripts -->
+<script src="js/lib/head.js" data-headjs-load="js/init.js"></script>
+</body>
+</html>

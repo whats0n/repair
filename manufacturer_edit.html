@@ -1,0 +1,111 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Template</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="format-detection" content="telephone=no">
+	<!-- theme color for android 5.0 -->
+	<meta name="theme-color" content="#fff"> 
+	<!-- <meta name="viewport" content="width=1200"> -->
+	<!-- <meta name="viewport" content="initial-scale=1, user-scalable=no"> -->
+	<link rel="stylesheet" media="all" href="css/icomoon.css" >
+	<link rel="stylesheet" media="all" href="css/select2.min.css" >
+	<link rel="stylesheet" media="all" href="css/screen.css" >
+	<!--[if IE]><script src="js/html5shiv.js"></script><![endif]-->
+</head>
+<body>
+
+	<!-- begin header  -->
+	<header class="header">
+		<div class="header__left">
+			<a href="#" class="logo">Repair</a>
+		</div>
+		<div class="header__right">
+			<button class="btn-big">New Work Order</button>
+			<div class="breadcrumbs">
+				<span class="breadcrumbs__icon"><i></i></span>
+				<ul>
+					<li><a href="#">Settings</a></li>
+					<li><a href="#" class="is-active">Manufacturers</a></li>
+				</ul>				
+			</div>
+		</div>
+	</header>
+	<!-- end header -->
+
+	<!-- begin main  -->
+	<main class="main">
+		<!-- begin sidebar  -->
+		<aside class="sidebar">
+			<div class="sidebar__box js-side">
+				<a href="#" class="sidebar__title js-side-link">Work Orders</a>
+				<ul class="sidebar__list js-side-block">
+					<li><a href="#">All Work Orders</a></li>
+					<li><a href="#">My Work Orders</a></li>
+				</ul>
+			</div>
+			<div class="sidebar__box js-side">
+				<a href="#" class="sidebar__title js-side-link is-active">Setting</a>
+				<ul class="sidebar__list js-side-block">
+					<li><a href="#" class="is-active">Manufacturers</a></li>
+					<li><a href="#">Models</a></li>
+					<li><a href="#">Device Types</a></li>
+					<li><a href="#">Colors</a></li>
+					<li><a href="#">Carriers</a></li>
+					<li><a href="#">Categories</a></li>
+					<li><a href="#">Customize</a></li>
+					<li><a href="#">Declaimer</a></li>
+				</ul>
+			</div>
+		</aside>
+		<!-- end sidebar -->
+		<!-- begin container  -->
+		<section class="container">
+
+			<!-- begin edit  -->
+			<div class="edit">
+				<div class="title">New Manufacturer</div>
+				<div class="block">
+					<div class="form">
+						<form action="">
+							<div class="form__row">
+								<div class="form__field">
+									<span class="label">Name</span>
+									<input type="text" class="input">
+								</div>
+								<div class="form__field">
+									<span class="label">Status</span>
+									<div class="select select_mod js-select">
+										<i class="icon icon-arr-bot"></i>
+										<span class="select__text js-select-text">Active</span>
+										<ul class="select__list js-select-list">
+											<li data-val="Active" class="is-active">Active</li>
+											<li data-val="Not Active">Not Active</li>
+										</ul>
+										<select>
+											<option value="Active" selected>Active</option>
+											<option value="Not Active">Not Active</option>
+										</select>
+									</div>
+								</div>
+							</div>							
+							<div class="btns">
+								<button class="btn-simple btn-simple_blue">Done</button>
+								<button class="btn-simple btn-simple_red">Cancel</button>
+							</div>	
+						</form>						
+					</div>
+				</div>
+			</div>
+			<!-- end edit -->
+
+		</section>
+		<!-- end container -->
+	</main>
+	<!-- end main -->
+
+<!-- load scripts -->
+<script src="js/lib/head.js" data-headjs-load="js/init.js"></script>
+</body>
+</html>
