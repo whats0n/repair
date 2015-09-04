@@ -33,6 +33,7 @@ body
 	.btn-big
 		float: right
 		margin: 3px 0
+		min-width: 144px
 
 .logo
 	font-size: 22px
@@ -588,7 +589,9 @@ body
 	&_accordion
 		font-size: 0
 		border-bottom: none
+		background: #FFF 
 		&.is-active
+			background-color: #eee
 			&:before
 				+rotate(90)
 				+arr(6, 12, #373F46, r)
@@ -626,8 +629,9 @@ body
 .btns
 	font-size: 0
 	text-align: left
-	.btn-simple
+	.btn-simple, .btn-link
 		margin: 0 10px 0 0
+		
 
 .facturer-table
 	border-bottom: 1px solid #cacbd3
@@ -647,6 +651,11 @@ body
 			font-size: 12px
 		.label
 			margin-bottom: 6px
+	&__btns
+		text-align: right
+		font-size: 0
+		.btn-simple
+			margin: 0 0 0 10px 
 
 .block
 	padding: 14px 15px
@@ -669,6 +678,10 @@ body
 		float: left
 	&__field
 		padding-bottom: 13px
+		p
+			font-size: 12px
+			line-height: 16px
+			color: #373f46
 
 .models-table
 	border-bottom: 1px solid #cacbd3
@@ -719,8 +732,6 @@ body
 		display: inline-block
 		vertical-align: top
 		margin: 0 10px 0 0
-		&:last-child
-			border: none
 	li
 		display: inline-block
 		vertical-align: top
@@ -762,7 +773,7 @@ body
 		&__mod
 			font-size: 0
 			.ok, .delete
-				margin: 0 0 0 10px
+				margin: 0 10px 0 0
 		.delete
 			&.is-delete
 				position: absolute
@@ -811,17 +822,152 @@ body
 			vertical-align: top
 			&:first-child
 				width: 33.4%
+	&__block
+		border: 1px solid #cacbd3
+		border-top: none
+		background: #fff
+		+border-radius(0 0 5px 5px) 
+		
 .tab-link
 	background-color: #cacbd3
 	border: 1px solid #cacbd3
 	+border-radius(5px 5px 0 0)
-	font-size: 16px
 	line-height: 40px
 	padding: 0 20px
 	text-align: center
 	color: #fff
 	display: block
+	font-size: 0
 	&.is-active
 		background-color: #fff
 		color: #373f46
 		border-bottom-color: #fff
+		.icon
+			color: #cacbd3
+	.icon, span
+		display: inline-block
+		vertical-align: middle
+		font-size: 16px
+	span
+		padding: 0 10px 0 0 
+		
+.comment
+	padding: 0 15px 10px
+	&:first-child
+		border-top: none
+		padding: 14px 15px 10px 
+	&-info
+		color: #999
+		font-size: 12px
+		line-height: 16px
+		text-align: right
+		display: block
+		padding: 14px 15px 14px
+		border-top: 1px solid #caccce
+	.btns
+		padding: 0 0 5px
+	.btn-big
+		margin: 0 0 13px  
+.post
+	+clr
+	.author
+		float: left
+		margin: 0 15px 0 0 
+	&__info
+		overflow: hidden
+		padding: 4px 0 
+	&__author
+		color: #caccce
+		font-size: 12px
+		line-height: 18px
+		display: inline-block
+		vertical-align: top
+		margin: 0 12px 0 0 
+	&__top
+		font-size: 0
+		padding: 0 0 7px  
+		.btn-edit-full, .btn-delete-full
+			margin: 0 15px 0 0 
+	p
+		font-size: 12px
+		line-height: 18px
+		color: #373f46 
+
+.author
+	width: 52px
+	height: 52px
+	background-color: white
+	border: 1px solid #cacbd3
+	+border-radius(50%)
+	color: #cacbd3
+	display: inline-block
+	vertical-align: top
+	+vertical
+	i, img
+		display: inline-block
+		vertical-align: middle
+	i
+		font-size: 20px
+	img
+		width: 100%
+		height: 100%
+		+border-radius(50%)
+
+.transactions
+	padding: 14px 0
+	.table
+		th, td
+			padding: 11px 15px
+
+.history
+	padding: 10px 0 10px
+	position: relative
+	&:before
+		content: "" 
+		width: 1px
+		height: 266px
+		background-color: #cacbd3
+		top: 53px
+		left: 19px
+		position: absolute
+	&__table
+		position: relative
+		z-index: 2 
+		th, td
+			text-align: left
+			vertical-align: top
+			&.is-circle
+				width: 5.5%
+			&.is-date
+				width: 14.5%
+			&.is-employee
+				width: 14.5%
+			&.is-log
+				width: 65.5%
+		th
+			font-size: 12px
+			padding: 0 15px 15px
+			font-weight: normal
+		td
+			padding: 6px 15px 
+			&.is-date
+				span
+					display: block
+			&.is-circle
+				i
+					display: inline-block
+					width: 9px
+					height: 9px
+					+border-radius(50%)
+			p, span
+				font-size: 12px
+				line-height: 16px
+			p
+				color: #373f46
+			span
+				color: #999
+
+.js-tabs-block
+	display: none
+	&.is-active
+		display: block

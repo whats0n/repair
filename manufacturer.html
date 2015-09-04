@@ -10,6 +10,7 @@
 	<!-- <meta name="viewport" content="width=1200"> -->
 	<!-- <meta name="viewport" content="initial-scale=1, user-scalable=no"> -->
 	<link rel="stylesheet" media="all" href="css/icomoon.css" >
+	<link rel="stylesheet" media="all" href="css/multiple-select.css" >
 	<link rel="stylesheet" media="all" href="css/select2.min.css" >
 	<link rel="stylesheet" media="all" href="css/screen.css" >
 	<!--[if IE]><script src="js/html5shiv.js"></script><![endif]-->
@@ -72,25 +73,11 @@
 					<span class="filter__label">Filter by:</span>
 				</div>
 				<div class="filter__box is-small">
-					<div class="select-check">
-						<div class="select-check__visible">
-							<span class="select-check__label">Status:</span>
-							<span class="select-check__choice">All</span>
-						</div>
-						<ul class="select-check__list">
-							<li>
-								<label class="checkbox">
-									<input type="checkbox">
-									<span>Not Active</span>
-								</label>
-							</li>
-							<li>
-								<label class="checkbox">
-									<input type="checkbox">
-									<span>Active</span>
-								</label>
-							</li>
-						</ul>
+					<div class="multi js-multi-parent">
+						<select name="" id="" class="js-multi-select-mod" data-all="Status: All" placeholder="Status: All">
+							<option value="Not Active">Not Active</option>
+							<option value="Active">Active</option>
+						</select>
 					</div>
 				</div>
 			</div>

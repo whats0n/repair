@@ -31,48 +31,87 @@ head.ready(function() {
 
 	$('.js-datepicker-due').datepicker({
 		beforeShow: function() {
+			$(this).addClass('is-choice');
 			setTimeout(function() {
 				$('.ui-datepicker').addClass('ui-datepicker_mod');
 				$('.ui-datepicker').append('<div class="ui-datepicker__bottom"><label><span>Time</span><input class="ui-datepicker__input"></label><button class="button ui-datepicker-btn">Done</button></div>');
 			}, 50);
+		},
+		onSelect: function() {
+			$('.js-datepicker-due').removeClass('is-choice');
 		}
+	});
+
+	$('body').on('click', '.ui-datepicker-btn', function(event) {
+		$('.is-choice').val($('.ui-datepicker__input').val());
+		$('.js-datepicker-due').removeClass('is-choice');
+		$('.ui-datepicker').hide();
+		return false;
 	});
 
 	//select
 
 	//multi start
 
-	// $('.js-multi-select').each(function() {
-	// 	var select = $(this),
-	// 		placeholder = select.attr('placeholder');
+	$('.js-multi-select').each(function() {
+		var select = $(this),
+			select_parent = $(this).parents('.js-multi-parent'),
+			placeholder = select.attr('placeholder'),
+			data_all = select.data('all');
 
-	// 	select.multipleSelect({
-	// 		single: false,
-	// 		placeholder: placeholder,
-	// 		onOpen: function() {
-	// 			if (select.hasClass('is-active')) {
-	// 				select.removeClass('is-active');
-	// 			}
-	// 			else {
-	// 				select.addClass('is-active')
-	// 			}
-	// 			$(this).toggleClass('is-active');
-	// 			console.log($(this));
+		select.multipleSelect({
+			single: false,
+			placeholder: placeholder,
+			selectAll: false,
+			allSelected: data_all,
+			onOpen: function() {
+				if (select_parent.find('.ms-parent').hasClass('is-active')) {
+					select_parent.find('.ms-parent').removeClass('is-active');
+				}
+				else {
+					select_parent.find('.ms-parent').addClass('is-active')
+				}
+			},
+			onClose: function() {
+				if (select_parent.find('.ms-parent').hasClass('is-active')) {
+					select_parent.find('.ms-parent').removeClass('is-active');
+				}
+				else {
+					select_parent.find('.ms-parent').addClass('is-active')
+				}
+			}
+		});
+	});
 
-	// 		},
-	// 		onClose: function() {
-	// 			if (select.hasClass('is-active')) {
-	// 				select.removeClass('is-active');
-	// 			}
-	// 			else {
-	// 				select.addClass('is-active')
-	// 			}
-	// 			$(this).toggleClass('is-active');
-	// 			console.log($(this));
+	$('.js-multi-select-mod').each(function() {
+		var select = $(this),
+			select_parent = $(this).parents('.js-multi-parent'),
+			placeholder = select.attr('placeholder'),
+			data_all = select.data('all');
 
-	// 		}
-	// 	});
-	// });
+		select.multipleSelect({
+			single: true,
+			placeholder: placeholder,
+			selectAll: false,
+			allSelected: data_all,
+			onOpen: function() {
+				if (select_parent.find('.ms-parent').hasClass('is-active')) {
+					select_parent.find('.ms-parent').removeClass('is-active');
+				}
+				else {
+					select_parent.find('.ms-parent').addClass('is-active')
+				}
+			},
+			onClose: function() {
+				if (select_parent.find('.ms-parent').hasClass('is-active')) {
+					select_parent.find('.ms-parent').removeClass('is-active');
+				}
+				else {
+					select_parent.find('.ms-parent').addClass('is-active')
+				}
+			}
+		});
+	});
 
 	//multi end
 
@@ -194,6 +233,22 @@ head.ready(function() {
 
 	});
 
+
+	//tabs
+	$(".js-tabs-link").click(function () {
+		
+		$(this).parents('.js-tabs-parent').find('.js-tabs-link').removeClass('is-active');
+		$(this).addClass('is-active');
+
+		var id = $(this).data("btn"),	
+			$item = $('.js-tabs-block'),
+			$currItem = $('.js-tabs-block[data-block=' + id + ']');
+
+		$(this).parents('.js-tabs-parent').find('.js-tabs-block[data-block=' + id + ']').addClass('is-active');
+	
+		$item.not($currItem).removeClass('is-active');
+		return false;
+	});
 
 
 });
