@@ -595,6 +595,10 @@ body
 			&:before
 				+rotate(90)
 				+arr(6, 12, #373F46, r)
+			.title__btns
+				display: block
+			.btn-edit
+				display: inline-block
 		&:before
 			content: ""
 			+arr(6, 12, #CACBD3, r)
@@ -608,6 +612,8 @@ body
 			-o-transform-origin: center center
 			transform-origin: center center
 			+transition(all 0.2s)
+		.title__btns, .btn-edit
+			display: none
 	&__btns
 		float: right
 		.btn-link
@@ -811,7 +817,7 @@ body
 			vertical-align: middle
 
 .tabs
-	padding: 14px 0
+	padding: 0 0 14px 0
 	&__btns
 		margin: 0 -2px
 		font-size: 0
@@ -827,7 +833,8 @@ body
 		border-top: none
 		background: #fff
 		+border-radius(0 0 5px 5px) 
-		
+	&-parent
+		padding: 14px 14px 15px 
 .tab-link
 	background-color: #cacbd3
 	border: 1px solid #cacbd3
@@ -930,6 +937,7 @@ body
 		top: 53px
 		left: 19px
 		position: absolute
+		display: none
 	&__table
 		position: relative
 		z-index: 2 

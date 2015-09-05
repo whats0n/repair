@@ -24,9 +24,102 @@ head.ready(function() {
 
 	$('.js-calendar').datepicker({
 		onSelect: function(value, date) {
-			$(this).parents('.js-calendar-parent').find('.js-calendar-label').text(value)
+			$(this).parents('.js-calendar-parent').find('.js-calendar-label').text(value);
+			$(this).parents('.js-calendar-parent').removeClass('is-active');
 			$('.js-calendar').hide();
 		}
+	});
+
+
+	//select DATE
+
+	if ([].indexOf) {
+
+		var find = function(array, value) {
+			return array.indexOf(value);
+		}
+
+	} else {
+		var find = function(array, value) {
+			for (var i = 0; i < array.length; i++) {
+				if (array[i] === value) return i;
+			}
+
+		  return -1;
+		}
+
+	}
+
+
+	$('.js-select-date').each(function() {
+		var checkbox = $(this).find('.drop-checkbox input');
+		var valuesArray = [];
+
+	checkbox.on('click', function() {
+
+		var valueContainer = $(this).parents('.js-select-date').find('.js-calendar-label'),
+			value = $(this).parent().find('span').text();
+
+		// check/uncheck events =======================================
+		
+		if ($(this).prop('checked')) {
+			
+			valuesArray[valuesArray.length] = value;
+		}
+		else {
+			var arrIndex = find(valuesArray, value);
+
+			valuesArray.splice(arrIndex, 1);
+		}
+		
+
+		// push values to valueContainer =======================
+		
+		var addValues = (valuesArray.length - 1);
+
+		if (valuesArray.length > 1) {
+			valueContainer.text(valuesArray);
+		}
+		else {
+			valueContainer.text(valuesArray[0]);
+		}
+
+
+			
+		// remove placeholder =======================================
+		if (valuesArray.length >= 1) {
+			valueContainer.removeClass('placeholder');
+		}
+		else {
+			valueContainer.addClass('placeholder');
+			valueContainer.text('More');
+		}
+		
+		
+	});
+
+	});
+
+	$('.js-select-date').each(function() {
+		$('body').on('click', function() {
+			$('.js-select-date').removeClass('is-active');
+		});
+		$(this).find('.select-date__visible').click(function() {
+			$(this).parents('.js-select-date').toggleClass('is-active');
+		});
+		$(this).click(function(event) {			
+			event.stopPropagation();
+		});
+		$(this).find('.js-select-checkbox').click(function() {
+			var thisInput = $(this).find('input');
+			if (thisInput.prop('checked')) {
+				$('.select-date__sublist').removeClass('is-active');
+				$(this).parents('.select-date__check').find('.select-date__sublist').addClass('is-active');
+			}
+			else {
+				$('.select-date__sublist').removeClass('is-active');
+			};
+		});
 	});
 
 	$('.js-datepicker-due').datepicker({
@@ -35,6 +128,7 @@ head.ready(function() {
 			setTimeout(function() {
 				$('.ui-datepicker').addClass('ui-datepicker_mod');
 				$('.ui-datepicker').append('<div class="ui-datepicker__bottom"><label><span>Time</span><input class="ui-datepicker__input"></label><button class="button ui-datepicker-btn">Done</button></div>');
+				$('.ui-datepicker__input').mask('00:00:00');
 			}, 50);
 		},
 		onSelect: function() {

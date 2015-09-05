@@ -147,11 +147,11 @@ a.link:hover { text-decoration: underline; }
 .select-check__list li { margin-bottom: 0; -moz-transition: all 0.2s; -o-transition: all 0.2s; -webkit-transition: all 0.2s; transition: all 0.2s; font-size: 14px; line-height: 16px; }
 
 .select-date { min-width: 124px; display: inline-block; vertical-align: top; position: relative; border: 1px solid #cacbd3; -moz-border-radius: 5px; -webkit-border-radius: 5px; border-radius: 5px; -moz-transition: border-color 0.2s; -o-transition: border-color 0.2s; -webkit-transition: border-color 0.2s; transition: border-color 0.2s; width: 100%; }
-.select-date.is-active, .select-date:hover { -moz-box-shadow: 1.5px 2.6px 2.9px 0.1px rgba(0, 0, 0, 0.11); -webkit-box-shadow: 1.5px 2.6px 2.9px 0.1px rgba(0, 0, 0, 0.11); box-shadow: 1.5px 2.6px 2.9px 0.1px rgba(0, 0, 0, 0.11); -moz-border-radius: 5px 5px 0 0; -webkit-border-radius: 5px; border-radius: 5px 5px 0 0; border-color: white; }
-.select-date.is-active .select-date__visible, .select-date:hover .select-date__visible { -moz-border-radius: 5px 5px 0 0; -webkit-border-radius: 5px; border-radius: 5px 5px 0 0; }
-.select-date.is-active .select-date__visible:before, .select-date:hover .select-date__visible:before { -ms-transform: rotate(-180deg); -webkit-transform: rotate(-180deg); transform: rotate(-180deg); width: 0px; height: 0px; border-style: solid; border-width: 4px 4px 0 4px; border-color: #373f46 transparent transparent transparent; }
-.select-date.is-active .select-date__list, .select-date:hover .select-date__list { visibility: visible; filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false); opacity: 1; }
-.select-date.is-active .select-date__list li, .select-date:hover .select-date__list li { margin-bottom: 5px; }
+.select-date.is-active { -moz-box-shadow: 1.5px 2.6px 2.9px 0.1px rgba(0, 0, 0, 0.11); -webkit-box-shadow: 1.5px 2.6px 2.9px 0.1px rgba(0, 0, 0, 0.11); box-shadow: 1.5px 2.6px 2.9px 0.1px rgba(0, 0, 0, 0.11); -moz-border-radius: 5px 5px 0 0; -webkit-border-radius: 5px; border-radius: 5px 5px 0 0; border-color: white; }
+.select-date.is-active .select-date__visible { -moz-border-radius: 5px 5px 0 0; -webkit-border-radius: 5px; border-radius: 5px 5px 0 0; }
+.select-date.is-active .select-date__visible:before { -ms-transform: rotate(-180deg); -webkit-transform: rotate(-180deg); transform: rotate(-180deg); width: 0px; height: 0px; border-style: solid; border-width: 4px 4px 0 4px; border-color: #373f46 transparent transparent transparent; }
+.select-date.is-active .select-date__list { visibility: visible; filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false); opacity: 1; }
+.select-date.is-active .select-date__list li { margin-bottom: 5px; }
 .select-date__visible { white-space: nowrap; font-size: 0; padding: 7px 25px 7px 10px; background-color: white; position: relative; cursor: pointer; -moz-border-radius: 5px; -webkit-border-radius: 5px; border-radius: 5px; }
 .select-date__visible:before { position: absolute; top: 50%; right: 10px; width: 0px; height: 0px; border-style: solid; border-width: 4px 4px 0 4px; border-color: #cacbd3 transparent transparent transparent; content: ""; margin-top: -2px; -moz-transition: all 0.2s; -o-transition: all 0.2s; -webkit-transition: all 0.2s; transition: all 0.2s; -webkit-transform-origin: center center; -moz-transform-origin: center center; -ms-transform-origin: center center; -o-transform-origin: center center; transform-origin: center center; }
 .select-date__label { color: #999999; font-size: 14px; line-height: 16px; overflow: hidden; -ms-text-overflow: ellipsis; text-overflow: ellipsis; white-space: nowrap; display: block; }
@@ -161,9 +161,9 @@ a.link:hover { text-decoration: underline; }
 .select-date__list li:hover, .select-date__list li.is-active { color: #303d45; }
 .select-date__list li.is-date { padding: 0 0 0 25px; cursor: pointer; }
 .select-date__list li.is-date:before { background: url("../img/svg/date.svg") no-repeat 0 0; -moz-background-size: 16px 15px; -o-background-size: 16px 15px; -webkit-background-size: 16px 15px; background-size: 16px 15px; width: 16px; height: 15px; display: inline-block; position: absolute; top: 0; left: 0; content: ""; }
-.select-date__list li.is-active .select-date__sublist, .select-date__list li:hover .select-date__sublist { visibility: visible; filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false); opacity: 1; }
-.select-date__list li.is-active .select-date__sublist li, .select-date__list li:hover .select-date__sublist li { margin-bottom: 5px; }
 .select-date__sublist { position: absolute; right: 0; width: 200px; background-color: white; -moz-box-shadow: 1.5px 2.6px 2.9px 0.1px rgba(0, 0, 0, 0.11); -webkit-box-shadow: 1.5px 2.6px 2.9px 0.1px rgba(0, 0, 0, 0.11); box-shadow: 1.5px 2.6px 2.9px 0.1px rgba(0, 0, 0, 0.11); -moz-border-radius: 5px 0 5px 5px; -webkit-border-radius: 5px; border-radius: 5px 0 5px 5px; z-index: 10; padding: 20px 8px 2px; -moz-transition: all 0.2s linear; -o-transition: all 0.2s linear; -webkit-transition: all 0.2s linear; transition: all 0.2s linear; filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0); opacity: 0; visibility: hidden; }
+.select-date__sublist.is-active { visibility: visible; filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false); opacity: 1; }
+.select-date__sublist.is-active li { margin-bottom: 5px; }
 
 .datepicker { position: absolute; top: 100%; right: 0; width: 201px; background-color: white; z-index: 200; -moz-border-radius: 5px; -webkit-border-radius: 5px; border-radius: 5px; }
 
@@ -173,7 +173,7 @@ a.link:hover { text-decoration: underline; }
 .ui-datepicker__bottom button { vertical-align: middle; }
 .ui-datepicker__bottom label { display: inline-block; vertical-align: middle; }
 .ui-datepicker__bottom label span { color: #999999; font-size: 12px; display: inline-block; vertical-align: middle; margin-right: 10px; }
-.ui-datepicker__input { color: #373f46; font-size: 12px; line-height: 20px; height: 22px; border: 1px solid #cacbd3; background: white; -moz-border-radius: 5px; -webkit-border-radius: 5px; border-radius: 5px; margin-right: 10px; width: 68px; padding: 0 10px; display: inline-block; vertical-align: middle; }
+.ui-datepicker__input { color: #373f46; font-size: 12px; line-height: 20px; height: 22px; border: 1px solid #cacbd3; background: white; -moz-border-radius: 5px; -webkit-border-radius: 5px; border-radius: 5px; margin-right: 10px; width: 68px; padding: 0 8px; display: inline-block; vertical-align: middle; text-align: center; }
 
 .ui-datepicker-title { font-size: 14px; display: inline-block; line-height: 16px; }
 
@@ -240,6 +240,13 @@ a.link:hover { text-decoration: underline; }
 .input:disabled { background-color: #cacbd3; border-color: #cacbd3; }
 .input.is-error { border-color: #cb2429; }
 .input_mod:disabled { border-color: #eeeeee; background-color: #eeeeee; }
+
+.input-date { width: 100%; max-width: 190px; position: relative; display: inline-block; }
+.input-date:hover:after { display: block; }
+.input-date:hover:before { display: none; }
+.input-date:before, .input-date:after { content: ""; position: absolute; top: 50%; right: 11px; margin-top: -8px; }
+.input-date:before { z-index: 2; background: url("../img/svg/calendar.svg") no-repeat 0 0; -moz-background-size: 16px 16px; -o-background-size: 16px 16px; -webkit-background-size: 16px 16px; background-size: 16px 16px; width: 16px; height: 16px; display: inline-block; }
+.input-date:after { z-index: 3; background: url("../img/svg/calendar-active.svg") no-repeat 0 0; -moz-background-size: 16px 16px; -o-background-size: 16px 16px; -webkit-background-size: 16px 16px; background-size: 16px 16px; width: 16px; height: 16px; display: inline-block; display: none; }
 
 .input-small { color: #373f46; font-size: 12px; width: 100%; border: 1px solid #cacbd3; -moz-border-radius: 5px; -webkit-border-radius: 5px; border-radius: 5px; background: white; line-height: 20px; height: 22px; padding: 0 8px; }
 
@@ -521,7 +528,10 @@ body { padding: 52px 0 0; position: relative; min-width: 960px; }
 .title_accordion { font-size: 0; border-bottom: none; background: white; }
 .title_accordion.is-active { background-color: #eeeeee; }
 .title_accordion.is-active:before { -ms-transform: rotate(90deg); -webkit-transform: rotate(90deg); transform: rotate(90deg); width: 0px; height: 0px; border-style: solid; border-width: 6px 0 6px 6px; border-color: transparent transparent transparent #373f46; }
+.title_accordion.is-active .title__btns { display: block; }
+.title_accordion.is-active .btn-edit { display: inline-block; }
 .title_accordion:before { content: ""; width: 0px; height: 0px; border-style: solid; border-width: 6px 0 6px 6px; border-color: transparent transparent transparent #cacbd3; position: absolute; top: 50%; margin-top: -6px; left: 15px; -webkit-transform-origin: center center; -moz-transform-origin: center center; -ms-transform-origin: center center; -o-transform-origin: center center; transform-origin: center center; -moz-transition: all 0.2s; -o-transition: all 0.2s; -webkit-transition: all 0.2s; transition: all 0.2s; }
+.title_accordion .title__btns, .title_accordion .btn-edit { display: none; }
 .title__btns { float: right; }
 .title__btns .btn-link { margin: 0 0 0 15px; }
 .title__text { overflow: hidden; padding: 0 22px; position: relative; }
@@ -594,11 +604,12 @@ body { padding: 52px 0 0; position: relative; min-width: 960px; }
 .order__taken-row .input-small { margin: 2px 0; vertical-align: middle; width: 64px; margin: 0 10px 0 0; }
 .order__taken-row .checkbox { margin: 2px 0; display: inline-block; vertical-align: middle; }
 
-.tabs { padding: 14px 0; }
+.tabs { padding: 0 0 14px 0; }
 .tabs__btns { margin: 0 -2px; font-size: 0; }
 .tabs__btns li { width: 33.3%; padding: 0 2px; display: inline-block; vertical-align: top; }
 .tabs__btns li:first-child { width: 33.4%; }
 .tabs__block { border: 1px solid #cacbd3; border-top: none; background: white; -moz-border-radius: 0 0 5px 5px; -webkit-border-radius: 0; border-radius: 0 0 5px 5px; }
+.tabs-parent { padding: 14px 14px 15px; }
 
 .tab-link { background-color: #cacbd3; border: 1px solid #cacbd3; -moz-border-radius: 5px 5px 0 0; -webkit-border-radius: 5px; border-radius: 5px 5px 0 0; line-height: 40px; padding: 0 20px; text-align: center; color: white; display: block; font-size: 0; }
 .tab-link.is-active { background-color: white; color: #373f46; border-bottom-color: white; }
@@ -631,7 +642,7 @@ body { padding: 52px 0 0; position: relative; min-width: 960px; }
 .transactions .table th, .transactions .table td { padding: 11px 15px; }
 
 .history { padding: 10px 0 10px; position: relative; }
-.history:before { content: ""; width: 1px; height: 266px; background-color: #cacbd3; top: 53px; left: 19px; position: absolute; }
+.history:before { content: ""; width: 1px; height: 266px; background-color: #cacbd3; top: 53px; left: 19px; position: absolute; display: none; }
 .history__table { position: relative; z-index: 2; }
 .history__table th, .history__table td { text-align: left; vertical-align: top; }
 .history__table th.is-circle, .history__table td.is-circle { width: 5.5%; }
