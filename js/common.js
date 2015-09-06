@@ -158,6 +158,7 @@ head.ready(function() {
 			placeholder: placeholder,
 			selectAll: false,
 			allSelected: data_all,
+			width: '100%',
 			onOpen: function() {
 				if (select_parent.find('.ms-parent').hasClass('is-active')) {
 					select_parent.find('.ms-parent').removeClass('is-active');
