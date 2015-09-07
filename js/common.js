@@ -267,6 +267,13 @@ head.ready(function() {
 	$('.js-search-input').focusout(function() {
 		$('.js-search').removeClass('is-active');
 	});
+	//date
+	$('.input-date .input').focusin(function() {
+		$(this).parents('.input-date').addClass('is-active');
+	});
+	$('.input-date .input').focusout(function() {
+		$(this).parents('.input-date').removeClass('is-active');
+	});
 
 	//chosen
 	$(".js-select-tags").select2({

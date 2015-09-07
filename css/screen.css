@@ -113,8 +113,7 @@ a.link:hover { text-decoration: underline; }
 .checkbox_mod { padding: 0 0 0 30px; }
 .checkbox_mod span { font-size: 14px; color: #414141; padding: 2px 0; }
 .checkbox_mod span:before { width: 20px; height: 20px; -moz-border-radius: 5px; -webkit-border-radius: 5px; border-radius: 5px; }
-.checkbox_mod span:after { color: white; left: 5px; }
-.checkbox_mod input:checked + span:before { background-color: #6ebdea; border-color: #6ebdea; }
+.checkbox_mod span:after { left: 5px; }
 .checkbox_mod input:checked + span:after { top: 7px; }
 
 .radio { position: relative; display: inline-block; vertical-align: top; padding: 0 0 0 25px; cursor: pointer; }
@@ -243,11 +242,8 @@ a.link:hover { text-decoration: underline; }
 .input_mod:disabled { border-color: #eeeeee; background-color: #eeeeee; }
 
 .input-date { width: 100%; max-width: 190px; position: relative; display: inline-block; }
-.input-date:hover:after { display: block; }
-.input-date:hover:before { display: none; }
-.input-date:before, .input-date:after { content: ""; position: absolute; top: 50%; right: 11px; margin-top: -8px; }
-.input-date:before { z-index: 2; background: url("../img/svg/calendar.svg") no-repeat 0 0; -moz-background-size: 16px 16px; -o-background-size: 16px 16px; -webkit-background-size: 16px 16px; background-size: 16px 16px; width: 16px; height: 16px; display: inline-block; }
-.input-date:after { z-index: 3; background: url("../img/svg/calendar-active.svg") no-repeat 0 0; -moz-background-size: 16px 16px; -o-background-size: 16px 16px; -webkit-background-size: 16px 16px; background-size: 16px 16px; width: 16px; height: 16px; display: inline-block; display: none; }
+.input-date:hover .icon-calendar, .input-date.is-active .icon-calendar { color: #373f46; }
+.input-date .icon-calendar { font-size: 16px; color: #cacbd3; position: absolute; top: 50%; right: 11px; margin-top: -8px; z-index: 3; }
 
 .input-small { color: #373f46; font-size: 12px; width: 100%; border: 1px solid #cacbd3; -moz-border-radius: 5px; -webkit-border-radius: 5px; border-radius: 5px; background: white; line-height: 20px; height: 22px; padding: 0 8px; }
 
@@ -304,16 +300,23 @@ a.link:hover { text-decoration: underline; }
 .select-print__list li:hover { background-color: #373f46; color: white; }
 
 .btn-print { font-size: 12px; color: #999999; line-height: 16px; display: inline-block; vertical-align: top; background: none; padding: 1px 30px 1px 0; position: relative; }
+.btn-print:hover { color: #373f46; }
+.btn-print:hover .icon-print { color: #373f46; }
 .btn-print .icon-print { position: absolute; top: 50%; font-size: 16px; color: #999999; margin-top: -8px; right: 4px; }
 
 .btn-edit { font-size: 16px; color: #cacbd3; background: none; display: inline-block; vertical-align: top; }
+.btn-edit:hover { color: #373f46; }
 
 .btn-edit-full, .btn-delete-full { color: #999999; background: none; display: inline-block; vertical-align: top; font-size: 0; }
 .btn-edit-full .icon, .btn-delete-full .icon { color: #cacbd3; font-size: 16px; display: inline-block; vertical-align: top; }
 .btn-edit-full span, .btn-delete-full span { font-size: 12px; display: inline-block; vertical-align: top; padding: 4px 0 0; }
 
+.btn-edit-full:hover { color: #373f46; }
+.btn-edit-full:hover .icon { color: #373f46; }
 .btn-edit-full .icon { margin: 0 12px 0 0; }
 
+.btn-delete-full:hover { color: #cb2227; }
+.btn-delete-full:hover .icon { color: #cb2227; }
 .btn-delete-full .icon { margin: 0 7px 0 0; }
 
 .field-area { position: relative; margin: 0 0 10px; }
@@ -340,10 +343,10 @@ a.link:hover { text-decoration: underline; }
 .textarea:-moz-placeholder, .textarea::-moz-placeholder { color: #999999; opacity: 1; }
 .textarea::-webkit-input-placeholder { color: #999999; }
 
-.multi .ms-choice { height: 32px; line-height: 1; border: 1px solid #cacbd3; -moz-border-radius: 5px; -webkit-border-radius: 5px; border-radius: 5px; }
+.multi .ms-choice { height: 32px; line-height: 1; border: 1px solid #cacbd3; -moz-border-radius: 5px; -webkit-border-radius: 5px; border-radius: 5px; font-size: 14px; }
 .multi .ms-choice span { color: #303d45; }
 .multi .ms-choice span.placeholder { color: #999999; }
-.multi .ms-choice > span { padding: 10px 25px 7px 10px; position: relative; top: 0; left: 0; right: 0; }
+.multi .ms-choice > span { padding: 8px 25px 8px 10px; position: relative; top: 0; left: 0; right: 0; }
 .multi .ms-choice > div { position: absolute; top: 50%; right: 10px; width: 0px; height: 0px; border-style: solid; border-width: 4px 4px 0 4px; border-color: #cacbd3 transparent transparent transparent; content: ""; margin-top: -2px; -moz-transition: all 0.2s; -o-transition: all 0.2s; -webkit-transition: all 0.2s; transition: all 0.2s; -webkit-transform-origin: center center; -moz-transform-origin: center center; -ms-transform-origin: center center; -o-transform-origin: center center; transform-origin: center center; background: none; }
 .multi .ms-choice > div.open { -ms-transform: rotate(-180deg); -webkit-transform: rotate(-180deg); transform: rotate(-180deg); width: 0px; height: 0px; border-style: solid; border-width: 4px 4px 0 4px; border-color: #373f46 transparent transparent transparent; }
 .multi .ms-drop.bottom { padding: 0 0 1px 10px; border: none; -moz-border-radius: 0 0 5px 5px; -webkit-border-radius: 0; border-radius: 0 0 5px 5px; background-color: white; -moz-box-shadow: 1.5px 2.6px 2.9px 0.1px rgba(0, 0, 0, 0.11); -webkit-box-shadow: 1.5px 2.6px 2.9px 0.1px rgba(0, 0, 0, 0.11); box-shadow: 1.5px 2.6px 2.9px 0.1px rgba(0, 0, 0, 0.11); z-index: 200; }
@@ -351,9 +354,9 @@ a.link:hover { text-decoration: underline; }
 .multi .ms-drop ul li { color: #999999; font-size: 12px; line-height: 16px; margin: 0 0 5px; }
 .multi .ms-drop ul li.selected label:after { top: 5px; filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false); opacity: 1; visibility: visible; }
 .multi .ms-drop ul li label { display: block; position: relative; padding: 0 0 0 20px; margin: 0 0 5px; cursor: pointer; }
-.multi .ms-drop ul li label:before, .multi .ms-drop ul li label:after { content: ""; position: absolute; }
-.multi .ms-drop ul li label:before { top: 0; left: 0; background-color: white; width: 16px; height: 16px; border: 1px solid #cacbd3; -moz-border-radius: 4px; -webkit-border-radius: 4px; border-radius: 4px; -moz-transition: all 0.2s; -o-transition: all 0.2s; -webkit-transition: all 0.2s; transition: all 0.2s; }
-.multi .ms-drop ul li label:after { content: "\e601"; filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0); opacity: 0; visibility: hidden; -moz-transition: all 0.2s; -o-transition: all 0.2s; -webkit-transition: all 0.2s; transition: all 0.2s; font-size: 8px; color: #373f46; position: absolute; top: 2px; left: 3px; font-family: "icomoon"; speak: none; font-style: normal; font-weight: normal; font-variant: normal; text-transform: none; line-height: 1; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
+.multi .ms-drop ul li label:before, .multi .ms-drop ul li label:after { content: ""; position: absolute; -moz-transition: all 0.2s; -o-transition: all 0.2s; -webkit-transition: all 0.2s; transition: all 0.2s; }
+.multi .ms-drop ul li label:before { top: 0; left: 0; background-color: white; width: 16px; height: 16px; border: 1px solid #cacbd3; -moz-border-radius: 4px; -webkit-border-radius: 4px; border-radius: 4px; }
+.multi .ms-drop ul li label:after { content: "\e601"; filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0); opacity: 0; visibility: hidden; font-size: 8px; color: #373f46; position: absolute; top: 2px; left: 3px; font-family: "icomoon"; speak: none; font-style: normal; font-weight: normal; font-variant: normal; text-transform: none; line-height: 1; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
 .multi .ms-drop ul li label input { display: none; }
 .multi .ms-parent.is-active .ms-choice { -moz-box-shadow: 1.5px 2.6px 2.9px 0.1px rgba(0, 0, 0, 0.11); -webkit-box-shadow: 1.5px 2.6px 2.9px 0.1px rgba(0, 0, 0, 0.11); box-shadow: 1.5px 2.6px 2.9px 0.1px rgba(0, 0, 0, 0.11); -moz-border-radius: 5px 5px 0 0; -webkit-border-radius: 5px; border-radius: 5px 5px 0 0; border-color: white; }
 
