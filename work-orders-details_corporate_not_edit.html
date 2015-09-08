@@ -18,48 +18,48 @@
 
 	<!-- begin header  -->
 	<header class="header">
-		<div class="header__left">
-			<a href="#" class="logo">Repair</a>
-		</div>
-		<div class="header__right">
-			<button class="btn-big">New Work Order</button>
-			<div class="breadcrumbs">
-				<span class="breadcrumbs__icon"><i></i></span>
-				<ul>
-					<li><a href="#">All Work Orders</a></li>
-					<li><a href="#" class="is-active">Work Order #120</a></li>
-				</ul>
-			</div>
+		<button class="btn-big">New Work Order</button>
+		<div class="breadcrumbs">
+			<span class="breadcrumbs__icon"><i></i></span>
+			<ul>
+				<li><a href="#">All Work Orders</a></li>
+				<li><a href="#" class="is-active">Work Order #120</a></li>
+			</ul>
 		</div>
 	</header>
 	<!-- end header -->
+	<!-- begin sidebar  -->
+	<aside class="sidebar">
+		<!-- begin sidebar__header  -->
+		<div class="sidebar__header">
+			<a href="#" class="logo">Repair</a>
+		</div>
+		<!-- end sidebar__header -->
+		<div class="sidebar__box js-side">
+			<a href="#" class="sidebar__title js-side-link is-active">Work Orders</a>
+			<ul class="sidebar__list js-side-block">
+				<li><a href="#" class="is-active">All Work Orders</a></li>
+				<li><a href="#">My Work Orders</a></li>
+			</ul>
+		</div>
+		<div class="sidebar__box js-side">
+			<a href="#" class="sidebar__title js-side-link">Setting</a>
+			<ul class="sidebar__list js-side-block">
+				<li><a href="#">Manufacturers</a></li>
+				<li><a href="#">Models</a></li>
+				<li><a href="#">Device Types</a></li>
+				<li><a href="#">Colors</a></li>
+				<li><a href="#">Carriers</a></li>
+				<li><a href="#">Categories</a></li>
+				<li><a href="#">Customize</a></li>
+				<li><a href="#">Declaimer</a></li>
+			</ul>
+		</div>
+	</aside>
+	<!-- end sidebar -->
 
 	<!-- begin main  -->
 	<main class="main">
-		<!-- begin sidebar  -->
-		<aside class="sidebar">
-			<div class="sidebar__box js-side">
-				<a href="#" class="sidebar__title js-side-link is-active">Work Orders</a>
-				<ul class="sidebar__list js-side-block">
-					<li><a href="#" class="is-active">All Work Orders</a></li>
-					<li><a href="#">My Work Orders</a></li>
-				</ul>
-			</div>
-			<div class="sidebar__box js-side">
-				<a href="#" class="sidebar__title js-side-link">Setting</a>
-				<ul class="sidebar__list js-side-block">
-					<li><a href="#">Manufacturers</a></li>
-					<li><a href="#">Models</a></li>
-					<li><a href="#">Device Types</a></li>
-					<li><a href="#">Colors</a></li>
-					<li><a href="#">Carriers</a></li>
-					<li><a href="#">Categories</a></li>
-					<li><a href="#">Customize</a></li>
-					<li><a href="#">Declaimer</a></li>
-				</ul>
-			</div>
-		</aside>
-		<!-- end sidebar -->
 		<!-- begin container  -->
 		<section class="container">
 			<!-- begin edit  -->
@@ -145,23 +145,23 @@
 						</div>
 						<div class="links">
 							<ul>
-								<li><a href="#">Customer</a></li>
-								<li><a href="#">Service Item</a></li>
-								<li><a href="#">Work Order</a></li>
-								<li><a href="#">Parts</a></li>
-								<li><a href="#">Labor</a></li>
-								<li><a href="#">Loaner</a></li>
-								<li><a href="#">Payment</a></li>
+								<li><a href="#" data-id="customer" class="js-anchor-link">Customer</a></li>
+								<li><a href="#" data-id="service" class="js-anchor-link">Service Item</a></li>
+								<li><a href="#" data-id="order" class="js-anchor-link">Work Order</a></li>
+								<li><a href="#" data-id="parts" class="js-anchor-link">Parts</a></li>
+								<li><a href="#" data-id="labor" class="js-anchor-link">Labor</a></li>
+								<li><a href="#" data-id="loaner" class="js-anchor-link">Loaner</a></li>
+								<li><a href="#" data-id="payment" class="js-anchor-link">Payment</a></li>
 							</ul>
 							<ul>
-								<li><a href="#">Comments</a></li>
-								<li><a href="#">Transactions</a></li>
-								<li><a href="#">History</a></li>
+								<li><a href="#" class="js-tabs-btn" data-btn="tab-comments">Comments</a></li>
+								<li><a href="#" class="js-tabs-btn" data-btn="tab-transactions">Transactions</a></li>
+								<li><a href="#" class="js-tabs-btn" data-btn="tab-history">History</a></li>
 							</ul>
 						</div>
 					</div>
 				</div>
-				<div class="js-accordion">
+				<div class="js-accordion js-anchor" data-anchor="customer">
 					<div class="title title_accordion js-accordion-arr">
 						<div class="title__btns">
 							<button class="btn-link">Save</button>
@@ -231,7 +231,7 @@
 						</div>
 					</div>
 				</div>
-				<div class="js-accordion">
+				<div class="js-accordion js-anchor" data-anchor="service">
 					<div class="title title_accordion js-accordion-arr">
 						<div class="title__btns">
 							<button class="btn-link">Save</button>
@@ -297,7 +297,7 @@
 						</div>
 					</div>
 				</div>
-				<div class="js-accordion">
+				<div class="js-accordion js-anchor" data-anchor="order">
 					<div class="title title_accordion js-accordion-arr">
 						<div class="title__btns">
 							<button class="btn-link">Save</button>
@@ -375,7 +375,7 @@
 						</div>
 					</div>
 				</div>
-				<div class="js-accordion">
+				<div class="js-accordion js-anchor" data-anchor="parts">
 					<div class="title title_accordion js-accordion-arr">
 						<div class="title__text">
 							<span class="js-accordion-link">Parts</span>
@@ -442,7 +442,7 @@
 						</div>
 					</div>
 				</div>
-				<div class="js-accordion">
+				<div class="js-accordion js-anchor" data-anchor="labor">
 					<div class="title title_accordion js-accordion-arr">
 						<div class="title__text">
 							<span class="js-accordion-link">Labors</span>
@@ -509,7 +509,7 @@
 						</div>
 					</div>
 				</div>
-				<div class="js-accordion">
+				<div class="js-accordion js-anchor" data-anchor="loaner">
 					<div class="title title_accordion js-accordion-arr">
 						<div class="title__text">
 							<span class="js-accordion-link">Loaner</span>
@@ -548,7 +548,7 @@
 						</div>
 					</div>
 				</div>
-				<div class="js-accordion">
+				<div class="js-accordion js-anchor" data-anchor="payment">
 					<div class="title title_accordion js-accordion-arr">
 						<div class="title__text">
 							<span class="js-accordion-link">Payment</span>

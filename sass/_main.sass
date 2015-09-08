@@ -2,34 +2,17 @@ html, body
 	height: 100%
 
 body
-	padding: 52px 0 0
+	// padding: 52px 0 0
 	position: relative
 	min-width: 960px
+	background-color: #EEE
+	padding: 0 0 0 20% 
 
 
 .header
 	+clr
+	padding: 4px 20px
 	background-color: #5F7583
-	position: absolute
-	top: 0
-	left: 0
-	right: 0
-	&__left, &__right
-		float: left
-		position: relative
-	&__left
-		width: 20%
-		padding: 8px 16px 7px
-		&:after
-			content: ""
-			position: absolute
-			top: 5px
-			bottom: 5px
-			right: 0
-			border-right: 1px solid rgba(0, 0, 0, 0.14)
-	&__right
-		width: 80%
-		padding: 4px 20px
 	.btn-big
 		float: right
 		margin: 3px 0
@@ -112,17 +95,25 @@ body
 
 .main
 	+clr
-	display: table
-	width: 100%
-	min-height: 100%
-	height: 100%
-	table-layout: fixed
 
 .sidebar
 	width: 20%
-	display: table-cell
 	background-color: #424B53
-	vertical-align: top
+	position: fixed
+	top: 0
+	left: 0
+	bottom: 0
+	overflow: auto
+	&__header
+		padding: 8px 16px 7px
+		background-color: #5F7583
+		&:after
+			content: ""
+			position: absolute
+			top: 5px
+			bottom: 5px
+			right: 0
+			border-right: 1px solid rgba(0, 0, 0, 0.14)		
 	&__title
 		display: block
 		font-size: 16px
@@ -158,10 +149,6 @@ body
 				background: #5F7583
 
 .container
-	width: 80%
-	display: table-cell
-	background-color: #EEE
-	vertical-align: top
 	padding: 20px 20px 80px
 
 .top-bar
@@ -391,25 +378,25 @@ body
 			display: inline-block
 			&:hover, &.is-active
 				color: #fff
-				background-color: #007098
+				background-color: #2d6f95
 	&__prev, &__prev-mod, &__next, &__next-mod
 		font-size: 8px
-		color: #CACBD3
+		color: #999
 		text-align: center
 		width: 20px
 		height: 20px
 		line-height: 20px
-		border: 2px solid #CACBD3
+		border: 2px solid #999
 		+border-radius(50%)
 		margin: 0 5px
 		display: inline-block
 		vertical-align: middle
-		&:hover, &.is-active
-			border-color: #007098
-			color: #007098
-		&:active
-			color: #999
-			border-color: #999
+		&:hover, &.is-active, &:active
+			border-color: #2d6f95
+			color: #2d6f95
+		&.is-disabled
+			color: #CACBD3
+			border-color: #CACBD3  
 
 .size
 	float: right
