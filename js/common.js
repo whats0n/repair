@@ -315,13 +315,16 @@ head.ready(function() {
 				event.stopPropagation();
 			});
 			$("body").on("click", ".js-status-list li", function(event){
+				var val = $(this).attr("data-val");
+				var status = $(".js-status");
 				var id = $(this).attr("data-id");
 				var text = $(this).text();
 				var selectList = $(this).parents(".js-status-list");
 				selectList.find("li").removeClass("is-active");
 				$(this).addClass("is-active");
-				$(this).parents(".js-status").find(".js-status-text").html($(this).html());
-				$(this).parents(".js-status").find(".js-status-input").val(id);
+				$(this).parents(".js-status").find(".js-status-text").html($(this).html());	
+				status.find("option").removeAttr("selected");
+				status.find('option[value="'+val+'"]').attr("selected", "selected");
 				$(this).parent().slideUp(200);
 				$(this).parents(".js-status").removeClass("is-active");
 				event.stopPropagation();
