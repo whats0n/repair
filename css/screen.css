@@ -522,6 +522,7 @@ body.is-close .breadcrumbs__icon:before { -ms-transform: rotate(-180deg); -webki
 .customize-table .table td.is-first { text-align: center; }
 .customize-table .table tr:hover .icon-customize { color: #373F46; }
 .customize-table .table .delete { position: absolute; top: 50%; right: 15px; margin-top: -7px; }
+.customize-table .table .delete.is-hide { display: none; }
 
 .choice { line-height: 16px; }
 .choice p, .choice small { font-size: 14px; margin-bottom: 10px; display: block; }

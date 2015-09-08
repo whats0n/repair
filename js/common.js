@@ -382,4 +382,13 @@ head.ready(function() {
 		$('body').toggleClass('is-close');
 	});
 
+	$('.customize-table').each(function() {
+		$(this).find('.radio input').click(function() {
+			if ($(this).prop('checked')) {
+				$(this).parents('.customize-table').find('.delete').removeClass('is-hide');
+				$(this).parents('.is-fourth').find('.delete').addClass('is-hide');
+			};
+		});
+	});
+
 });
