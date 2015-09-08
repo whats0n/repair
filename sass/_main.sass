@@ -6,9 +6,18 @@ body
 	position: relative
 	min-width: 960px
 	background-color: #EEE
-	padding: 0 0 0 20% 
-
-
+	padding: 0 0 0 20%
+	+transition(padding 0.3s linear)
+	+r(1000)
+		padding: 0 0 0 200px
+	&.is-close
+		padding: 0
+		.sidebar
+			+translateX(-100%)
+		.breadcrumbs__icon
+			+rotate(180)
+			&:before
+				+rotate(-180)
 .header
 	+clr
 	padding: 4px 20px
@@ -44,6 +53,8 @@ body
 		position: absolute
 		top: 0
 		left: 0
+		+transition(all 0.3s)
+		cursor: pointer
 		&:before, &:after
 			content: ""
 			position: absolute
@@ -56,6 +67,7 @@ body
 			left: 0
 			right: 0
 			bottom: 0
+			+transition(all 0.3s)
 		&:after
 			top: 4px
 			left: 4px
@@ -104,6 +116,9 @@ body
 	left: 0
 	bottom: 0
 	overflow: auto
+	+transition(transform 0.3s linear)
+	+r(1000)
+		width: 200px
 	&__header
 		padding: 8px 16px 7px
 		background-color: #5F7583
@@ -113,7 +128,7 @@ body
 			top: 5px
 			bottom: 5px
 			right: 0
-			border-right: 1px solid rgba(0, 0, 0, 0.14)		
+			border-right: 1px solid rgba(0, 0, 0, 0.14)
 	&__title
 		display: block
 		font-size: 16px
@@ -396,7 +411,7 @@ body
 			color: #2d6f95
 		&.is-disabled
 			color: #CACBD3
-			border-color: #CACBD3  
+			border-color: #CACBD3
 
 .size
 	float: right
@@ -576,7 +591,7 @@ body
 	&_accordion
 		font-size: 0
 		border-bottom: none
-		background: #FFF 
+		background: #FFF
 		&.is-active
 			background-color: #eee
 			&:before
@@ -624,7 +639,7 @@ body
 	text-align: left
 	.btn-simple, .btn-link
 		margin: 0 10px 0 0
-		
+
 
 .facturer-table
 	border-bottom: 1px solid #cacbd3
@@ -648,7 +663,7 @@ body
 		text-align: right
 		font-size: 0
 		.btn-simple
-			margin: 0 0 0 10px 
+			margin: 0 0 0 10px
 
 .block
 	padding: 14px 15px
@@ -819,9 +834,9 @@ body
 		border: 1px solid #cacbd3
 		border-top: none
 		background: #fff
-		+border-radius(0 0 5px 5px) 
+		+border-radius(0 0 5px 5px)
 	&-parent
-		padding: 14px 14px 15px 
+		padding: 14px 14px 15px
 .tab-link
 	background-color: #cacbd3
 	border: 1px solid #cacbd3
@@ -843,13 +858,13 @@ body
 		vertical-align: middle
 		font-size: 16px
 	span
-		padding: 0 10px 0 0 
-		
+		padding: 0 10px 0 0
+
 .comment
 	padding: 0 15px 10px
 	&:first-child
 		border-top: none
-		padding: 14px 15px 10px 
+		padding: 14px 15px 10px
 	&-info
 		color: #999
 		font-size: 12px
@@ -861,31 +876,31 @@ body
 	.btns
 		padding: 0 0 5px
 	.btn-big
-		margin: 0 0 13px  
+		margin: 0 0 13px
 .post
 	+clr
 	.author
 		float: left
-		margin: 0 15px 0 0 
+		margin: 0 15px 0 0
 	&__info
 		overflow: hidden
-		padding: 4px 0 
+		padding: 4px 0
 	&__author
 		color: #caccce
 		font-size: 12px
 		line-height: 18px
 		display: inline-block
 		vertical-align: top
-		margin: 0 12px 0 0 
+		margin: 0 12px 0 0
 	&__top
 		font-size: 0
-		padding: 0 0 7px  
+		padding: 0 0 7px
 		.btn-edit-full, .btn-delete-full
-			margin: 0 15px 0 0 
+			margin: 0 15px 0 0
 	p
 		font-size: 12px
 		line-height: 18px
-		color: #373f46 
+		color: #373f46
 
 .author
 	width: 52px
@@ -917,7 +932,7 @@ body
 	padding: 10px 0 10px
 	position: relative
 	&:before
-		content: "" 
+		content: ""
 		width: 1px
 		height: 266px
 		background-color: #cacbd3
@@ -927,7 +942,7 @@ body
 		display: none
 	&__table
 		position: relative
-		z-index: 2 
+		z-index: 2
 		th, td
 			text-align: left
 			vertical-align: top
@@ -944,7 +959,7 @@ body
 			padding: 0 15px 15px
 			font-weight: normal
 		td
-			padding: 6px 15px 
+			padding: 6px 15px
 			&.is-date
 				span
 					display: block
