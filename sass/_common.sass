@@ -193,6 +193,9 @@ a
 	background: none
 	display: inline-block
 	vertical-align: middle
+	// height: 14px
+	// white-space: nowrap
+	line-height: normal
 .ok
 	font-size: 0
 	&:hover
@@ -288,7 +291,7 @@ a
 				visibility: visible
 				+opacity(1)
 				top: 5px
-				color: #fff 
+				color: #fff
 		&:disabled + span
 			&:before
 				border-color: #EEE
@@ -559,6 +562,8 @@ a
 		+transition(all 0.2s linear)
 		+opacity(0)
 		visibility: hidden
+		max-height: 250px
+		overflow: auto
 		li
 			margin-bottom: 0
 			+transition(all 0.2s)
@@ -804,7 +809,7 @@ a
 		display: block
 		padding: 0 22px 0 10px
 		height: 22px
-		line-height: 22px
+		line-height: 20px
 		border: 1px solid #CACBD3
 		background-color: #FFF
 		+border-radius(5px)
@@ -834,6 +839,8 @@ a
 		overflow-y: auto
 		background: #fff
 		+box-shadow(1.5px 2.6px 2.9px 0.1px rgba(0, 0, 0, 0.11))
+		max-height: 250px
+		overflow: auto
 		li
 			padding: 0 10px
 			cursor: pointer
@@ -949,6 +956,8 @@ a
 		background: #fff
 		+box-shadow(1.5px 2.6px 2.9px 0.1px rgba(0, 0, 0, 0.11))
 		padding: 0 0 5px
+		max-height: 250px
+		overflow: auto
 		li
 			padding: 0 10px
 			cursor: pointer
@@ -1009,24 +1018,7 @@ a
 	display: inline-block
 	&:hover, &.is-active
 		.icon-calendar
-			color: #373f46 
-	// 	&:after
-	// 		display: block
-	// 	&:before
-	// 		display: none
-	// &:before, &:after
-	// 	content: ""
-	// 	position: absolute
-	// 	top: 50%
-	// 	right: 11px
-	// 	margin-top: -8px
-	// &:before
-	// 	z-index: 2
-	// 	+svg(calendar, 16, 16)
-	// &:after
-	// 	z-index: 3
-	// 	+svg(calendar-active, 16, 16)
-	// 	display: none
+			color: #373f46
 	.icon-calendar
 		font-size: 16px
 		color: #cacbd3
@@ -1035,7 +1027,9 @@ a
 		right: 11px
 		margin-top: -8px
 		z-index: 3
-
+		background: #fff
+	.input
+		padding-right: 30px
 .input-small
 	color: #373f46
 	font-size: 12px
@@ -1522,7 +1516,7 @@ a
 							top: 5px
 							+opacity(1)
 							visibility: visible
-							color: #fff 
+							color: #fff
 						&:before
 							background-color: #6EBDEA
 							border-color: #6EBDEA
@@ -1530,7 +1524,7 @@ a
 					display: block
 					position: relative
 					padding: 0 0 0 20px
-					margin: 0 0 5px 
+					margin: 0 0 5px
 					cursor: pointer
 					&:before, &:after
 						content: ""

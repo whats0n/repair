@@ -2,7 +2,6 @@ html, body
 	height: 100%
 
 body
-	// padding: 52px 0 0
 	position: relative
 	min-width: 960px
 	background-color: #EEE
@@ -117,6 +116,7 @@ body
 	bottom: 0
 	overflow: auto
 	+transition(transform 0.3s linear)
+	z-index: 300
 	+r(1000)
 		width: 200px
 	&__header
@@ -400,7 +400,7 @@ body
 		text-align: center
 		width: 20px
 		height: 20px
-		line-height: 20px
+		line-height: 18px
 		border: 2px solid #999
 		+border-radius(50%)
 		margin: 0 5px
@@ -489,6 +489,8 @@ body
 				margin-top: -7px
 			&__mod
 				font-size: 0
+				+vertical
+				text-align: left
 				.ok, .delete
 					margin: 0 0 0 10px
 					position: static
