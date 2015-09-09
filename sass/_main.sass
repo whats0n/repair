@@ -5,10 +5,10 @@ body
 	position: relative
 	min-width: 960px
 	background-color: #EEE
-	padding: 0 0 0 20%
+	// padding: 0 0 0 20%
 	+transition(padding 0.3s linear)
 	+r(1000)
-		padding: 0 0 0 200px
+		// padding: 0 0 0 200px
 	&.is-close
 		padding: 0
 		.sidebar
@@ -17,10 +17,15 @@ body
 			+rotate(180)
 			&:before
 				+rotate(-180)
+		.container, .header
+			width: 100%
 .header
 	+clr
 	padding: 4px 20px
 	background-color: #5F7583
+	width: 80%
+	float: right
+	+transition(all 0.3s linear)
 	.btn-big
 		float: right
 		margin: 3px 0
@@ -165,6 +170,9 @@ body
 
 .container
 	padding: 20px 20px 80px
+	width: 80%
+	float: right
+	+transition(width 0.3s linear)
 
 .top-bar
 	background-color: #F8F8F8
