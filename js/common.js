@@ -286,7 +286,7 @@ head.ready(function() {
 		var place = $(this).attr('placeholder');
 
 		$(this).select2({
-			placeholder: place,
+			placeholder: place
 		}).on('select2:open', function() {
 			$('.select2-search__field').attr('placeholder', 'Search');
 		});
