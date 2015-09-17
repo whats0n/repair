@@ -126,39 +126,53 @@
 							</ul>
 						</div>
 					</div>
-					<div class="info__block">
-						<div class="print">
-							<button class="btn-print">Print<i class="icon icon-print"></i></button>
-							<div class="select-print js-select">
-								<i class="icon icon-arr-bot"></i>
-								<span class="select-print__text js-select-text"></span>
-								<ul class="select-print__list js-select-list">
-									<li data-val="Work Order">Work Order</li>
-									<li data-val="Service Item">Service Item</li>
-								</ul>
-								<select>
-									<option value="Work Order">Work Order</option>
-									<option value="Service Item">Service Item</option>
-								</select>
+					<!--info fixed element-->
+					<div class="info-fixed js-fixed-nav">
+						<!--just wrapper for center content-->
+						<div class="info-fixed__inner js-fixed-nav-in">
+							<!--info block-->
+							<div class="info__block">
+								<!-- btn print + print select -->
+								<div class="print">
+									<button class="btn-print">Print<i class="icon icon-print"></i></button>
+									<div class="select-print js-select">
+										<i class="icon icon-arr-bot"></i>
+										<span class="select-print__text js-select-text"></span>
+										<ul class="select-print__list js-select-list">
+											<li data-val="Work Order">Work Order</li>
+											<li data-val="Service Item">Service Item</li>
+										</ul>
+										<select>
+											<option value="Work Order">Work Order</option>
+											<option value="Service Item">Service Item</option>
+										</select>
+									</div>
+								</div>
+								<!-- end btn print + select -->
+								<!--nav links-->
+								<div class="links">
+									<ul>
+										<li><a href="#" data-id="customer" class="js-anchor-link">Customer</a></li>
+										<li><a href="#" data-id="service" class="js-anchor-link">Service Item</a></li>
+										<li><a href="#" data-id="order" class="js-anchor-link">Work Order</a></li>
+										<li><a href="#" data-id="parts" class="js-anchor-link">Parts</a></li>
+										<li><a href="#" data-id="labor" class="js-anchor-link">Labor</a></li>
+										<li><a href="#" data-id="loaner" class="js-anchor-link">Loaner</a></li>
+										<li><a href="#" data-id="payment" class="js-anchor-link">Payment</a></li>
+									</ul>
+									<ul>
+										<li><a href="#" class="js-tabs-btn" data-btn="tab-comments">Comments</a></li>
+										<li><a href="#" class="js-tabs-btn" data-btn="tab-transactions">Transactions</a></li>
+										<li><a href="#" class="js-tabs-btn" data-btn="tab-history">History</a></li>
+									</ul>
+								</div>
+								<!--end nav links-->
 							</div>
-						</div>
-						<div class="links">
-							<ul>
-								<li><a href="#" data-id="customer" class="js-anchor-link">Customer</a></li>
-								<li><a href="#" data-id="service" class="js-anchor-link">Service Item</a></li>
-								<li><a href="#" data-id="order" class="js-anchor-link">Work Order</a></li>
-								<li><a href="#" data-id="parts" class="js-anchor-link">Parts</a></li>
-								<li><a href="#" data-id="labor" class="js-anchor-link">Labor</a></li>
-								<li><a href="#" data-id="loaner" class="js-anchor-link">Loaner</a></li>
-								<li><a href="#" data-id="payment" class="js-anchor-link">Payment</a></li>
-							</ul>
-							<ul>
-								<li><a href="#" class="js-tabs-btn" data-btn="tab-comments">Comments</a></li>
-								<li><a href="#" class="js-tabs-btn" data-btn="tab-transactions">Transactions</a></li>
-								<li><a href="#" class="js-tabs-btn" data-btn="tab-history">History</a></li>
-							</ul>
-						</div>
+							<!--end info block-->
+						</div>	
+						<!--end wrapper-->					
 					</div>
+					<!--end info fixed element-->	
 				</div>
 				<div class="js-accordion js-anchor" data-anchor="customer">
 					<div class="title title_accordion js-accordion-arr">

@@ -230,13 +230,15 @@ a
 	display: inline-block
 	padding: 0 0 0 30px
 	background: none
+	&_small
+		font-size: 12px
 	&:hover
 		color: #2f363f
 		&:before
 			background: #2f363f
 			border-color: #2f363f
 			color: #fff
-	&:active
+	&:active, &.is-active
 		color: #20252c
 		&:before
 			background: #20252c
@@ -271,11 +273,13 @@ a
 	vertical-align: top
 	padding: 0 0 0 25px
 	cursor: pointer
+	min-height: 16px
 	&:hover
 		span
 			color: #373F46
 			&:before
-				border-color: #2F3C45
+				background-color: #6ebdea
+				border-color: #6ebdea
 	input
 		position: absolute
 		top: 0
@@ -337,6 +341,7 @@ a
 			+transition(all 0.2s)
 	&_mod
 		padding: 0 0 0 30px
+		min-height: 20px 
 		span
 			font-size: 14px
 			color: #414141
@@ -361,9 +366,12 @@ a
 	vertical-align: top
 	padding: 0 0 0 25px
 	cursor: pointer
+	min-height: 16px
 	&:hover
 		span
 			color: #373F46
+			&:before
+				border-color: #6ebdea 
 	input
 		position: absolute
 		top: 0
@@ -372,6 +380,8 @@ a
 		visibility: hidden
 		&:checked + span
 			color: #373F46
+			&:before
+				border-color: #6ebdea 
 			&:after
 				visibility: visible
 				+opacity(1)
@@ -403,6 +413,7 @@ a
 			height: 20px
 			border: 1px solid #CDCED5
 			+border-radius(50%)
+			+transition(all 0.2s)
 		&:after
 			content: ""
 			position: absolute
@@ -411,13 +422,14 @@ a
 			width: 12px
 			height: 12px
 			+border-radius(50%)
-			background-color: #373F46
+			background-color: #6ebdea
 			+scale(0.4)
 			+opacity(0)
 			visibility: hidden
 			+transition(all 0.2s)
 	&_big
 		padding: 0 0 0 30px
+		min-height: 20px
 		span
 			font-size: 14px
 			color: #414141
@@ -684,6 +696,10 @@ a
 	background-color: #FFF
 	z-index: 200
 	+border-radius(5px)
+	&.is-show
+		position: relative
+		top: 0
+		right: 0
 .ui-datepicker
 	padding: 0 3px
 	background-color: #FFF
@@ -990,7 +1006,6 @@ a
 .input
 	position: relative
 	font-size: 14px
-	color: #373F46
 	display: inline-block
 	vertical-align: middle
 	max-width: 190px
@@ -999,6 +1014,8 @@ a
 	background-color: #FFF
 	+border-radius(5px)
 	padding: 7px 10px
+	color: #373F46
+	+placeholder-color(#999)
 	&:hover, &:focus
 		border-color: #373F46
 	&:disabled
@@ -1460,6 +1477,17 @@ a
 	font-size: 12px
 	+placeholder-color(#999)
 	display: block
+	&:hover, &:focus
+		border-color: #373F46
+	&:disabled
+		background-color: #CACBD3
+		border-color: #CACBD3
+	&.is-error
+		border-color: #CB2429
+	&_mod
+		&:disabled
+			border-color: #EEE
+			background-color: #EEE
 
 .multi
 	.ms-choice
@@ -1565,3 +1593,113 @@ a
 				+box-shadow(1.5px 2.6px 2.9px 0.1px rgba(0, 0, 0, 0.11))
 				+border-radius(5px 5px 0 0)
 				border-color: #fff
+
+.page
+	margin-bottom: 20px
+	background-color: #f8f8f8
+	padding: 15px 0 0
+	+border-radius(5px)
+	&_mod
+		background: #fff
+	&__titles, &__block
+		display: table
+		width: 100%
+	&__titles
+		border-top: 1px solid #cacbd3
+		border-bottom: 1px solid #cacbd3
+		.page__col
+			background-color: #eee
+			line-height: 28px
+			color: #212121
+			font-size: 14px
+	&__block
+		border-bottom: 1px solid #cacbd3
+	&__section
+		padding: 0 0 20px 
+	&__col
+		width: 25%
+		border-left: 1px solid #cacbd3 
+		display: table-cell
+		padding: 5px 15px 
+		&:first-child
+			border: none
+	&__col-three
+		width: 33.33%
+	&__row, &__radio, &__checkbox, &__add
+		font-size: 0
+		padding: 10px 0
+	&__row
+		.btn-simple, .btn-link, .btn-big
+			margin: 0 10px 10px 0  
+	&__select
+		display: inline-block
+				
+//master file
+.textarea-lite
+	background-color: white
+	border: 1px solid #eee
+	+border-radius(5px)
+	font-family: Arial
+	font-size: 16px
+	line-height: 16px
+	width: 100%
+	resize: none
+	padding: 10px 10px 
+	display: block
+	color: #373F46
+	+placeholder-color(#999)
+	&:hover, &:focus
+		border-color: #373F46
+	&:disabled
+		background-color: #CACBD3
+		border-color: #CACBD3
+	&.is-error
+		border-color: #CB2429
+	&_mod
+		&:disabled
+			border-color: #EEE
+			background-color: #EEE
+			
+.textarea-med
+	background-color: white
+	border: 1px solid #eee
+	+border-radius(5px)
+	font-family: Arial
+	font-size: 14px
+	line-height: 16px
+	width: 100%
+	resize: none
+	padding: 10px 10px 
+	display: block
+	color: #373F46
+	+placeholder-color(#999)
+	&:hover, &:focus
+		border-color: #373F46
+	&:disabled
+		background-color: #CACBD3
+		border-color: #CACBD3
+	&.is-error
+		border-color: #CB2429
+	&_mod
+		&:disabled
+			border-color: #EEE
+			background-color: #EEE
+			
+.info-fixed
+	&__inner
+		+transition(background 0.15s)
+		&.is-fixed
+			position: fixed
+			top: 0
+			left: 0
+			right: 0
+			background: #fff
+			z-index: 298 
+			padding: 0 0 0 20%
+			+r(1000)
+				padding: 0 0 0 192px 
+			.print
+				margin-right: 20px
+			.links
+				margin-left: 20px
+				

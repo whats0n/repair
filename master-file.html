@@ -1,0 +1,1327 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Template</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="format-detection" content="telephone=no">
+	<!-- theme color for android 5.0 -->
+	<meta name="theme-color" content="#fff">
+	<!-- <meta name="viewport" content="width=1200"> -->
+	<!-- <meta name="viewport" content="initial-scale=1, user-scalable=no"> -->
+	<link rel="stylesheet" media="all" href="css/icomoon.css" >
+	<link rel="stylesheet" media="all" href="css/multiple-select.css" >
+	<link rel="stylesheet" media="all" href="css/select2.min.css" >
+	<link rel="stylesheet" media="all" href="css/screen.css" >
+	<!--[if IE]><script src="js/html5shiv.js"></script><![endif]-->
+</head>
+<body>
+
+	<!-- begin header  -->
+	<header class="header">
+		<button class="btn-big">New Work Order</button>
+		<div class="breadcrumbs">
+			<span class="breadcrumbs__icon"><i></i></span>
+			<ul>
+				<li><a href="#">All Work Orders</a></li>
+				<li><a href="#" class="is-active">Work Order #120</a></li>
+			</ul>
+		</div>
+	</header>
+	<!-- end header -->
+	<!-- begin sidebar  -->
+	<aside class="sidebar js-side">
+		<!-- begin sidebar__header  -->
+		<div class="sidebar__header">
+			<a href="#" class="logo">Repair</a>
+		</div>
+		<!-- end sidebar__header -->
+		<div class="sidebar__box">
+			<a href="#" class="sidebar__title js-side-link is-active">Work Orders</a>
+			<ul class="sidebar__list js-side-block">
+				<li><a href="#" class="is-active">All Work Orders</a></li>
+				<li><a href="#">My Work Orders</a></li>
+			</ul>
+		</div>
+		<div class="sidebar__box js-side">
+			<a href="#" class="sidebar__title js-side-link">Setting</a>
+			<ul class="sidebar__list js-side-block">
+				<li><a href="#">Manufacturers</a></li>
+				<li><a href="#">Models</a></li>
+				<li><a href="#">Device Types</a></li>
+				<li><a href="#">Colors</a></li>
+				<li><a href="#">Carriers</a></li>
+				<li><a href="#">Categories</a></li>
+				<li><a href="#">Customize</a></li>
+				<li><a href="#">Declaimer</a></li>
+			</ul>
+		</div>
+	</aside>
+	<!-- end sidebar -->
+	<!-- begin main  -->
+	<main class="main">
+		<!-- begin container  -->
+		<section class="container">
+
+			<!-- begin page -->
+			<div class="page">
+				<!-- begin accordion block and anchor for link (js-accordion for work)  -->	
+				<div class="js-accordion js-anchor" data-anchor="customer">
+					<!--accordion btn (js-accordion-link for dropdown) --> 
+					<div class="title title_accordion js-accordion-arr is-active">
+						<div class="title__text">
+							<span class="js-accordion-link">iTem</span>
+						</div>
+					</div>
+					<!--end accordion title-->
+					<!--accordion dropdown -->
+					<div class="block block_accordion js-accordion-block" style="display: block;">
+						<textarea name="" id="" cols="30" rows="4" class="textarea-lite" placeholder="Some information here"></textarea>
+					</div>
+					<!--end accorion dropdown -->
+				</div>
+				<!-- end accordion block (js-accordion for work) -->
+			</div>
+			<!-- end page -->
+			<!-- begin page -->
+			<div class="page">
+				<!-- begin top-bar  -->
+				<div class="top-bar">
+					<!-- search block -->
+					<div class="search js-search">
+						<input type="text" class="search__input js-search-input" placeholder="Search item by ID, customer, phone or model...">
+						<button class="search__btn icon icon-search"></button>
+					</div>
+					<!-- end search block -->
+
+					<!-- filter block -->
+					<div class="filter">
+						<!--filter box (Some things in the filter.) box = max-width: 20%! -->
+						<div class="filter__box">
+							<span class="filter__label">Filter by:</span>
+						</div>
+
+						<!-- class is-**** = for min-width (filter__box) -->
+
+						<!--is-small = small select-->
+						<div class="filter__box is-small">
+							<div class="multi js-multi-parent">
+								<select name="" id="" class="js-multi-select" data-all="Status: All" placeholder="Status: All" multiple style="width: 100%;">
+									<option value="New">New</option>
+									<option value="On Hold">On Hold</option>
+									<option value="In Progress">In Progress</option>
+									<option value="Done">Done</option>
+								</select>
+							</div>
+						</div>
+						<!--is-small = small select-->
+						<div class="filter__box is-small">
+							<div class="multi js-multi-parent">
+								<select name="" id="" class="js-multi-select" data-all="Priority: All" placeholder="Priority: All" multiple style="width: 100%;">
+									<option value="High">High</option>
+									<option value="Normal">Normal</option>
+									<option value="Low">Low</option>
+								</select>
+							</div>
+						</div>
+						<!--is-big = bigger select-->
+						<div class="filter__box is-big">
+							<div class="multi js-multi-parent">
+								<select name="" id="" class="js-multi-select" data-all="Technician: All" placeholder="Technician: Marks John" multiple style="width: 100%;">
+									<option value="Name Name">Name Name</option>
+									<option value="Name Name Name">Name Name Name</option>
+									<option value="Name Name">Name Name</option>
+								</select>
+							</div>
+						</div>
+						<!--is-med = medium select-->
+						<div class="filter__box is-med">
+							<!--select datepicker & checkboxes-->
+							<div class="select-date js-select-date js-calendar-parent">
+								<div class="select-date__visible">
+									<span class="select-date__label js-calendar-label">More</span>
+								</div>
+								<ul class="select-date__list">
+									<li class="is-date js-calendar-btn">
+										<span>Due Date</span>
+										<div class="js-calendar datepicker"></div>
+									</li>
+									<li class="select-date__check">
+										<label class="js-select-checkbox checkbox">
+											<input type="checkbox">
+											<span>Model</span>
+										</label>
+										<ul class="select-date__sublist">
+											<li>
+												<label class="drop-checkbox checkbox">
+													<input type="checkbox">
+													<span>Name Name</span>
+												</label>
+											</li>
+											<li>
+												<label class="drop-checkbox checkbox">
+													<input type="checkbox">
+													<span>Name Name Name</span>
+												</label>
+											</li>
+											<li>
+												<label class="drop-checkbox checkbox">
+													<input type="checkbox">
+													<span>Name Name</span>
+												</label>
+											</li>
+										</ul>
+									</li>
+									<li class="is-date js-calendar-btn">
+										<span>Created Date</span>
+										<div class="js-calendar datepicker"></div>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- end top-bar -->
+
+				<!-- begin order-table  -->
+				<div class="order-table">
+					<!--table wrapper (for scroll when we need table min-width: 980+) -->
+					<div class="table-wrapper">
+						<table class="table">
+							<thead>
+								<tr>
+									<th class="table__number"><span>WO #</span></th>
+									<th class="table__summary"><span class="is-active">Summary</span></th>
+									<th class="table__customer"><span>Customer</span></th>
+									<th class="table__model"><span>Model</span></th>
+									<th class="table__technician"><span>Technician</span></th>
+									<th class="table__due-date"><span>Due Date</span></th>
+									<th class="table__store"><span>Store</span></th>
+									<th class="table__create-date"><span>Created Date</span></th>
+									<th class="table__create-by"><span>Created By</span></th>
+									<th class="table__priority"><span>Priority</span></th>
+									<th class="table__status"><span>Status</span></th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td class="table__number">
+										<a href="#">1</a>
+									</td>
+									<td class="table__summary"><span>Broken home button</span></td>
+									<td class="table__customer"><span>Smith, Linda</span></td>
+									<td class="table__model"><span>iPhone 5S 64GB</span></td>
+									<td class="table__technician"><span>Jackson, Eric</span></td>
+									<td class="table__due-date"><span>5/7/2015</span></td>
+									<td class="table__store"><span>Retail 1</span></td>
+									<td class="table__create-date"><span>5/7/15</span> <span>12:45 PM</span></td>
+									<td class="table__create-by"><span>Harrelson, Debby</span></td>
+									<td class="table__priority"><span>High</span></td>
+									<td class="table__status">
+										<a href="#" class="btn-status btn-status_green">Done</a>
+									</td>
+								</tr>
+								<tr>
+									<td class="table__number">
+										<a href="#">2</a>
+									</td>
+									<td class="table__summary"><span>Client reported a low battery level</span></td>
+									<td class="table__customer"><span>Smith, Linda</span></td>
+									<td class="table__model"><span>iPhone 6S</span></td>
+									<td class="table__technician"><span>Marks, John</span></td>
+									<td class="table__due-date"><span>3/3/2015</span></td>
+									<td class="table__store"><span>San Diego</span></td>
+									<td class="table__create-date"><span>5/7/15</span> <span>12:45 PM</span></td>
+									<td class="table__create-by"><span>O'Brien, Simon</span></td>
+									<td class="table__priority"><span>Normal</span></td>
+									<td class="table__status">
+										<a href="#" class="btn-status btn-status_yellow">In Progress</a>
+									</td>
+								</tr>
+								<tr>
+									<td class="table__number">
+										<a href="#">3</a>
+									</td>
+									<td class="table__summary"><span>Blocked iPhone 6</span></td>
+									<td class="table__customer"><span>Wu, Don</span></td>
+									<td class="table__model"><span>iPhone 5S 64GB</span></td>
+									<td class="table__technician"><span>Marks, John</span></td>
+									<td class="table__due-date"><span>3/4/2015</span></td>
+									<td class="table__store"><span>Berkeley Store 1</span></td>
+									<td class="table__create-date"><span>5/7/15</span> <span>12:45 PM</span></td>
+									<td class="table__create-by"><span>Harrelson, Debby</span></td>
+									<td class="table__priority"><span>Low</span></td>
+									<td class="table__status">
+										<a href="#" class="btn-status btn-status_gray">On Hold</a>
+									</td>
+								</tr>
+								<tr>
+									<td class="table__number">
+										<a href="#">4</a>
+									</td>
+									<td class="table__summary"><span>Blocked iPhone 6</span></td>
+									<td class="table__customer"><span>Wu, Don</span></td>
+									<td class="table__model"><span>iPhone 5S 64GB</span></td>
+									<td class="table__technician"><span>Marks, John</span></td>
+									<td class="table__due-date"><span>3/4/2015</span></td>
+									<td class="table__store"><span>Berkeley Store 1</span></td>
+									<td class="table__create-date"><span>5/7/15</span> <span>12:45 PM</span></td>
+									<td class="table__create-by"><span>Harrelson, Debby</span></td>
+									<td class="table__priority"><span>Low</span></td>
+									<td class="table__status">
+										<a href="#" class="btn-status btn-status_gray">On Hold</a>
+									</td>
+								</tr>
+								<tr>
+									<td class="table__number">
+										<a href="#">5</a>
+									</td>
+									<td class="table__summary"><span>Blocked iPhone 6</span></td>
+									<td class="table__customer"><span>Wu, Don</span></td>
+									<td class="table__model"><span>iPhone 5S 64GB</span></td>
+									<td class="table__technician"><span>Marks, John</span></td>
+									<td class="table__due-date"><span>3/4/2015</span></td>
+									<td class="table__store"><span>Berkeley Store 1</span></td>
+									<td class="table__create-date"><span>5/7/15</span> <span>12:45 PM</span></td>
+									<td class="table__create-by"><span>Harrelson, Debby</span></td>
+									<td class="table__priority"><span>Normal</span></td>
+									<td class="table__status">
+										<a href="#" class="btn-status btn-status_blue">New</a>
+									</td>
+								</tr>
+								<tr>
+									<td class="table__number">
+										<a href="#">6</a>
+									</td>
+									<td class="table__summary"><span>Blocked iPhone 6</span></td>
+									<td class="table__customer"><span>Wu, Don</span></td>
+									<td class="table__model"><span>iPhone 5S 64GB</span></td>
+									<td class="table__technician"><span>Marks, John</span></td>
+									<td class="table__due-date"><span>3/4/2015</span></td>
+									<td class="table__store"><span>Berkeley Store 1</span></td>
+									<td class="table__create-date"><span>5/7/15</span> <span>12:45 PM</span></td>
+									<td class="table__create-by"><span>Harrelson, Debby</span></td>
+									<td class="table__priority"><span>Low</span></td>
+									<td class="table__status">
+										<a href="#" class="btn-status btn-status_gray">On Hold</a>
+									</td>
+								</tr>
+								<tr>
+									<td class="table__number">
+										<a href="#">7</a>
+									</td>
+									<td class="table__summary"><span>Blocked iPhone 6</span></td>
+									<td class="table__customer"><span>Wu, Don</span></td>
+									<td class="table__model"><span>iPhone 5S 64GB</span></td>
+									<td class="table__technician"><span>Marks, John</span></td>
+									<td class="table__due-date"><span>3/4/2015</span></td>
+									<td class="table__store"><span>Berkeley Store 1</span></td>
+									<td class="table__create-date"><span>5/7/15</span> <span>12:45 PM</span></td>
+									<td class="table__create-by"><span>Harrelson, Debby</span></td>
+									<td class="table__priority"><span>Low</span></td>
+									<td class="table__status">
+										<a href="#" class="btn-status btn-status_gray">On Hold</a>
+									</td>
+								</tr>
+								<tr>
+									<td class="table__number">
+										<a href="#">8</a>
+									</td>
+									<td class="table__summary"><span>Blocked iPhone 6</span></td>
+									<td class="table__customer"><span>Wu, Don</span></td>
+									<td class="table__model"><span>iPhone 5S 64GB</span></td>
+									<td class="table__technician"><span>Marks, John</span></td>
+									<td class="table__due-date"><span>3/4/2015</span></td>
+									<td class="table__store"><span>Berkeley Store 1</span></td>
+									<td class="table__create-date"><span>5/7/15</span> <span>12:45 PM</span></td>
+									<td class="table__create-by"><span>Harrelson, Debby</span></td>
+									<td class="table__priority"><span>Low</span></td>
+									<td class="table__status">
+										<a href="#" class="btn-status btn-status_gray">On Hold</a>
+									</td>
+								</tr>
+								<tr>
+									<td class="table__number">
+										<a href="#">9</a>
+									</td>
+									<td class="table__summary"><span>Blocked iPhone 6</span></td>
+									<td class="table__customer"><span>Wu, Don</span></td>
+									<td class="table__model"><span>iPhone 5S 64GB</span></td>
+									<td class="table__technician"><span>Marks, John</span></td>
+									<td class="table__due-date"><span>3/4/2015</span></td>
+									<td class="table__store"><span>Berkeley Store 1</span></td>
+									<td class="table__create-date"><span>5/7/15</span> <span>12:45 PM</span></td>
+									<td class="table__create-by"><span>Harrelson, Debby</span></td>
+									<td class="table__priority"><span>Low</span></td>
+									<td class="table__status">
+										<a href="#" class="btn-status btn-status_gray">On Hold</a>
+									</td>
+								</tr>
+								<tr>
+									<td class="table__number">
+										<a href="#">10</a>
+									</td>
+									<td class="table__summary"><span>Blocked iPhone 6</span></td>
+									<td class="table__customer"><span>Wu, Don</span></td>
+									<td class="table__model"><span>iPhone 5S 64GB</span></td>
+									<td class="table__technician"><span>Marks, John</span></td>
+									<td class="table__due-date"><span>3/4/2015</span></td>
+									<td class="table__store"><span>Berkeley Store 1</span></td>
+									<td class="table__create-date"><span>5/7/15</span> <span>12:45 PM</span></td>
+									<td class="table__create-by"><span>Harrelson, Debby</span></td>
+									<td class="table__priority"><span>Low</span></td>
+									<td class="table__status">
+										<a href="#" class="btn-status btn-status_gray">On Hold</a>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+					<!--end table wrapper-->
+					<!--bottom for pages and page size -->
+					<div class="bottom">
+						<!--pages = pagination-->
+						<div class="pages">
+							<span class="pages__text">Page 1 of 3 (24 items)</span>
+							<!-- is-disabled = styles for disabled button -->
+							<a href="#" class="pages__prev is-disabled"><i class="icon icon-left"></i></a>
+							<a href="#" class="pages__prev-mod"><i class="icon icon-left-mod"></i></a>
+							<ul class="pages__list">
+								<!-- is-active = active class for numbers -->
+								<li><a href="#" class="is-active">1</a></li>
+								<li><a href="#">2</a></li>
+								<li><a href="#">3</a></li>
+							</ul>
+							<a href="#" class="pages__next"><i class="icon icon-right"></i></a>
+							<a href="#" class="pages__next-mod"><i class="icon icon-right-mod"></i></a>
+						</div>
+						<!--end pages-->
+						<!--size select-->
+						<div class="size">
+							<span class="size__text">Page size</span>
+							<div class="select-size js-select">
+								<span class="select-size__text js-select-text">10</span>
+								<ul class="select-size__list js-select-list">
+									<li data-val="10" class="is-active">10</li>
+									<li data-val="20">20</li>
+									<li data-val="50">50</li>
+									<li data-val="100">100</li>
+								</ul>
+								<select>
+									<option value="10" selected>10</option>
+									<option value="20">20</option>
+									<option value="50">50</option>
+									<option value="100">100</option>
+								</select>
+							</div>
+						</div>
+						<!--end size-->
+					</div>
+					<!--end bottom-->
+				</div>
+				<!-- end order-table -->
+			</div>
+			<!-- end page -->
+			<!-- begin page -->
+			<div class="page">		
+				<!-- begin accordion block and anchor for link (js-accordion for work) -->
+				<div class="js-accordion js-anchor" data-anchor="parts">
+					<!--accordion btn (js-accordion-link for dropdown) --> 
+					<div class="title title_accordion js-accordion-arr is-active">
+						<div class="title__text">
+							<span class="js-accordion-link">Parts</span>
+							<button class="btn-edit"><i class="icon icon-edit"></i></button>
+						</div>
+					</div>
+					<!--end accordion title-->
+					<!--accordion dropdown -->
+					<div class="block block_accordion js-accordion-block" style="display: block;">
+						<div class="order">
+							<table class="table">
+								<thead>
+									<tr>
+										<th class="is-id">ID</th>
+										<th class="is-description">Description</th>
+										<th class="is-serial">Serial</th>
+										<th class="is-qty">QTY</th>
+										<th class="is-price">Price</th>
+										<th class="is-extprice">EXt Price</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td class="is-id"><span class="table-text">11356</span></td>
+										<td class="is-description"><span class="table-text">iPhone 5S Font Screen</span></td>
+										<td class="is-serial"><span class="table-text">11356-1</span></td>
+										<td class="is-qty"><span class="table-text">1</span></td>
+										<td class="is-price"><span class="table-text">$40.00</span></td>
+										<td class="is-extprice"><span class="table-text">$40.00</span><button class="delete is-delete"><i class="icon icon-delete is-delete"></i></button></td>
+									</tr>
+									<tr>
+										<td class="is-id"><span class="table-text">11357</span></td>
+										<td class="is-description"><span class="table-text">iPhone 5S Screen Replacement</span></td>
+										<td class="is-serial"></td>
+										<td class="is-qty"><span class="table-text">2</span></td>
+										<td class="is-price"><span class="table-text">$40.00</span></td>
+										<td class="is-extprice"><span class="table-text">$40.00</span><button class="delete is-delete"><i class="icon icon-delete is-delete"></i></button></td>
+									</tr>
+									<tr>
+										<td colspan="2">
+											<div class="select2-search">
+												<select class="js-select-search" placeholder="Choose Model..." style="width: 100%;">
+													<option value=""></option>
+													<option value="iPhone 5">iPhone 5</option>
+													<option value="iPhone 5">iPhone 5</option>
+													<option value="iPhone 5">iPhone 5</option>
+													<option value="iPhone 5">iPhone 5</option>
+												</select>
+											</div>
+										</td>
+										<td colspan="4">
+											<div class="table__mod">
+												<button class="ok"><i class="icon icon-check"></i></button>
+												<button class="delete"><i class="icon icon-delete"></i></button>
+											</div>
+										</td>
+									</tr>
+									<tr>
+										<td colspan="5">
+											<button class="add-link">Add Part</button>
+										</td>
+										<td><span class="table-text">Subtotal: $80.00</span></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+					<!--end accorion dropdown -->
+				</div>
+				<!-- end accordion block (js-accordion for work) -->
+			</div>
+			<!-- end page -->
+			<!-- begin page -->
+			<div class="page">
+				<!--begin title - just title for block-->
+				<div class="title">New Manufacturer</div>
+				<!--end title-->
+				<div class="block">
+					<!-- begin form-block -->
+					<div class="form">
+						<!-- begin form -->
+						<form action="">
+							<!-- begin form row (for clear floats) -->
+							<div class="form__row">
+								<!-- begin form col = width 1/3 by parent -->
+								<div class="form__col">
+									<!-- begin form field -->			
+									<div class="form__field">
+										<span class="label">Name*</span>
+										<input type="text" class="input">
+									</div>
+									<!-- end form field -->	
+									<!-- begin form field -->	
+									<div class="form__field">
+										<span class="label">Manufacturer*</span>
+										<div class="select select_mod js-select">
+											<i class="icon icon-arr-bot"></i>
+											<span class="select__text js-select-text"><span class="select__placeholder">Choose Manufacturer...</span></span>
+											<ul class="select__list js-select-list">
+												<li data-val="Active">Active</li>
+												<li data-val="Not Active">Not Active</li>
+											</ul>
+											<select>
+												<option value="Active">Active</option>
+												<option value="Not Active">Not Active</option>
+											</select>
+										</div>
+									</div>
+									<!-- end form field -->	
+									<!-- begin form field -->	
+									<div class="form__field">
+										<span class="label">Device Type*</span>
+										<div class="select select_mod js-select">
+											<i class="icon icon-arr-bot"></i>
+											<span class="select__text js-select-text"><span class="select__placeholder">Choose Device Type...</span></span>
+											<ul class="select__list js-select-list">
+												<li data-val="Active">Active</li>
+												<li data-val="Not Active">Not Active</li>
+											</ul>
+											<select>
+												<option value="Active">Active</option>
+												<option value="Not Active">Not Active</option>
+											</select>
+										</div>
+									</div>
+									<!-- end form field -->	
+								</div>
+								<!-- end form col -->
+								<!-- begin form col = width 1/3 by parent -->
+								<div class="form__col">
+									<div class="form__field">
+										<span class="label">Colors*</span>
+										<div class="select select_mod js-select">
+											<i class="icon icon-arr-bot"></i>
+											<span class="select__text js-select-text"><span class="select__placeholder">Choose Colors...</span></span>
+											<ul class="select__list js-select-list">
+												<li data-val="Active">Active</li>
+												<li data-val="Not Active">Not Active</li>
+											</ul>
+											<select>
+												<option value="Active">Active</option>
+												<option value="Not Active">Not Active</option>
+											</select>
+										</div>
+									</div>
+									<div class="form__field">
+										<span class="label">Carriers*</span>
+										<div class="select select_mod js-select">
+											<i class="icon icon-arr-bot"></i>
+											<span class="select__text js-select-text"><span class="select__placeholder">Choose Carriers...</span></span>
+											<ul class="select__list js-select-list">
+												<li data-val="Active">Active</li>
+												<li data-val="Not Active">Not Active</li>
+											</ul>
+											<select>
+												<option value="Active">Active</option>
+												<option value="Not Active">Not Active</option>
+											</select>
+										</div>
+									</div>
+									<div class="form__field">
+										<span class="label">Status*</span>
+										<div class="select select_mod js-select">
+											<i class="icon icon-arr-bot"></i>
+											<span class="select__text js-select-text"><span class="select__placeholder">Choose Status...</span></span>
+											<ul class="select__list js-select-list">
+												<li data-val="Active">Active</li>
+												<li data-val="Not Active">Not Active</li>
+											</ul>
+											<select>
+												<option value="Active">Active</option>
+												<option value="Not Active">Not Active</option>
+											</select>
+										</div>
+									</div>
+								</div>
+								<!-- end form col -->
+							</div>
+							<!-- end form row -->
+							<!-- begin btns (centering on the left) -->
+							<div class="btns">
+								<!--btn-simple small btns _blue/_red = background: blue/red-->
+								<button class="btn-simple btn-simple_blue">Done</button>
+								<button class="btn-simple btn-simple_red">Cancel</button>
+							</div>
+							<!-- end btns -->
+						</form>
+						<!-- end form -->
+					</div>
+					<!-- end form-block -->
+				</div>
+			</div>
+			<!-- end page -->
+			<!-- begin page -->
+			<div class="page">
+				<div class="js-accordion js-anchor" data-anchor="service">
+					<div class="title title_accordion js-accordion-arr is-active">
+						<!--title buttons-->
+						<div class="title__btns">
+							<!-- btn-link default - blue, _red - for red color-->
+							<button class="btn-link">Save</button>
+							<button class="btn-link btn-link_red">Cancel</button>
+							<!--end btn-link-->
+						</div>
+						<!--end title buttons-->
+						<!--title text = block name and btn-edit"-->
+						<div class="title__text">
+							<span class="js-accordion-link">Customer</span>
+							<button class="btn-edit"><i class="icon icon-edit"></i></button>
+						</div>
+						<!--end title-text-->
+					</div>
+					<div class="block block_accordion js-accordion-block" style="display: block;">
+						<div class="form">
+							<form action="">
+								<div class="form__row">
+									<div class="form__col">
+										<div class="form__field">
+											<span class="label">Account</span>
+											<div class="select select_mod js-select">
+												<i class="icon icon-arr-bot"></i>
+												<span class="select__text js-select-text">Personal</span>
+												<ul class="select__list js-select-list">
+													<li data-val="Personal" class="is-active">Personal</li>
+													<li data-val="Business">Business</li>
+												</ul>
+												<select>
+													<option value="Personal">Personal</option>
+													<option value="Business">Business</option>
+												</select>
+											</div>
+										</div>
+										<div class="form__field">
+											<span class="label">First Name</span>
+											<input type="text" class="input">
+										</div>
+										<div class="form__field">
+											<span class="label">Last Name</span>
+											<input type="text" class="input">
+										</div>
+									</div>
+									<div class="form__col">
+										<div class="form__field">
+											<span class="label">Address</span>
+											<input type="text" class="input">
+										</div>
+										<div class="form__field">
+											<span class="label">State</span>
+											<div class="select2-search">
+												<select class="js-select-search" placeholder="Choose State..." style="width: 190px;">
+													<option value=""></option>
+													<option value="UT">UT</option>
+													<option value="State">State</option>
+													<option value="State State State">State State State</option>
+													<option value="State State State">State State State</option>
+												</select>
+											</div>
+										</div>
+										<div class="form__field">
+											<span class="label">City</span>
+											<div class="select2-search">
+												<select class="js-select-search" placeholder="Choose City..." style="width: 190px;">
+													<option value=""></option>
+													<option value="City">City</option>
+													<option value="City">City</option>
+													<option value="City City City">City City City</option>
+													<option value="City City City">City City City</option>
+												</select>
+											</div>
+										</div>
+										<div class="form__field">
+											<span class="label">ZIP</span>
+											<input type="text" class="input">
+										</div>
+									</div>
+									<div class="form__col">
+										<div class="form__field">
+											<span class="label">Primary Phone</span>
+											<input type="text" class="input">
+										</div>
+										<div class="form__field">
+											<span class="label">Mobile Phone</span>
+											<input type="text" class="input">
+										</div>
+										<div class="form__field">
+											<span class="label">Email</span>
+											<input type="text" class="input">
+										</div>
+									</div>
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- end page -->
+			<!-- begin page -->
+			<div class="page">
+				<div class="title">Title</div>
+				<!--accordion dropdown -->
+				<div class="block">
+					<div class="form">
+						<form action="">
+							<div class="form__field">
+								<textarea name="" id="" cols="30" rows="2" class="textarea-med" placeholder="Some information here">Some Text is here</textarea>
+							</div>							
+							<!-- begin btns (centering on the left) -->
+							<div class="btns">
+								<!--btn-simple small btns _blue/_red = background: blue/red-->
+								<button class="btn-simple btn-simple_blue">Save</button>
+								<button class="btn-simple btn-simple_red">Cancel</button>
+							</div>
+							<!-- end btns -->
+						</form>
+					</div>					
+				</div>
+				<!--end accorion dropdown -->
+			</div>
+			<!-- end page -->
+			<!-- begin edit (edit_mod = padding-top: 0;) -->
+			<div class="edit edit_mod">		
+				<!--page nav (info)-->
+				<div class="info">
+					<!--info row-->
+					<div class="info__row">
+						<!--info col-->
+						<div class="info__col">
+							<ul>
+								<li>
+									<span class="info__label">Status</span>
+									<a href="#" class="btn-status btn-status_yellow">In Progress</a>
+								</li>
+								<li>
+									<span class="info__label">Priority:</span>
+									<span class="info__text">High</span>
+								</li>
+								<li>
+									<span class="info__label">Service Type:</span>
+									<span class="info__text">Screen Replacement</span>
+								</li>
+							</ul>
+						</div>
+						<!--end info col-->
+						<!--info col-->
+						<div class="info__col">
+							<ul>
+								<li>
+									<span class="info__label">Technician:</span>
+									<span class="info__text">Matk John</span>
+								</li>
+								<li>
+									<span class="info__label">Created Date:</span>
+									<span class="info__text">05/05/2015</span>
+								</li>
+								<li>
+									<span class="info__label">Due Date:</span>
+									<span class="info__text">12/05/2015</span>
+								</li>
+							</ul>
+						</div>
+						<!--end info col-->
+						<!--info col-->
+						<div class="info__col">
+							<ul>
+								<li>
+									<span class="info__label">Customer:</span>
+									<span class="info__text">Aurora Khulud Al-Rekavi</span>
+								</li>
+								<li>
+									<span class="info__label">Phone:</span>
+									<span class="info__text">+38000000000</span>
+								</li>
+								<li>
+									<span class="info__label">E-mail:</span>
+									<span class="info__text">example@gmail.com</span>
+								</li>
+							</ul>
+						</div>
+						<!--end info col-->
+						<!--info col-->
+						<div class="info__col">
+							<ul>
+								<li>
+									<span class="info__label">Subtotal:</span>
+									<span class="info__text">$120.00</span>
+								</li>
+								<li>
+									<span class="info__label">Balance:</span>
+									<span class="info__text is-red">$0.00</span>
+								</li>
+							</ul>
+						</div>
+						<!--end info col-->
+					</div>
+					<!--end info row-->
+					<!--info fixed element-->
+					<div class="info-fixed">
+						<!--just wrapper for center content-->
+						<div class="info-fixed__inner">
+							<!--info block-->
+							<div class="info__block">
+								<!-- btn print + print select -->
+								<div class="print">
+									<button class="btn-print">Print<i class="icon icon-print"></i></button>
+									<div class="select-print js-select">
+										<i class="icon icon-arr-bot"></i>
+										<span class="select-print__text js-select-text"></span>
+										<ul class="select-print__list js-select-list">
+											<li data-val="Work Order">Work Order</li>
+											<li data-val="Service Item">Service Item</li>
+										</ul>
+										<select>
+											<option value="Work Order">Work Order</option>
+											<option value="Service Item">Service Item</option>
+										</select>
+									</div>
+								</div>
+								<!-- end btn print + select -->
+								<!--nav links-->
+								<div class="links">
+									<ul>
+										<li><a href="#" data-id="customer" class="">Customer</a></li>
+										<li><a href="#" data-id="service" class="">Service Item</a></li>
+										<li><a href="#" data-id="order" class="">Work Order</a></li>
+										<li><a href="#" data-id="parts" class="">Parts</a></li>
+										<li><a href="#" data-id="labor" class="">Labor</a></li>
+										<li><a href="#" data-id="loaner" class="">Loaner</a></li>
+										<li><a href="#" data-id="payment" class="">Payment</a></li>
+									</ul>
+									<ul>
+										<li><a href="#" class="js-tabs-btn" data-btn="tab-comments">Comments</a></li>
+										<li><a href="#" class="js-tabs-btn" data-btn="tab-transactions">Transactions</a></li>
+										<li><a href="#" class="js-tabs-btn" data-btn="tab-history">History</a></li>
+									</ul>
+								</div>
+								<!--end nav links-->
+							</div>
+							<!--end info block-->
+						</div>	
+						<!--end wrapper-->					
+					</div>
+					<!--end info fixed element-->					
+				</div>
+				<!--end page nav-->
+				<div class="tabs-parent">
+					<div class="tabs js-tabs-parent">
+						<ul class="tabs__btns">
+							<li>
+								<a href="#" class="tab-link js-tabs-link is-active" data-btn="tab-comments">
+									<span>Comments</span>
+									<i class="icon icon-comments"></i>
+								</a>
+							</li>
+							<li>
+								<a href="#" class="tab-link js-tabs-link" data-btn="tab-transactions">
+									<span>Transactions</span>
+									<i class="icon icon-transaction"></i>
+								</a>
+							</li>
+							<li>
+								<a href="#" class="tab-link js-tabs-link" data-btn="tab-history">
+									<span>History</span>
+									<i class="icon icon-history"></i>
+								</a>
+							</li>
+						</ul>
+						<div class="tabs__block js-tabs-block is-active" data-block="tab-comments">
+							<div class="comment">
+								<div class="field-area is-active">
+									<textarea class="textarea" placeholder="Add comment"></textarea>
+									<div class="attach">
+										<i class="icon icon-attach"></i>
+										<p>To attach files drag & drop here or <a href="#">select files from your computer…</a>  or <a href="#">Google Docs…</a></p>
+										<div class="attach__mod">
+											<div class="attach__box">
+												<div class="cover">
+													<i class="icon icon-cover"></i>
+												</div>
+												<span>Labor</span>
+												<button class="delete"><i class="icon icon-delete"></i></button>
+											</div>
+											<div class="attach__box">
+												<div class="load"><i></i></div>
+												<span>Labor</span>
+												<button class="delete"><i class="icon icon-delete"></i></button>
+											</div>
+										</div>
+									</div>
+								</div>
+								<button class="btn-big btn-big_green">Add comment</button>
+								<div class="post">
+									<a href="#" class="author">
+										<i class="icon icon-user"></i>
+									</a>
+									<div class="post__info">
+										<div class="post__top">
+											<span class="post__author">By Smith, John 5/12/2015 4:25 PM</span>
+											<button class="btn-edit-full">
+												<i class="icon icon-edit"></i>
+												<span>Edit</span>
+											</button>
+											<button class="btn-delete-full">
+												<i class="icon icon-basket"></i>
+												<span>Delete</span>
+											</button>
+										</div>
+										<p>Order parts on line between 7:00 and 8:00 am on Monday</p>
+									</div>
+								</div>
+							</div>
+							<span class="comment-info">Last Modified By: Smith, John  5/12/2015 5:25 PM</span>
+							<div class="comment">
+								<div class="field-area">
+									<textarea class="textarea" placeholder="Edit comment"></textarea>
+									<div class="attach">
+										<i class="icon icon-attach"></i>
+										<p>To attach files drag & drop here or <a href="#">select files from your computer…</a>  or <a href="#">Google Docs…</a></p>
+									</div>
+								</div>
+								<div class="btns">
+									<button class="btn-link btn-link_green">Save</button>
+									<button class="btn-link btn-link_red">Cancel</button>
+								</div>
+							</div>
+						</div>
+						<div class="tabs__block js-tabs-block" data-block="tab-transactions">
+							<div class="transactions">
+								<table class="table">
+									<thead>
+										<tr>
+											<th>ID</th>
+											<th>Date</th>
+											<th>Store</th>
+											<th>Salesperson</th>
+											<th>Subtotal</th>
+											<th>Tax</th>
+											<th>Total</th>
+											<th>Voided</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td>209990</td>
+											<td>6/1/2015  7:45 AM</td>
+											<td>Ann_sto</td>
+											<td>Lovely Nick</td>
+											<td>$50.00</td>
+											<td>$0.00</td>
+											<td>$50.00</td>
+											<td>No</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</div>
+						<div class="tabs__block js-tabs-block" data-block="tab-history">
+							<div class="history">
+								<table class="history__table">
+									<thead>
+										<tr>
+											<th class="is-circle"></th>
+											<th class="is-date">Date</th>
+											<th class="is-employee">Employee</th>
+											<th class="is-log">History Log</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td class="is-circle">
+												<i style="background-color: #6e7185;"></i>
+											</td>
+											<td class="is-date">
+												<span>Mon 06/13/2015</span>
+												<span>7:45 AM</span>
+											</td>
+											<td class="is-employee">
+												<p>Smith, John</p>
+											</td>
+											<td class="is-log">
+												<p>Transaction <span>210201 (Trans ID 210201)</span></p>
+											</td>
+										</tr>
+										<tr>
+											<td class="is-circle">
+												<i style="background-color: #7f8296;"></i>
+											</td>
+											<td class="is-date">
+												<span>Mon 06/13/2015</span>
+												<span>7:45 AM</span>
+											</td>
+											<td class="is-employee">
+												<p>Smith, John</p>
+											</td>
+											<td class="is-log">
+												<p>Status <span>on Hold to Fixed</span></p>
+											</td>
+										</tr>
+										<tr>
+											<td class="is-circle">
+												<i style="background-color: #9295a5;"></i>
+											</td>
+											<td class="is-date">
+												<span>Mon 06/13/2015</span>
+												<span>7:45 AM</span>
+											</td>
+											<td class="is-employee">
+												<p>Smith, John</p>
+											</td>
+											<td class="is-log">
+												<p>Status <span>Waiting on Customer to On Hold</span></p>
+											</td>
+										</tr>
+										<tr>
+											<td class="is-circle">
+												<i style="background-color: #a5a7b4;"></i>
+											</td>
+											<td class="is-date">
+												<span>Mon 06/13/2015</span>
+												<span>7:45 AM</span>
+											</td>
+											<td class="is-employee">
+												<p>Smith, John</p>
+											</td>
+											<td class="is-log">
+												<p>Status <span>In Progress to Waiting on Customer</span></p>
+											</td>
+										</tr>
+										<tr>
+											<td class="is-circle">
+												<i style="background-color: #b7b9c4;"></i>
+											</td>
+											<td class="is-date">
+												<span>Mon 06/13/2015</span>
+												<span>7:45 AM</span>
+											</td>
+											<td class="is-employee">
+												<p>Smith, John</p>
+											</td>
+											<td class="is-log">
+												<p>Deposit <span>$50.00 to $70.00, (Trans ID 210200)</span></p>
+											</td>
+										</tr>
+										<tr>
+											<td class="is-circle">
+												<i style="background-color: #cacbd3;"></i>
+											</td>
+											<td class="is-date">
+												<span>Mon 06/13/2015</span>
+												<span>7:45 AM</span>
+											</td>
+											<td class="is-employee">
+												<p>Smith, John</p>
+											</td>
+											<td class="is-log">
+												<p>Status <span>New to In Progress</span>, Due Date <span>7/7/2015 to 7/8/2015</span></p>
+											</td>
+										</tr>
+										<tr>
+											<td class="is-circle">
+												<i style="background-color: #dcdde2;"></i>
+											</td>
+											<td class="is-date">
+												<span>Mon 06/13/2015</span>
+												<span>7:45 AM</span>
+											</td>
+											<td class="is-employee">
+												<p>Smith, John</p>
+											</td>
+											<td class="is-log">
+												<p>Work Order <span>#36,</span> Service Item <span>iPhone 5S 16 GB (3E4R5T),</span> Status <span>New,</span> Priority <span>Urgent,</span> Due Date <span>7/7/2015,</span> Technician <span>Lovely, Nick,</span> Loaner <span>iPhone 4 Wh 16GB (3E4R5T),</span> Deposit Taken <span>$50.00 (Trans ID 210199)</span></p>
+											</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</div>
+					</div>
+					<div class="edit__btns">
+						<button class="btn-simple btn-simple_small btn-simple_blue">Process</button>
+						<button class="btn-simple btn-simple_small btn-simple_red">Cancel </button>
+					</div>
+				</div>
+			</div>
+			<!-- end edit -->
+			<!-- begin page (page_mod = background: white;)-->
+			<div class="page page_mod">
+				<!-- begin page__section  -->
+				<div class="page__section">
+					<div class="page__titles">
+						<div class="page__col">Buttons</div>
+						<div class="page__col">Checkbox</div>
+						<div class="page__col">Radiobutton</div>
+						<div class="page__col">Add button</div>
+					</div>
+					<div class="page__block">
+						<!-- begin buttons -->
+						<div class="page__col">
+							<div class="page__row">
+								<div class="page__buttons">
+									<button class="btn-simple">Process</button>
+									<button class="btn-simple btn-simple_red">Cancel</button>
+								</div>
+								<div class="page__links">
+									<button class="btn-link">Save</button>
+									<button class="btn-link btn-link_red">Cancel</button>
+								</div>
+							</div>	
+							<div class="page__row">
+								<div class="page__buttons">
+									<button class="btn-big btn-big_green">Add comment</button>
+									<button class="btn-big">New Work Order</button>
+								</div>
+								<div class="page__links">
+									<button class="btn-link btn-link_green">Save</button>
+									<button class="btn-link btn-link_red">Cancel</button>
+								</div>
+							</div>							
+						</div>
+						<!-- end buttons -->
+						<!-- begin checkbox (checkbox = 16px, checkbox_mod = 20px  -->
+						<div class="page__col">
+							<div class="page__checkbox">
+								<label class="checkbox checkbox_mod">
+									<input type="checkbox"><span></span>
+								</label>
+							</div>
+							<div class="page__checkbox">
+								<label class="checkbox checkbox_mod">
+									<input type="checkbox" checked><span></span>
+								</label>
+							</div>
+							<div class="page__checkbox">
+								<label class="checkbox checkbox_mod">
+									<input type="checkbox" disabled><span></span>
+								</label>
+							</div>
+							<div class="page__checkbox">
+								<label class="checkbox checkbox_mod">
+									<input type="checkbox" checked disabled><span></span>
+								</label>
+							</div>
+						</div>
+						<!-- end checkbox (checkbox = 16px, checkbox_mod = 20px -->
+						<!-- begin radio buttons (radio buttons = 16px, checkbox_big = 20px  -->
+						<div class="page__col">							
+							<div class="page__radio">
+								<label class="radio radio_big">
+									<input type="radio"><span></span>
+								</label>
+							</div>
+							<div class="page__radio">
+								<label class="radio radio_big">
+									<input type="radio" checked><span></span>
+								</label>
+							</div>
+							<div class="page__radio">
+								<label class="radio radio_big">
+									<input type="radio" disabled><span></span>
+								</label>
+							</div>
+							<div class="page__radio">
+								<label class="radio radio_big">
+									<input type="radio" checked disabled><span></span>
+								</label>
+							</div>
+						</div>
+						<!-- end radio buttons (radio buttons = 16px, checkbox_big = 20px -->
+						<!-- begin add buttons (add buttons = font-size: 14px, add-link_small = 12px  -->
+						<div class="page__col">
+							<div class="page__add">
+								<button class="add-link add-link_small">Add Smth</button>
+							</div>
+							<div class="page__add">
+								<button class="add-link add-link_small is-active">Add Smth</button>
+							</div>
+							<div class="page__add">
+								<button class="add-link add-link_small" disabled>Add Smth</button>
+							</div>
+						</div>
+						<!-- end add buttons (add buttons = font-size: 14px, add-link_small = 12px -->
+					</div>
+				</div>
+				<!-- end page__section -->
+				<!-- begin page__section  -->
+				<div class="page__section">
+					<div class="page__titles">
+						<div class="page__col page__col-three">Text fields</div>
+						<div class="page__col page__col-three">Calendar</div>
+						<div class="page__col page__col-three">Dropdowns</div>
+					</div>
+					<div class="page__block">
+						<div class="page__col page__col-three">
+							<div class="page__row">
+								<!--field-->
+								<div class="form__field">
+									<!--label-->
+									<span class="label">Name</span>
+									<!--input-->
+									<input type="text" class="input">
+								</div>
+								<!--end field-->
+								<!--input field-->
+								<div class="form__field">
+									<!--label-->
+									<span class="label">Name</span>
+									<!--select2 (select with search-input)-->
+									<div class="select2-search">
+										<select class="js-select-search" placeholder="Choose State..." style="width: 190px;">
+											<option value=""></option>
+											<option value="UT">UT</option>
+											<option value="State">State</option>
+											<option value="State State State">State State State</option>
+											<option value="State State State">State State State</option>
+										</select>
+									</div>
+									<!--end select2-->
+								</div>
+								<!--end field-->
+								<!--search-->
+								<div class="form__field">
+									<div class="search search_full js-search">
+										<input type="text" class="search__input js-search-input" placeholder="Search item by ID, customer, phone or model...">
+										<button class="search__btn icon icon-search"></button>
+									</div>
+								</div>								
+								<!--end search-->
+								<!--field-->
+								<div class="form__field">
+									<span class="label">Name</span>
+									<!--input disabled-->
+									<input type="text" class="input input_mod" value="N/A" disabled>
+								</div>
+								<!--end field-->
+								<div class="form__field">
+									<div class="field">
+										<label>
+											<!--input input-error-->
+											<input type="text" class="input is-error">
+											<!--input error-message-->
+											<span class="error">This field is required.</span>
+										</label>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="page__col page__col-three">
+							<div class="page__row">
+								<!--datepicker (is-show = always visible)-->
+								<div class="js-calendar datepicker is-show"></div>
+								<!--end datepicker-->
+							</div>
+						</div>
+						<div class="page__col page__col-three">
+							<div class="page__row">
+								<!--select-->
+								<div class="select select_mod js-select">
+									<i class="icon icon-arr-bot"></i>
+									<span class="select__text js-select-text">Personal</span>
+									<ul class="select__list js-select-list">
+										<li data-val="Personal" class="is-active">Personal</li>
+										<li data-val="Business">Business</li>
+									</ul>
+									<select>
+										<option value="Personal">Personal</option>
+										<option value="Business">Business</option>
+									</select>
+								</div>
+								<!--end select-->
+							</div>
+							<div class="page__row">
+								<div class="page__select">
+									<!--multi-select-->
+									<div class="multi js-multi-parent">
+										<select name="" id="" class="js-multi-select" data-all="Status: All" placeholder="Status: All" multiple style="width: 100%;">
+											<option value="New">New</option>
+											<option value="On Hold">On Hold</option>
+											<option value="In Progress">In Progress</option>
+											<option value="Done">Done</option>
+										</select>
+									</div>
+									<!--end multi-select-->
+								</div>								
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- end page__section -->
+			</div>
+			<!-- end page -->
+		</section>
+		<!-- end container -->
+	</main>
+	<!-- end main -->
+
+<!-- load scripts -->
+<script src="js/lib/head.js" data-headjs-load="js/init.js"></script>
+</body>
+</html>
