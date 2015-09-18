@@ -19,6 +19,12 @@ body
 				+rotate(-180)
 		.container, .header
 			width: 100%
+		.header
+			.header__inner
+				&.header-fixed
+					padding: 4px 20px 4px 0
+		.info-fixed__inner
+			padding: 0
 .header
 	+clr
 	padding: 4px 20px
@@ -26,6 +32,24 @@ body
 	width: 80%
 	float: right
 	+transition(all 0.3s linear)
+	min-height: 52px
+	.header__inner
+		padding: 4px 20px 
+		background-color: #5F7583
+		&.header-fixed
+			position: fixed
+			top: 0
+			left: 0
+			right: 0
+			width: 100%
+			padding: 4px 20px 4px 20%
+			min-width: 960px
+			+transition(padding 0.3s linear)
+			z-index: 298 
+			+r(1000)
+				padding: 4px 20px 4px 192px 
+		.breadcrumbs
+			margin: 0 0 0 20px 
 	.btn-big
 		float: right
 		margin: 3px 0
@@ -723,7 +747,7 @@ body
 	&__col
 		width: 25%
 		display: table-cell
-		padding: 3px 13px
+		padding: 3px 12px
 		border-left: 1px solid #EEE
 		&:first-child
 			border: none

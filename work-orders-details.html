@@ -19,14 +19,16 @@
 
 	<!-- begin header  -->
 	<header class="header">
-		<button class="btn-big">New Work Order</button>
-		<div class="breadcrumbs">
-			<span class="breadcrumbs__icon"><i></i></span>
-			<ul>
-				<li><a href="#">All Work Orders</a></li>
-				<li><a href="#" class="is-active">Work Order #120</a></li>
-			</ul>
-		</div>
+		<div class="header__inner header-fixed">
+			<button class="btn-big">New Work Order</button>
+			<div class="breadcrumbs">
+				<span class="breadcrumbs__icon"><i></i></span>
+				<ul>
+					<li><a href="#">All Work Orders</a></li>
+					<li><a href="#" class="is-active">Work Order #120</a></li>
+				</ul>
+			</div>
+		</div>		
 	</header>
 	<!-- end header -->
 	<!-- begin sidebar  -->
@@ -65,72 +67,73 @@
 			<!-- begin edit  -->
 			<div class="edit edit_mod">
 				<div class="info">
-					<div class="info__row">
-						<div class="info__col">
-							<ul>
-								<li>
-									<span class="info__label">Status</span>
-									<a href="#" class="btn-status btn-status_yellow">In Progress</a>
-								</li>
-								<li>
-									<span class="info__label">Priority:</span>
-									<span class="info__text">High</span>
-								</li>
-								<li>
-									<span class="info__label">Service Type:</span>
-									<span class="info__text">Screen Replacement</span>
-								</li>
-							</ul>
-						</div>
-						<div class="info__col">
-							<ul>
-								<li>
-									<span class="info__label">Technician:</span>
-									<span class="info__text">Matk John</span>
-								</li>
-								<li>
-									<span class="info__label">Created Date:</span>
-									<span class="info__text">05/05/2015</span>
-								</li>
-								<li>
-									<span class="info__label">Due Date:</span>
-									<span class="info__text">12/05/2015</span>
-								</li>
-							</ul>
-						</div>
-						<div class="info__col">
-							<ul>
-								<li>
-									<span class="info__label">Customer:</span>
-									<span class="info__text">Aurora Khulud Al-Rekavi</span>
-								</li>
-								<li>
-									<span class="info__label">Phone:</span>
-									<span class="info__text">+38000000000</span>
-								</li>
-								<li>
-									<span class="info__label">E-mail:</span>
-									<span class="info__text">example@gmail.com</span>
-								</li>
-							</ul>
-						</div>
-						<div class="info__col">
-							<ul>
-								<li>
-									<span class="info__label">Subtotal:</span>
-									<span class="info__text">$120.00</span>
-								</li>
-								<li>
-									<span class="info__label">Balance:</span>
-									<span class="info__text is-red">$0.00</span>
-								</li>
-							</ul>
-						</div>
-					</div>
 					<!--info fixed element-->
 					<div class="info-fixed js-fixed-nav">
 						<!--just wrapper for center content-->
 						<div class="info-fixed__inner js-fixed-nav-in">
+							
+							<div class="info__row">
+								<div class="info__col">
+									<ul>
+										<li>
+											<span class="info__label">Status</span>
+											<a href="#" class="btn-status btn-status_yellow">In Progress</a>
+										</li>
+										<li>
+											<span class="info__label">Priority:</span>
+											<span class="info__text">High</span>
+										</li>
+										<li>
+											<span class="info__label">Service Type:</span>
+											<span class="info__text">Screen Replacement</span>
+										</li>
+									</ul>
+								</div>
+								<div class="info__col">
+									<ul>
+										<li>
+											<span class="info__label">Technician:</span>
+											<span class="info__text">Matk John</span>
+										</li>
+										<li>
+											<span class="info__label">Created Date:</span>
+											<span class="info__text">05/05/2015</span>
+										</li>
+										<li>
+											<span class="info__label">Due Date:</span>
+											<span class="info__text">12/05/2015</span>
+										</li>
+									</ul>
+								</div>
+								<div class="info__col">
+									<ul>
+										<li>
+											<span class="info__label">Customer:</span>
+											<span class="info__text">Aurora Khulud Al-Rekavi</span>
+										</li>
+										<li>
+											<span class="info__label">Phone:</span>
+											<span class="info__text">+38000000000</span>
+										</li>
+										<li>
+											<span class="info__label">E-mail:</span>
+											<span class="info__text">example@gmail.com</span>
+										</li>
+									</ul>
+								</div>
+								<div class="info__col">
+									<ul>
+										<li>
+											<span class="info__label">Subtotal:</span>
+											<span class="info__text">$120.00</span>
+										</li>
+										<li>
+											<span class="info__label">Balance:</span>
+											<span class="info__text is-red">$0.00</span>
+										</li>
+									</ul>
+								</div>
+							</div>
 							<!--info block-->
 							<div class="info__block">
 								<!-- btn print + print select -->
