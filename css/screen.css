@@ -403,7 +403,6 @@ a.link:hover { text-decoration: underline; }
 .textarea-med.is-error { border-color: #cb2429; }
 .textarea-med_mod:disabled { border-color: #eeeeee; background-color: #eeeeee; }
 
-.info-fixed__inner { -moz-transition: background 0.15s; -o-transition: background 0.15s; -webkit-transition: background 0.15s; transition: background 0.15s; }
 .info-fixed__inner.is-fixed { position: fixed; top: 52px; left: 0; right: 0; background: white; z-index: 298; padding: 0 0 0 20%; min-width: 960px; border-bottom: 1px solid #cacbd3; }
 @media only screen and (max-width: 1000px) { .info-fixed__inner.is-fixed { padding: 0 0 0 192px; } }
 .info-fixed__inner.is-fixed .info__row { padding: 11px 20px 5px; }
@@ -419,7 +418,7 @@ body.is-close .breadcrumbs__icon { -ms-transform: rotate(180deg); -webkit-transf
 body.is-close .breadcrumbs__icon:before { -ms-transform: rotate(-180deg); -webkit-transform: rotate(-180deg); transform: rotate(-180deg); }
 body.is-close .container, body.is-close .header { width: 100%; }
 body.is-close .header .header__inner.header-fixed { padding: 4px 20px 4px 0; }
-body.is-close .info-fixed__inner { padding: 0; -moz-transition: background 0.15s, padding 0.3s linear; -o-transition: background 0.15s, padding 0.3s linear; -webkit-transition: background 0.15s, padding 0.3s linear; transition: background 0.15s, padding 0.3s linear; }
+body.is-close .info-fixed__inner { padding: 0; -moz-transition: padding 0.3s linear; -o-transition: padding 0.3s linear; -webkit-transition: padding 0.3s linear; transition: padding 0.3s linear; }
 
 .header { *zoom: 1; padding: 4px 20px; background-color: #5f7583; width: 80%; float: right; -moz-transition: all 0.3s linear; -o-transition: all 0.3s linear; -webkit-transition: all 0.3s linear; transition: all 0.3s linear; min-height: 52px; }
 .header:after { content: " "; display: table; clear: both; }

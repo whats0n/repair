@@ -368,11 +368,13 @@ head.ready(function() {
 	// scroll
 	if ($('.js-fixed-nav').length) {
 		$(".js-anchor-link").click(function (){
-			var id = $(this).data('id');
+			var id = $(this).data('id'),
+				fixedHeight = $('.js-fixed-nav-in').outerHeight(),
+				headerHeight = $('.header-fixed').outerHeight();
 			$('.js-anchor-link').removeClass('is-active');
 			$(this).addClass('is-active');
 			$('html, body').animate({
-				scrollTop: $('.js-anchor[data-anchor="' + id + '"').offset().top - 0
+				scrollTop: $('.js-anchor[data-anchor="' + id + '"').offset().top - fixedHeight - headerHeight
 			}, 600);
 			$('.js-anchor[data-anchor="' + id + '"').each(function() {
 				$(this).find('.js-accordion-arr, .js-accordion-link').addClass('is-active');
@@ -382,9 +384,12 @@ head.ready(function() {
 		});
 		function scrollHeader() {
 			if ($('.js-fixed-nav').length) {
+				var fixedHeight = $('.js-fixed-nav-in').outerHeight(),
+					headerHeight = $('.header-fixed').outerHeight();
+
 				$('.js-anchor').each(function() {
 					var navHeight = $('.js-fixed-nav').outerHeight();
-					if ($(window).scrollTop() >= $(this).offset().top - $('.js-fixed-nav').outerHeight()) {
+					if ($(window).scrollTop() >= $(this).offset().top - fixedHeight - headerHeight) {
 						var id = $(this).attr("data-anchor");
 						$(".js-anchor-link").removeClass("is-active");
 						$(".js-anchor-link[data-id='"+id+"']").addClass("is-active");
@@ -399,7 +404,7 @@ head.ready(function() {
 		});
 
 		$(window).scroll(function() {
-			
+
 			var fixedHeight = $('.js-fixed-nav-in').outerHeight(),
 				headerHeight = $('.header-fixed').outerHeight(),
 				navTop = $('.js-fixed-nav').offset().top;
