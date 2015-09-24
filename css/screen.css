@@ -232,7 +232,7 @@ a.link:hover { text-decoration: underline; }
 .select__placeholder { color: #999999; }
 .select__text { position: relative; display: block; padding: 0 30px 0 10px; height: 32px; line-height: 30px; border: 1px solid #cacbd3; background-color: white; -moz-border-radius: 5px; -webkit-border-radius: 5px; border-radius: 5px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; z-index: 2; -moz-transition: border-color 0.2s; -o-transition: border-color 0.2s; -webkit-transition: border-color 0.2s; transition: border-color 0.2s; }
 .select__list { position: absolute; display: none; left: 0; right: 0; top: 100%; z-index: 100; -moz-border-radius: 0 0 5px 5px; -webkit-border-radius: 0; border-radius: 0 0 5px 5px; max-height: 200px; overflow-x: hidden; overflow-y: auto; background: white; -moz-box-shadow: 1.5px 2.6px 2.9px 0.1px rgba(0, 0, 0, 0.11); -webkit-box-shadow: 1.5px 2.6px 2.9px 0.1px rgba(0, 0, 0, 0.11); box-shadow: 1.5px 2.6px 2.9px 0.1px rgba(0, 0, 0, 0.11); padding: 0 0 5px; max-height: 250px; overflow: auto; }
-.select__list li { padding: 0 10px; cursor: pointer; line-height: 20px; -moz-transition: all 0.2s; -o-transition: all 0.2s; -webkit-transition: all 0.2s; transition: all 0.2s; }
+.select__list li { padding: 0 10px; cursor: pointer; line-height: 20px; -moz-transition: all 0.2s; -o-transition: all 0.2s; -webkit-transition: all 0.2s; transition: all 0.2s; color: #999999; }
 .select__list li:hover { background-color: #373f46; color: white; }
 .select__list li.is-active { display: none; }
 
@@ -293,6 +293,9 @@ a.link:hover { text-decoration: underline; }
 .select2-container--default.is-status .select2-results__option[aria-selected=true]:after { -ms-transform: scale(1); -webkit-transform: scale(1); transform: scale(1); filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false); opacity: 1; visibility: visible; }
 
 .select2-results__option { line-height: 16px; padding: 0 12px; }
+
+.select2-search_small .select2-container .select2-selection--single { height: 32px; }
+.select2-search_small .select2-container .select2-selection--single .select2-selection__rendered { font-size: 12px; }
 
 .print { position: relative; padding: 0 30px; }
 
@@ -626,7 +629,8 @@ body.is-close .info-fixed__inner { padding: 0; -moz-transition: padding 0.3s lin
 .form__row { *zoom: 1; }
 .form__row:after { content: " "; display: table; clear: both; }
 .form__col { width: 33.3%; float: left; }
-.form__field { padding-bottom: 13px; }
+.form__field { padding-bottom: 13px; *zoom: 1; }
+.form__field:after { content: " "; display: table; clear: both; }
 .form__field p { font-size: 12px; line-height: 16px; color: #373f46; }
 
 .models-table { border-bottom: 1px solid #cacbd3; }
