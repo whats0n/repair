@@ -741,17 +741,45 @@ body
 .info
 	background-color: #FFF
 	+border-radius(5px 5px 0 0)
+	&__titles
+		border-bottom: 1px solid #eeeeee 
+		background-color: #f8f8f8
+		+border-radius(5px 5px 0 0) 
+		ul
+			width: 100%
+			display: table
+			table-layout: fixed
+		li
+			display: table-cell
+			font-size: 14px
+			color: #373f46
+			line-height: 33px
+			border-left: 1px solid #eeeeee 
+			padding: 0 25px 
+			&:first-child
+				border: none
+			&.is-half
+				width: 50%
+				padding: 0 30px 
+			&.is-quarter
+				width: 25%
 	&__row
 		display: table
 		table-layout: fixed
 		padding: 11px 0 5px
 		width: 100%
+		&.is-mod
+			padding: 0
+			.info__col
+				padding: 14px 12px 8px 
 	&__col
 		width: 25%
 		display: table-cell
 		padding: 3px 12px
 		border-left: 1px solid #EEE
 		&:first-child
+			border: none
+		&.is-born
 			border: none
 		li
 			font-size: 12px
@@ -766,6 +794,16 @@ body
 	&__block
 		border-top: 1px solid #cacbd3
 		padding: 5px 0 4px
+		&.is-mod
+			background-color: #f8f8f8
+			border-bottom: 1px solid #cacbd3
+			.links
+				li
+					a
+						color: #373f46
+						&:hover, &.is-active
+							color: #2D6F95
+						
 		.print
 			float: right
 			margin: 5px 0

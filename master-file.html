@@ -751,10 +751,19 @@
 			<div class="edit edit_mod">		
 				<!--page nav (info)-->
 				<div class="info">
+					<!-- begin info titles  -->
+					<div class="info__titles">
+						<ul>
+							<li class="is-half">Title1</li>
+							<li class="is-quarter">Title2</li>
+							<li class="is-quarter">Title3</li>
+						</ul>
+					</div>
+					<!-- end info titles -->
 					<!--info row-->
-					<div class="info__row">
-						<!--info col-->
-						<div class="info__col">
+					<div class="info__row is-mod">
+						<!--info col (is-born = border: none;)-->
+						<div class="info__col is-born">
 							<ul>
 								<li>
 									<span class="info__label">Status</span>
@@ -772,7 +781,7 @@
 						</div>
 						<!--end info col-->
 						<!--info col-->
-						<div class="info__col">
+						<div class="info__col is-born">
 							<ul>
 								<li>
 									<span class="info__label">Technician:</span>
@@ -828,7 +837,7 @@
 						<!--just wrapper for center content-->
 						<div class="info-fixed__inner">
 							<!--info block-->
-							<div class="info__block">
+							<div class="info__block is-mod">
 								<!-- btn print + print select -->
 								<div class="print">
 									<button class="btn-print">Print<i class="icon icon-print"></i></button>
@@ -1127,7 +1136,7 @@
 						<div class="page__col">
 							<div class="page__row">
 								<div class="page__buttons">
-									<button class="btn-simple">Process</button>
+									<button class="btn-simple btn-simple_blue">Process</button>
 									<button class="btn-simple btn-simple_red">Cancel</button>
 								</div>
 								<div class="page__links">
@@ -1263,7 +1272,7 @@
 								<!-- begin tags  -->
 								<div class="form__field">
 									<div class="select2">
-										<select class="js-select-tags" multiple style="width: 262px;">
+										<select class="js-select-tags" multiple style="width: 100%;">
 											<option value="Water Inside">Water Inside</option>
 											<option value="Broken Screen">Broken Screen</option>
 											<option value="Scratched back cover">Scratched back cover</option>
