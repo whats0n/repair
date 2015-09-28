@@ -494,6 +494,7 @@ body.is-close .info-fixed__inner { padding: 0; -moz-transition: padding 0.3s lin
 
 .table { background-color: white; border-collapse: collapse; }
 .table thead { background-color: #eeeeee; border-bottom: 1px solid #cacbd3; }
+.table__header { background: #eeeeee; }
 .table tr:hover { background-color: #f8f8f8; }
 .table tr:hover a { text-decoration: underline; }
 .table tr:hover .btn-status { text-decoration: none; }
