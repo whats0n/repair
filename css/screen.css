@@ -494,11 +494,11 @@ body.is-close .info-fixed__inner { padding: 0; -moz-transition: padding 0.3s lin
 
 .table { background-color: white; border-collapse: collapse; }
 .table thead { background-color: #eeeeee; border-bottom: 1px solid #cacbd3; }
-.table__header { background: #eeeeee; }
 .table tr:hover { background-color: #f8f8f8; }
 .table tr:hover a { text-decoration: underline; }
 .table tr:hover .btn-status { text-decoration: none; }
 .table tr:last-child td { border-bottom: none; }
+.table tr.table__header { background: #eeeeee; }
 .table td, .table th { text-align: left; font-weight: normal; color: #373f46; font-size: 12px; line-height: 16px; vertical-align: top; }
 .table td.table__number, .table th.table__number { padding-left: 15px; }
 .table td.table__status, .table th.table__status { padding-right: 17px; }
