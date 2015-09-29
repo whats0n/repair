@@ -669,10 +669,11 @@ body
 		span
 			display: inline-block
 			vertical-align: middle
-			margin: 0 10px 0 0
+			margin: 0 10px 0 -25px
 			font-size: 14px
 			cursor: pointer
 			+user-select(none)
+			padding: 0 0 0 25px 
 	.btn-edit, .btn-link
 		vertical-align: middle
 
@@ -704,6 +705,7 @@ body
 	&__btns
 		text-align: right
 		font-size: 0
+		padding: 14px 0 0 
 		.btn-simple
 			margin: 0 0 0 10px
 
@@ -796,15 +798,15 @@ body
 	&__block
 		border-top: 1px solid #cacbd3
 		padding: 5px 0 4px
+		background-color: #f8f8f8
 		&.is-mod
-			background-color: #f8f8f8
 			border-bottom: 1px solid #cacbd3
-			.links
-				li
-					a
-						color: #373f46
-						&:hover, &.is-active
-							color: #2D6F95
+		.links
+			li
+				a
+					color: #373f46
+					&:hover, &.is-active
+						color: #2D6F95
 						
 		.print
 			float: right
@@ -900,52 +902,57 @@ body
 			vertical-align: middle
 
 .tabs
-	padding: 0 0 14px 0
 	&__btns
-		margin: 0 -2px
+		// margin: 0 -2px
 		font-size: 0
+		border-bottom: 1px solid #cacbd3
 		li
-			width: 33.3%
-			padding: 0 2px
+			// width: 33.3%
+			// padding: 0 2px
 			display: inline-block
 			vertical-align: top
-			&:first-child
-				width: 33.4%
+			// &:first-child
+			// 	width: 33.4%
+			margin: 0 0 -1px 
 	&__block
-		border: 1px solid #cacbd3
+		// border: 1px solid #cacbd3
 		border-top: none
-		background: #fff
+		// background: #fff
 		+border-radius(0 0 5px 5px)
 	&-parent
 		padding: 14px 14px 15px
 .tab-link
-	background-color: #cacbd3
-	border: 1px solid #cacbd3
+	// background-color: #cacbd3
+	border: 1px solid transparent
+	border-bottom: none
 	+border-radius(5px 5px 0 0)
 	line-height: 40px
-	padding: 0 20px
+	padding: 0 25px
 	text-align: center
-	color: #fff
 	display: block
 	font-size: 0
 	&.is-active
-		background-color: #fff
-		color: #373f46
-		border-bottom-color: #fff
-		.icon
-			color: #cacbd3
+		// background-color: #fff
+		border-color: #cacbd3
+		border-top-color: #2d6f95 
+		background-color: #f8f8f8
+		.icon, span
+			color: #373f46
 	.icon, span
 		display: inline-block
 		vertical-align: middle
 		font-size: 16px
+	.icon
+		color: #cacbd3
 	span
 		padding: 0 10px 0 0
+		color: #999
 
 .comment
-	padding: 0 15px 10px
+	padding: 0 0 10px
 	&:first-child
 		border-top: none
-		padding: 14px 15px 10px
+		padding: 14px 0 10px
 	&-info
 		color: #999
 		font-size: 12px
@@ -1004,14 +1011,21 @@ body
 		+border-radius(50%)
 
 .transactions
-	padding: 14px 0
+	margin: 14px 0 0
+	overflow: hidden	
+	border: 1px solid #cacbd3
+	border-radius: 5px
 	.table
 		th, td
 			padding: 11px 15px
 
 .history
-	padding: 10px 0 10px
+	padding: 10px 12px 10px
 	position: relative
+	background-color: white
+	border: 1px solid #cacbd3
+	border-radius: 5px
+	margin: 14px 0 0 
 	&:before
 		content: ""
 		width: 1px

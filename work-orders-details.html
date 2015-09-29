@@ -72,8 +72,19 @@
 						<!--just wrapper for center content-->
 						<div class="info-fixed__inner js-fixed-nav-in">
 							
-							<div class="info__row">
-								<div class="info__col">
+							<!-- begin info titles  -->
+							<div class="info__titles">
+								<ul>
+									<li class="is-half">Title1</li>
+									<li class="is-quarter">Title2</li>
+									<li class="is-quarter">Title3</li>
+								</ul>
+							</div>
+							<!-- end info titles -->
+							<!--info row-->
+							<div class="info__row is-mod">
+								<!--info col (is-born = border: none;)-->
+								<div class="info__col is-born">
 									<ul>
 										<li>
 											<span class="info__label">Status</span>
@@ -89,7 +100,9 @@
 										</li>
 									</ul>
 								</div>
-								<div class="info__col">
+								<!--end info col-->
+								<!--info col-->
+								<div class="info__col is-born">
 									<ul>
 										<li>
 											<span class="info__label">Technician:</span>
@@ -105,6 +118,8 @@
 										</li>
 									</ul>
 								</div>
+								<!--end info col-->
+								<!--info col-->
 								<div class="info__col">
 									<ul>
 										<li>
@@ -121,6 +136,8 @@
 										</li>
 									</ul>
 								</div>
+								<!--end info col-->
+								<!--info col-->
 								<div class="info__col">
 									<ul>
 										<li>
@@ -133,7 +150,9 @@
 										</li>
 									</ul>
 								</div>
+								<!--end info col-->
 							</div>
+							<!--end info row-->
 							<!--info block-->
 							<div class="info__block">
 								<!-- btn print + print select -->
@@ -717,9 +736,9 @@
 						</ul>
 						<div class="tabs__block js-tabs-block is-active" data-block="tab-comments">
 							<div class="comment">
-								<div class="field-area is-active">
+								<div class="field-area">
 									<textarea class="textarea" placeholder="Add comment"></textarea>
-									<div class="attach">
+									<!-- <div class="attach">
 										<i class="icon icon-attach"></i>
 										<p>To attach files drag & drop here or <a href="#">select files from your computer…</a>  or <a href="#">Google Docs…</a></p>
 										<div class="attach__mod">
@@ -736,7 +755,7 @@
 												<button class="delete"><i class="icon icon-delete"></i></button>
 											</div>
 										</div>
-									</div>
+									</div> -->
 								</div>
 								<button class="btn-big btn-big_green">Add comment</button>
 								<div class="post">
@@ -760,19 +779,28 @@
 								</div>
 							</div>
 							<span class="comment-info">Last Modified By: Smith, John  5/12/2015 5:25 PM</span>
-							<div class="comment">
-								<div class="field-area">
-									<textarea class="textarea" placeholder="Edit comment"></textarea>
-									<div class="attach">
-										<i class="icon icon-attach"></i>
-										<p>To attach files drag & drop here or <a href="#">select files from your computer…</a>  or <a href="#">Google Docs…</a></p>
+							<div class="comment">								
+								<div class="post">
+									<a href="#" class="author">
+										<i class="icon icon-user"></i>
+									</a>
+									<div class="post__info">
+										<div class="post__top">
+											<span class="post__author">By Smith, John 5/12/2015 4:25 PM</span>
+											<button class="btn-edit-full">
+												<i class="icon icon-edit"></i>
+												<span>Edit</span>
+											</button>
+											<button class="btn-delete-full">
+												<i class="icon icon-basket"></i>
+												<span>Delete</span>
+											</button>
+										</div>
+										<p>Order parts on line between 7:00 and 8:00 am on Monday</p>
 									</div>
 								</div>
-								<div class="btns">
-									<button class="btn-link btn-link_green">Save</button>
-									<button class="btn-link btn-link_red">Cancel</button>
-								</div>
 							</div>
+							<span class="comment-info">Last Modified By: Smith, John  5/12/2015 5:25 PM</span>
 						</div>
 						<div class="tabs__block js-tabs-block" data-block="tab-transactions">
 							<div class="transactions">
@@ -926,13 +954,15 @@
 							</div>
 						</div>
 					</div>
-					<div class="edit__btns">
-						<button class="btn-simple btn-simple_small btn-simple_blue">Process</button>
-						<button class="btn-simple btn-simple_small btn-simple_red">Cancel </button>
-					</div>
 				</div>
 			</div>
 			<!-- end edit -->
+			<!-- begin edib__btns -->
+			<div class="edit__btns">
+				<button class="btn-simple btn-simple_small btn-simple_blue">Process</button>
+				<button class="btn-simple btn-simple_small btn-simple_red">Cancel </button>
+			</div>
+			<!-- end edib__btns -->
 
 		</section>
 		<!-- end container -->
