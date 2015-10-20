@@ -1078,3 +1078,176 @@ body
 	display: none
 	&.is-active
 		display: block
+
+.popup-wrapper
+	position: fixed
+	top: 0
+	left: 0
+	bottom: 0
+	right: 0
+	padding: 20px
+	background: rgba(black, 0.6) 
+	z-index: 3000
+	min-height: 300px
+	overflow: auto 
+
+.popup
+	height: 100%
+	position: relative
+	width: 832px
+	margin: 0 auto 
+	background: #fff
+	padding: 47px 20px 67px  
+	border-radius: 5px
+	&__header
+		position: absolute
+		top: 0
+		left: 0
+		right: 0
+		height: 33px
+		padding: 0 30px 0 25px 
+		background: #5f7583 
+		border-radius: 5px 5px 0 0
+	&__title
+		line-height: 33px
+		font-size: 18px
+		color: #fff
+	&__footer
+		position: absolute
+		bottom: 0
+		left: 0
+		right: 0
+		padding: 12px 20px 13px
+		border-top: 1px solid #e5e5e5
+		text-align: right
+		font-size: 0
+		.btn-simple
+			margin-left: 13px
+	.icon
+		position: absolute
+		top: 50%
+		right: 15px
+		font-size: 12px
+		margin-top: -6px
+		color: #fff
+		cursor: pointer 
+	&__body
+		height: 100%
+		overflow: auto
+		padding: 40px 5px
+		border-radius: 5px
+		border: 1px solid #d3d3d3
+	&__logo
+		font-size: 0
+		margin-bottom: 35px
+	p, li
+		font-size: 16px
+		line-height: 1.3
+	&__label
+		float: left
+	&__sub-title
+		font-size: 36px
+		color: #a6a6a6
+		line-height: 1.3
+		font-weight: normal 
+		padding: 30px 0 20px 
+	&__box
+		padding: 0 0 20px
+		+clr
+		&-mod
+			padding: 0 0 20px 11px
+			+clr
+	&__section
+		+clr
+	&__left
+		float: left
+		width: 470px
+	&__right
+		float: right
+		width: 290px
+		text-align: right
+		padding: 0 20px 0 0 
+	&__table
+		margin-bottom: 50px
+		th, td
+			font-size: 16px
+		th
+			padding: 5px 10px 5px 10px
+			text-align: left
+			font-weight: normal
+		td
+			border: 1px solid #a6a6a6
+			padding: 5px 20px 5px 10px
+			&.is-price, &.is-extprice
+				text-align: right
+			&.is-total, &.is-total-price
+				border: none
+				text-align: left
+	&__disclaimer
+		max-width: 95%
+		padding: 0 0 110px 
+		p
+			margin-bottom: 10px
+	&__signature
+		font-size: 16px
+		line-height: 1.3
+		+clr
+		padding: 0 0 60px 
+		&-in
+			float: left
+			margin-right: 20px
+	&__date
+		float: right
+		margin-left: 30px
+	&__line
+		overflow: hidden
+		border-bottom: 1px solid #262626 
+		padding: 15px 0 0 
+	&__code
+		text-align: center
+		img
+			font-size: 0
+		span
+			display: block
+			font-size: 16px
+			line-height: 1.3
+	&__page
+		color: #939393
+		font-size: 0
+		p
+			position: relative
+			display: inline-block
+			padding: 0 18px 0 0
+			&:last-child
+				&:before
+					display: none
+			&:before
+				content: "" 
+				position: absolute
+				top: 0
+				bottom: 0
+				right: 9px
+				width: 1px
+				background: #939393 
+	h4
+		font-size: 24px
+		line-height: 1.3
+		margin-bottom: 20px
+		text-align: center
+	&__block
+		padding: 0 5px 30px
+	&__service, &__customer
+		li
+			+clr
+		&-title
+			float: left
+		&-info
+			overflow: hidden
+	&__service
+		&-title
+			width: 220px
+	&__customer
+		&-title
+			width: 250px
+	&__top
+		padding-bottom: 50px
