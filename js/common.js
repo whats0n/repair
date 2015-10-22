@@ -454,4 +454,46 @@ head.ready(function() {
 		});
 	});
 
+	//print
+	$('.js-print-btn').click(function() {
+		$(this).parents('.js-print').toggleClass('is-active');
+		return false;
+	});
+	$('.js-print').each(function() {
+		$('body').click(function() {
+			$('.js-print').removeClass('is-active');
+		});
+		$(this).click(function(event) {
+			event.stopPropagation();
+		});
+		$('.js-print-item').click(function() {
+			$('.js-print').removeClass('is-active');
+			var id = $(this).data('btn'),
+				items = $('.js-popup'),
+				currItem = $('.js-popup[data-block="' + id + '"]'),
+				popup = $('.js-popup-wrap');
+
+			popup.addClass('is-active');
+			items.removeClass('is-active');
+			currItem.addClass('is-active');
+
+			return false;
+		});
+	});
+
+	$('.js-popup-wrap').each(function() {
+		$('.js-popup-close').click(function() {
+			$('.js-popup-wrap').removeClass('is-active');
+			$('.js-popup').removeClass('is-active');
+			return false;
+		});
+		$('body').click(function() {
+			$('.js-popup-wrap').removeClass('is-active');
+			$('.js-popup').removeClass('is-active');
+		});
+		$('.js-popup').click(function() {
+			event.stopPropagation();
+		});
+	});
+
 });

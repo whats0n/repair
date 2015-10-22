@@ -156,19 +156,13 @@
 							<!--info block-->
 							<div class="info__block">
 								<!-- btn print + print select -->
-								<div class="print">
-									<button class="btn-print">Print<i class="icon icon-print"></i></button>
-									<div class="select-print js-select">
-										<i class="icon icon-arr-bot"></i>
-										<span class="select-print__text js-select-text"></span>
-										<ul class="select-print__list js-select-list">
-											<li data-val="Work Order">Work Order</li>
-											<li data-val="Service Item">Service Item</li>
+								<div class="print">									
+									<div class="select-print js-print">
+										<button class="btn-print js-print-btn">Print<i class="icon icon-print"></i><i class="icon icon-arr-bot"></i></button>
+										<ul class="select-print__list js-print-list">
+											<li class="js-print-item" data-btn="work">Work Order</li>
+											<li class="js-print-item" data-btn="service">Service Item</li>
 										</ul>
-										<select>
-											<option value="Work Order">Work Order</option>
-											<option value="Service Item">Service Item</option>
-										</select>
 									</div>
 								</div>
 								<!-- end btn print + select -->
