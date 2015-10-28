@@ -70,7 +70,7 @@ a.link:hover { text-decoration: underline; }
 .btn-link_red:active { color: #87171e; }
 .btn-link_red:active:disabled { color: #999999; }
 
-.btn-status { font-size: 12px; line-height: 22px; width: 100%; text-align: center; -moz-border-radius: 5px; -webkit-border-radius: 5px; border-radius: 5px; display: inline-block; max-width: 75px; }
+.btn-status { font-size: 12px; line-height: 22px; width: 100%; text-align: center; -moz-border-radius: 5px; -webkit-border-radius: 5px; border-radius: 5px; display: inline-block; max-width: 75px; -ms-text-overflow: ellipsis; text-overflow: ellipsis; overflow: hidden; white-space: nowrap; vertical-align: top; padding: 0 5px; }
 .btn-status_green { background-color: #21c684; color: white; }
 .btn-status_yellow { background-color: #fdf787; color: #373f46; }
 .btn-status_gray { background-color: #999999; color: white; }
@@ -218,6 +218,7 @@ a.link:hover { text-decoration: underline; }
 .select:hover .select__text { border-color: #373f46; }
 .select_mod.is-active .select__text { border-color: white; }
 .select_mod .select__text { border-color: #cacbd3; }
+.select_status .select__text .btn-status { margin: 4px 0; }
 .select_status .select__list li { line-height: 1; padding: 5px 0 0 40px; position: relative; }
 .select_status .select__list li:hover { background: none; }
 .select_status .select__list li.is-active { display: block; }

@@ -177,6 +177,12 @@ a
 	+border-radius(5px)
 	display: inline-block
 	max-width: 75px
+	-ms-text-overflow: ellipsis
+	text-overflow: ellipsis
+	overflow: hidden
+	white-space: nowrap
+	vertical-align: top
+	padding: 0 5px 
 	&_green
 		background-color: #21C684
 		color: #fff
@@ -887,6 +893,9 @@ a
 		.select__text
 			border-color: #CACBD3
 	&_status
+		.select__text
+			.btn-status
+				margin: 4px 0 
 		.select__list
 			li
 				line-height: 1
