@@ -126,11 +126,6 @@ head.ready(function() {
 	$('.js-datepicker-due').datepicker({
 		beforeShow: function() {
 			$(this).addClass('is-choice');
-			setTimeout(function() {
-				$('.ui-datepicker').addClass('ui-datepicker_mod');
-				$('.ui-datepicker').append('<div class="ui-datepicker__bottom"><label><span>Time</span><input class="ui-datepicker__input"></label><button class="button ui-datepicker-btn">Done</button></div>');
-				$('.ui-datepicker__input').mask('00:00:00');
-			}, 50);
 		},
 		onSelect: function() {
 			$('.js-datepicker-due').removeClass('is-choice');
