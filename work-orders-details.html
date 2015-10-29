@@ -20,7 +20,17 @@
 	<!-- begin header  -->
 	<header class="header">
 		<div class="header__inner header-fixed">
-			<button class="btn-big">New Work Order</button>
+			<!-- btn print + print select -->
+			<div class="print">									
+				<div class="select-print js-print">
+					<button class="btn-print btn-print_mod js-print-btn">Print<i class="icon icon-print"></i><i class="icon icon-arr-bot"></i></button>
+					<ul class="select-print__list js-print-list">
+						<li class="js-print-item" data-btn="work">Work Order</li>
+						<li class="js-print-item" data-btn="service">Service Item</li>
+					</ul>
+				</div>
+			</div>
+			<!-- end btn print + select -->
 			<div class="breadcrumbs">
 				<span class="breadcrumbs__icon"><i></i></span>
 				<ul>
@@ -65,144 +75,19 @@
 		<!-- begin container  -->
 		<section class="container js-anchor">
 			<!-- begin edit  -->
-			<div class="edit edit_mod">
-				<div class="info">
-					<!--info fixed element-->
-					<div class="info-fixed js-fixed-nav">
-						<!--just wrapper for center content-->
-						<div class="info-fixed__inner js-fixed-nav-in">
-							
-							<!-- begin info titles  -->
-							<div class="info__titles">
-								<ul>
-									<li class="is-half">Work Order</li>
-									<li class="is-quarter">Customer</li>
-									<li class="is-quarter">Payment</li>
-								</ul>
-							</div>
-							<!-- end info titles -->
-							<!--info row-->
-							<div class="info__row is-mod">
-								<!--info col (is-born = border: none;)-->
-								<div class="info__col is-born">
-									<ul>
-										<li>
-											<span class="info__label">Status</span>
-											<a href="#" class="btn-status btn-status_yellow">In Progress</a>
-										</li>
-										<li>
-											<span class="info__label">Priority:</span>
-											<span class="info__text">High</span>
-										</li>
-										<li>
-											<span class="info__label">Service Type:</span>
-											<span class="info__text">Screen Replacement</span>
-										</li>
-									</ul>
-								</div>
-								<!--end info col-->
-								<!--info col-->
-								<div class="info__col is-born">
-									<ul>
-										<li>
-											<span class="info__label">Technician:</span>
-											<span class="info__text">Matk John</span>
-										</li>
-										<li>
-											<span class="info__label">Created Date:</span>
-											<span class="info__text">05/05/2015</span>
-										</li>
-										<li>
-											<span class="info__label">Due Date:</span>
-											<span class="info__text">12/05/2015</span>
-										</li>
-									</ul>
-								</div>
-								<!--end info col-->
-								<!--info col-->
-								<div class="info__col">
-									<ul>
-										<li>
-											<span class="info__label">Customer:</span>
-											<span class="info__text">Aurora Khulud Al-Rekavi</span>
-										</li>
-										<li>
-											<span class="info__label">Phone:</span>
-											<span class="info__text">+38000000000</span>
-										</li>
-										<li>
-											<span class="info__label">E-mail:</span>
-											<span class="info__text">example@gmail.com</span>
-										</li>
-									</ul>
-								</div>
-								<!--end info col-->
-								<!--info col-->
-								<div class="info__col">
-									<ul>
-										<li>
-											<span class="info__label">Subtotal:</span>
-											<span class="info__text">$120.00</span>
-										</li>
-										<li>
-											<span class="info__label">Balance:</span>
-											<span class="info__text is-red">$0.00</span>
-										</li>
-									</ul>
-								</div>
-								<!--end info col-->
-							</div>
-							<!--end info row-->
-							<!--info block-->
-							<div class="info__block">
-								<!-- btn print + print select -->
-								<div class="print">									
-									<div class="select-print js-print">
-										<button class="btn-print js-print-btn">Print<i class="icon icon-print"></i><i class="icon icon-arr-bot"></i></button>
-										<ul class="select-print__list js-print-list">
-											<li class="js-print-item" data-btn="work">Work Order</li>
-											<li class="js-print-item" data-btn="service">Service Item</li>
-										</ul>
-									</div>
-								</div>
-								<!-- end btn print + select -->
-								<!--nav links-->
-								<div class="links">
-									<ul>
-										<li><a href="#" data-id="customer" class="js-anchor-link">Customer</a></li>
-										<li><a href="#" data-id="service" class="js-anchor-link">Service Item</a></li>
-										<li><a href="#" data-id="order" class="js-anchor-link">Work Order</a></li>
-										<li><a href="#" data-id="parts" class="js-anchor-link">Parts</a></li>
-										<li><a href="#" data-id="labor" class="js-anchor-link">Labor</a></li>
-										<li><a href="#" data-id="loaner" class="js-anchor-link">Loaner</a></li>
-										<li><a href="#" data-id="payment" class="js-anchor-link">Payment</a></li>
-									</ul>
-									<ul>
-										<li><a href="#" class="js-tabs-btn" data-btn="tab-comments">Comments</a></li>
-										<li><a href="#" class="js-tabs-btn" data-btn="tab-transactions">Transactions</a></li>
-										<li><a href="#" class="js-tabs-btn" data-btn="tab-history">History</a></li>
-									</ul>
-								</div>
-								<!--end nav links-->
-							</div>
-							<!--end info block-->
-						</div>	
-						<!--end wrapper-->					
-					</div>
-					<!--end info fixed element-->	
-				</div>
+			<div class="edit">
 				<div class="js-accordion js-anchor" data-anchor="customer">
-					<div class="title title_accordion js-accordion-arr">
+					<div class="title title_accordion js-accordion-arr	is-active">
 						<div class="title__btns">
 							<button class="btn-link">Save</button>
 							<button class="btn-link btn-link_red">Cancel</button>
 						</div>
 						<div class="title__text">
-							<span class="js-accordion-link">Customer</span>
+							<span class="js-accordion-link is-active">Customer</span>
 							<button class="btn-edit"><i class="icon icon-edit"></i></button>
 						</div>
 					</div>
-					<div class="block block_accordion js-accordion-block">
+					<div class="block js-accordion-block">
 						<div class="form">
 							<form action="">
 								<div class="form__row">
@@ -285,17 +170,17 @@
 					</div>
 				</div>
 				<div class="js-accordion js-anchor" data-anchor="service">
-					<div class="title title_accordion js-accordion-arr">
+					<div class="title title_accordion js-accordion-arr	is-active">
 						<div class="title__btns">
 							<button class="btn-link">Save</button>
 							<button class="btn-link btn-link_red">Cancel</button>
 						</div>
 						<div class="title__text">
-							<span class="js-accordion-link">Service Item</span>
+							<span class="js-accordion-link is-active">Service Item</span>
 							<button class="btn-edit"><i class="icon icon-edit"></i></button>
 						</div>
 					</div>
-					<div class="block block_accordion js-accordion-block">
+					<div class="block js-accordion-block">
 						<div class="form">
 							<form action="">
 								<div class="form__row">
@@ -383,17 +268,17 @@
 					</div>
 				</div>
 				<div class="js-accordion js-anchor" data-anchor="order">
-					<div class="title title_accordion js-accordion-arr">
+					<div class="title title_accordion js-accordion-arr	is-active">
 						<div class="title__btns">
 							<button class="btn-link">Save</button>
 							<button class="btn-link btn-link_red">Cancel</button>
 						</div>
 						<div class="title__text">
-							<span class="js-accordion-link">Work Order</span>
+							<span class="js-accordion-link is-active">Work Order</span>
 							<button class="btn-edit"><i class="icon icon-edit"></i></button>
 						</div>
 					</div>
-					<div class="block block_accordion js-accordion-block">
+					<div class="block js-accordion-block">
 						<div class="form">
 							<form action="">
 								<div class="form__row">
@@ -423,7 +308,7 @@
 										</div>
 										<div class="form__field">
 											<span class="label">Description</span>
-											<input type="text" class="input">
+											<textarea class="textarea" placeholder="Add comment"></textarea>
 										</div>
 										<div class="form__field">
 											<span class="label">Referral</span>
@@ -445,6 +330,40 @@
 												<i class="icon icon-calendar"></i>
 												<input type="text" class="js-datepicker-due input">
 											</label>
+											<div class="form__field-date">
+												<div class="form__field-time">
+													<select class="js-select-time" style="width: 100%;">
+														<option value="01">01</option>
+														<option value="02">02</option>
+														<option value="03">03</option>
+														<option value="04">04</option>
+														<option value="05">05</option>
+														<option value="06">06</option>
+														<option value="07">07</option>
+														<option value="08">08</option>
+														<option value="09">09</option>
+														<option value="10">10</option>
+														<option value="11">11</option>
+														<option value="12">12</option>
+													</select>
+												</div>
+												<div class="form__field-time">
+													<select class="js-select-time" style="width: 100%;">
+														<option value="10">10</option>
+														<option value="20">20</option>
+														<option value="30">30</option>
+														<option value="40">40</option>
+														<option value="50">50</option>
+														<option value="60">60</option>
+													</select>
+												</div>
+												<div class="form__field-time">
+													<select class="js-select-time" style="width: 100%;">
+														<option value="AM">AM</option>
+														<option value="PM">PM</option>
+													</select>
+												</div>
+											</div>
 										</div>
 										<div class="form__field">
 											<span class="label">Technician</span>
@@ -479,13 +398,13 @@
 					</div>
 				</div>
 				<div class="js-accordion js-anchor" data-anchor="parts">
-					<div class="title title_accordion js-accordion-arr">
+					<div class="title title_accordion js-accordion-arr	is-active">
 						<div class="title__text">
-							<span class="js-accordion-link">Parts</span>
+							<span class="js-accordion-link is-active">Parts</span>
 							<button class="btn-edit"><i class="icon icon-edit"></i></button>
 						</div>
 					</div>
-					<div class="block block_accordion js-accordion-block">
+					<div class="block js-accordion-block">
 						<div class="order">
 							<table class="table">
 								<thead>
@@ -546,13 +465,13 @@
 					</div>
 				</div>
 				<div class="js-accordion js-anchor" data-anchor="labor">
-					<div class="title title_accordion js-accordion-arr">
+					<div class="title title_accordion js-accordion-arr	is-active">
 						<div class="title__text">
-							<span class="js-accordion-link">Labors</span>
+							<span class="js-accordion-link is-active">Labors</span>
 							<button class="btn-edit"><i class="icon icon-edit"></i></button>
 						</div>
 					</div>
-					<div class="block block_accordion js-accordion-block">
+					<div class="block js-accordion-block">
 						<div class="order">
 							<table class="table">
 								<thead>
@@ -613,13 +532,13 @@
 					</div>
 				</div>
 				<div class="js-accordion js-anchor" data-anchor="loaner">
-					<div class="title title_accordion js-accordion-arr">
+					<div class="title title_accordion js-accordion-arr	is-active">
 						<div class="title__text">
-							<span class="js-accordion-link">Loaner</span>
+							<span class="js-accordion-link is-active">Loaner</span>
 							<button class="btn-edit"><i class="icon icon-edit"></i></button>
 						</div>
 					</div>
-					<div class="block block_accordion js-accordion-block">
+					<div class="block js-accordion-block">
 						<div class="order">
 							<table class="table">
 								<thead>
@@ -652,13 +571,13 @@
 					</div>
 				</div>
 				<div class="js-accordion js-anchor" data-anchor="payment">
-					<div class="title title_accordion js-accordion-arr">
+					<div class="title title_accordion js-accordion-arr	is-active">
 						<div class="title__text">
-							<span class="js-accordion-link">Payment</span>
+							<span class="js-accordion-link is-active">Payment</span>
 							<button class="btn-edit"><i class="icon icon-edit"></i></button>
 						</div>
 					</div>
-					<div class="block block_accordion js-accordion-block">
+					<div class="block js-accordion-block">
 						<div class="order">
 							<table class="table">
 								<tbody>

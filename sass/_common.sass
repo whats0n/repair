@@ -1204,6 +1204,7 @@ a
 			padding: 0 35px 0 10px
 	.select2-results>.select2-results__options
 		padding: 0 0 5px
+		max-height: 205px 
 	.select2-results__option
 		color: #999
 		font-size: 12px
@@ -1282,6 +1283,9 @@ a
 			color: #373f46 
 			background: #fff 
 			+box-shadow(1.5px 2.6px 2.9px 0.1px rgba(0, 0, 0, 0.11))
+			&_mod
+				.icon
+					color: #373f46 
 	.icon
 		top: 50%
 		position: absolute
@@ -1312,6 +1316,11 @@ a
 			&:hover
 				background-color: #373F46
 				color: #fff
+	&_mod
+		color: #fff
+		font-size: 16px
+		.icon
+			color: #fff 
 
 .btn-print
 	font-size: 12px
@@ -1323,9 +1332,10 @@ a
 	padding: 5px 54px 5px 10px
 	position: relative
 	+border-radius(5px 5px 0 0)
+	+transition(color 0.2s)
 	&:hover
 		color: #373f46
-		.icon-print
+		.icon
 			color: #373f46
 	.icon-print
 		position: absolute
@@ -1334,6 +1344,11 @@ a
 		color: #999
 		margin-top: -8px
 		right: 30px
+	&_mod
+		color: #fff
+		font-size: 16px
+		.icon
+			color: #fff 
 
 .btn-edit
 	font-size: 16px
@@ -1461,7 +1476,8 @@ a
 	width: 100%
 	max-width: 100%
 	min-width: 100%
-	min-height: 130px
+	min-height: 70px
+	max-height: 140px 
 	background-color: white
 	border: 1px solid #cacbd3
 	+border-radius(5px)

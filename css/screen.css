@@ -280,7 +280,7 @@ a.link:hover { text-decoration: underline; }
 .select2-container--default .select2-search--dropdown { padding: 0 10px 9px; position: relative; }
 .select2-container--default .select2-search--dropdown:before { content: "\e600"; font-family: "icomoon"; speak: none; font-style: normal; font-weight: normal; font-variant: normal; text-transform: none; line-height: 1; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; font-size: 16px; color: #cacbd3; position: absolute; top: 3px; right: 21px; }
 .select2-container--default .select2-search--dropdown .select2-search__field { -moz-border-radius: 5px; -webkit-border-radius: 5px; border-radius: 5px; border: 1px solid #cacbd3; height: 22px; padding: 0 35px 0 10px; }
-.select2-container--default .select2-results > .select2-results__options { padding: 0 0 5px; }
+.select2-container--default .select2-results > .select2-results__options { padding: 0 0 5px; max-height: 205px; }
 .select2-container--default .select2-results__option { color: #999999; font-size: 12px; }
 .select2-container--default .select2-results__option[aria-selected=true] { background: none; color: #999999; }
 .select2-container--default .select2-results__option--highlighted[aria-selected] { background-color: #373f46; color: white; }
@@ -304,15 +304,20 @@ a.link:hover { text-decoration: underline; }
 .select-print.is-active .select-print__list { display: block; }
 .select-print.is-active .icon-arr-bot { -ms-transform: rotate(-180deg); -webkit-transform: rotate(-180deg); transform: rotate(-180deg); z-index: 201; }
 .select-print.is-active .btn-print { color: #373f46; background: white; -moz-box-shadow: 1.5px 2.6px 2.9px 0.1px rgba(0, 0, 0, 0.11); -webkit-box-shadow: 1.5px 2.6px 2.9px 0.1px rgba(0, 0, 0, 0.11); box-shadow: 1.5px 2.6px 2.9px 0.1px rgba(0, 0, 0, 0.11); }
+.select-print.is-active .btn-print_mod .icon { color: #373f46; }
 .select-print .icon { top: 50%; position: absolute; font-size: 6px; color: #373f46; right: 15px; margin-top: -3px; -moz-transition: all 0.2s; -o-transition: all 0.2s; -webkit-transition: all 0.2s; transition: all 0.2s; }
 .select-print__list { position: absolute; display: none; right: 0; top: 100%; z-index: 100; -moz-border-radius: 0 0 5px 5px; -webkit-border-radius: 0; border-radius: 0 0 5px 5px; max-height: 200px; overflow-x: hidden; overflow-y: auto; background: white; -moz-box-shadow: 1.5px 2.6px 2.9px 0.1px rgba(0, 0, 0, 0.11); -webkit-box-shadow: 1.5px 2.6px 2.9px 0.1px rgba(0, 0, 0, 0.11); box-shadow: 1.5px 2.6px 2.9px 0.1px rgba(0, 0, 0, 0.11); padding: 0 0 5px; width: 123px; }
 .select-print__list li { padding: 0 30px 0 10px; cursor: pointer; line-height: 20px; -moz-transition: all 0.2s; -o-transition: all 0.2s; -webkit-transition: all 0.2s; transition: all 0.2s; }
 .select-print__list li:hover { background-color: #373f46; color: white; }
+.select-print_mod { color: white; font-size: 16px; }
+.select-print_mod .icon { color: white; }
 
-.btn-print { font-size: 12px; color: #999999; line-height: 16px; display: inline-block; vertical-align: top; background: none; padding: 5px 54px 5px 10px; position: relative; -moz-border-radius: 5px 5px 0 0; -webkit-border-radius: 5px; border-radius: 5px 5px 0 0; }
+.btn-print { font-size: 12px; color: #999999; line-height: 16px; display: inline-block; vertical-align: top; background: none; padding: 5px 54px 5px 10px; position: relative; -moz-border-radius: 5px 5px 0 0; -webkit-border-radius: 5px; border-radius: 5px 5px 0 0; -moz-transition: color 0.2s; -o-transition: color 0.2s; -webkit-transition: color 0.2s; transition: color 0.2s; }
 .btn-print:hover { color: #373f46; }
-.btn-print:hover .icon-print { color: #373f46; }
+.btn-print:hover .icon { color: #373f46; }
 .btn-print .icon-print { position: absolute; top: 50%; font-size: 16px; color: #999999; margin-top: -8px; right: 30px; }
+.btn-print_mod { color: white; font-size: 16px; }
+.btn-print_mod .icon { color: white; }
 
 .btn-edit { font-size: 16px; color: #cacbd3; background: none; display: inline-block; vertical-align: top; }
 .btn-edit:hover { color: #373f46; }
@@ -349,7 +354,7 @@ a.link:hover { text-decoration: underline; }
 .attach__box .delete { position: absolute; top: 0; right: 0; }
 .attach__box span { font-size: 12px; line-height: 16px; color: #373f46; display: block; padding: 2px 0 0; }
 
-.textarea { padding: 8px 10px; width: 100%; max-width: 100%; min-width: 100%; min-height: 130px; background-color: white; border: 1px solid #cacbd3; -moz-border-radius: 5px; -webkit-border-radius: 5px; border-radius: 5px; color: #373f46; font-size: 12px; display: block; }
+.textarea { padding: 8px 10px; width: 100%; max-width: 100%; min-width: 100%; min-height: 70px; max-height: 140px; background-color: white; border: 1px solid #cacbd3; -moz-border-radius: 5px; -webkit-border-radius: 5px; border-radius: 5px; color: #373f46; font-size: 12px; display: block; }
 .textarea:-moz-placeholder, .textarea::-moz-placeholder { color: #999999; opacity: 1; }
 .textarea::-webkit-input-placeholder { color: #999999; }
 .textarea:hover, .textarea:focus { border-color: #373f46; }
@@ -430,6 +435,7 @@ body.is-close .info-fixed__inner { padding: 0; -moz-transition: padding 0.3s lin
 @media only screen and (max-width: 1000px) { .header .header__inner.header-fixed { padding: 4px 20px 4px 192px; } }
 .header .header__inner .breadcrumbs { margin: 0 0 0 20px; }
 .header .btn-big { float: right; margin: 3px 0; min-width: 144px; }
+.header .print { float: right; margin: 10px 0 0; }
 
 .logo { font-size: 22px; color: white; display: inline-block; vertical-align: top; padding: 0 0 0 46px; position: relative; line-height: 37px; }
 .logo:before { content: ""; position: absolute; top: 0; left: 0; background: url('../img/icons-sfd7c59db01.png') 0 0 no-repeat; width: 36px; height: 37px; }
@@ -633,6 +639,10 @@ body.is-close .info-fixed__inner { padding: 0; -moz-transition: padding 0.3s lin
 .form__field { padding-bottom: 13px; *zoom: 1; }
 .form__field:after { content: " "; display: table; clear: both; }
 .form__field p { font-size: 12px; line-height: 16px; color: #373f46; }
+.form__field .textarea { max-width: 190px; min-width: 190px; max-height: 200px; min-height: 100px; }
+.form__field-date { max-width: 200px; padding: 14px 0 26px; *zoom: 1; }
+.form__field-date:after { content: " "; display: table; clear: both; }
+.form__field-time { width: 33.33%; float: left; padding: 0 10px 0 0; }
 
 .models-table { border-bottom: 1px solid #cacbd3; }
 .models-table .table td, .models-table .table th { padding: 10px 15px 18px; }

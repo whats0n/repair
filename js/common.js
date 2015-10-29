@@ -288,6 +288,10 @@ head.ready(function() {
 		});
 	});
 
+	$('.js-select-time').select2({
+		minimumResultsForSearch: -1
+	});
+
 
 	$(document).ready(function() {
 		$(document).click(function() {

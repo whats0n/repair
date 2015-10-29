@@ -55,7 +55,9 @@ body
 		float: right
 		margin: 3px 0
 		min-width: 144px
-
+	.print
+		float: right
+		margin: 10px 0 0 
 .logo
 	font-size: 22px
 	color: #fff
@@ -735,6 +737,19 @@ body
 			font-size: 12px
 			line-height: 16px
 			color: #373f46
+		.textarea
+			max-width: 190px
+			min-width: 190px 
+			max-height: 200px
+			min-height: 100px 
+		&-date
+			max-width: 200px
+			padding: 14px 0 26px 
+			+clr
+		&-time
+			width: 33.33% 
+			float: left
+			padding: 0 10px 0 0
 
 .models-table
 	border-bottom: 1px solid #cacbd3
@@ -902,27 +917,19 @@ body
 
 .tabs
 	&__btns
-		// margin: 0 -2px
 		padding: 0 20px 
 		font-size: 0
 		border-bottom: 1px solid #cacbd3
 		li
-			// width: 33.3%
-			// padding: 0 2px
 			display: inline-block
 			vertical-align: top
-			// &:first-child
-			// 	width: 33.4%
 			margin: 0 0 -1px 
 	&__block
-		// border: 1px solid #cacbd3
 		border-top: none
-		// background: #fff
 		+border-radius(0 0 5px 5px)
 	&-parent
 		padding: 14px 14px 15px
 .tab-link
-	// background-color: #cacbd3
 	border: 1px solid transparent
 	border-bottom: none
 	+border-radius(5px 5px 0 0)
@@ -932,7 +939,6 @@ body
 	display: block
 	font-size: 0
 	&.is-active
-		// background-color: #fff
 		border-color: #cacbd3
 		border-top-color: #2d6f95 
 		background-color: #f8f8f8
