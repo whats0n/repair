@@ -424,8 +424,14 @@ a.link:hover { text-decoration: underline; }
 .ui-dialog .ui-dialog-buttonpane { background: white; border-top: 1px solid #eeeeee; padding: 12px 10px 11px; -moz-border-radius: 0 0 5px 5px; -webkit-border-radius: 0; border-radius: 0 0 5px 5px; }
 .ui-dialog .ui-dialog-buttonpane .ui-button { color: white; font-size: 12px; line-height: 32px; height: 32px; background: #2d6f95; -moz-border-radius: 5px; -webkit-border-radius: 5px; border-radius: 5px; border: none; -moz-box-shadow: none; -webkit-box-shadow: none; box-shadow: none; width: 84px; }
 .ui-dialog .ui-dialog-buttonpane .ui-button:hover { background: #215d7f; }
+.ui-dialog .ui-dialog-buttonpane .ui-button:active { background: #1a4964; }
+.ui-dialog .ui-dialog-buttonpane .ui-button:disabled { color: #999999; background: #eeeeee; }
 .ui-dialog .ui-dialog-buttonpane .ui-button:active, .ui-dialog .ui-dialog-buttonpane .ui-button:focus, .ui-dialog .ui-dialog-buttonpane .ui-button:hover { -moz-box-shadow: none; -webkit-box-shadow: none; box-shadow: none; border: none; color: white; }
 .ui-dialog .ui-dialog-buttonpane .ui-button:active { background: #1a4964; }
+.ui-dialog .ui-dialog-buttonpane .ui-button.is-cancel { background: #cb222e; }
+.ui-dialog .ui-dialog-buttonpane .ui-button.is-cancel:hover { background: #a41c25; }
+.ui-dialog .ui-dialog-buttonpane .ui-button.is-cancel:active { background: #87171e; }
+.ui-dialog .ui-dialog-buttonpane .ui-button.is-cancel:disabled { color: #999999; background: #eeeeee; }
 .ui-dialog .ui-dialog-content { padding: 29px 15px 22px 65px; position: relative; }
 .ui-dialog .ui-dialog-content .ui-icon { position: absolute; top: 20px; left: 20px; background: url("../img/svg/dialog.svg") no-repeat 0 0; -moz-background-size: 25px 24px; -o-background-size: 25px 24px; -webkit-background-size: 25px 24px; background-size: 25px 24px; width: 25px; height: 24px; display: inline-block; margin: 0 !important; }
 .ui-dialog .ui-dialog-content p { color: #212121; font-size: 16px; line-height: 1; }

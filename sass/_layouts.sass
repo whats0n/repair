@@ -31,13 +31,27 @@
 			+box-shadow(none)
 			width: 84px
 			&:hover
-				background: #215d7f 
+				background: #215D7F
+			&:active
+				background: #1A4964
+			&:disabled
+				color: #999
+				background: #EEE
 			&:active, &:focus, &:hover
 				+box-shadow(none)
 				border: none
 				color: #fff 
 			&:active
 				background: #1a4964 
+			&.is-cancel
+				background: #CB222E
+				&:hover
+					background: #A41C25
+				&:active
+					background: #87171E
+				&:disabled
+					color: #999
+					background: #EEE
 	.ui-dialog-content
 		padding: 29px 15px 22px 65px
 		position: relative
