@@ -1,0 +1,51 @@
+.ui-dialog
+	+border-radius(7px)
+	background: #f8f8f8
+	.ui-widget-titlebar
+		background: #5f7583
+		padding: 0 30px
+		font-size: 16px
+		color: #fff  
+		+border-radius(5px 5px 0 0)
+		border: none
+		text-align: center
+		font-weight: normal
+	.ui-button.ui-dialog-titlebar-close
+		color: #fff
+		&:hover
+			color: #fff 
+	.ui-dialog-buttonpane
+		background: #fff
+		border-top: 1px solid #eee 
+		padding: 12px 10px 11px 
+		+border-radius(0 0 5px 5px)
+		.ui-button
+			color: #fff
+			font-size: 12px
+			line-height: 32px
+			height: 32px
+			background: #2d6f95
+			+border-radius(5px)
+			border: none
+			+box-shadow(none)
+			width: 84px
+			&:hover
+				background: #215d7f 
+			&:active, &:focus, &:hover
+				+box-shadow(none)
+				border: none
+				color: #fff 
+			&:active
+				background: #1a4964 
+	.ui-dialog-content
+		padding: 29px 15px 22px 65px
+		position: relative
+		.ui-icon
+			position: absolute
+			top: 20px
+			left: 20px
+			+svg(dialog, 25, 24) 
+		p
+			color: #212121
+			font-size: 16px
+			line-height: 1
