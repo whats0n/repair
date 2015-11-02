@@ -418,7 +418,7 @@ a.link:hover { text-decoration: underline; }
 .info-fixed__inner.is-fixed .info__titles { padding: 0 20px; }
 
 .ui-dialog { -moz-border-radius: 7px; -webkit-border-radius: 7px; border-radius: 7px; background: #f8f8f8; }
-.ui-dialog .ui-dialog-titlebar { background: #5f7583; padding: 0 30px; font-size: 16px; color: white; -moz-border-radius: 5px 5px 0 0; -webkit-border-radius: 5px; border-radius: 5px 5px 0 0; border: none; text-align: center; font-weight: normal; }
+.ui-dialog .ui-dialog-titlebar { background: #5f7583; padding: 0 30px; font-size: 16px; color: white; -moz-border-radius: 5px 5px 0 0; -webkit-border-radius: 5px; border-radius: 5px 5px 0 0; border: none; text-align: center; font-weight: normal; line-height: 36px; }
 .ui-dialog .ui-button.ui-dialog-titlebar-close { color: white; }
 .ui-dialog .ui-button.ui-dialog-titlebar-close:hover { color: white; }
 .ui-dialog .ui-dialog-buttonpane { background: white; border-top: 1px solid #eeeeee; padding: 12px 10px 11px; -moz-border-radius: 0 0 5px 5px; -webkit-border-radius: 0; border-radius: 0 0 5px 5px; }
