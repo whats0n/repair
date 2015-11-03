@@ -659,7 +659,7 @@ body.is-close .info-fixed__inner { padding: 0; -moz-transition: padding 0.3s lin
 .form__field:after { content: " "; display: table; clear: both; }
 .form__field p { font-size: 12px; line-height: 16px; color: #373f46; }
 .form__field .textarea { max-width: 190px; min-width: 190px; max-height: 200px; min-height: 100px; }
-.form__field-date { max-width: 200px; padding: 14px 0 26px; *zoom: 1; }
+.form__field-date { max-width: 200px; padding: 18px 0 18px; *zoom: 1; }
 .form__field-date:after { content: " "; display: table; clear: both; }
 .form__field-time { width: 33.33%; float: left; padding: 0 10px 0 0; }
 
