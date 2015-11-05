@@ -655,7 +655,7 @@ body.is-close .info-fixed__inner { padding: 0; -moz-transition: padding 0.3s lin
 .form__row { *zoom: 1; }
 .form__row:after { content: " "; display: table; clear: both; }
 .form__col { width: 33.3%; float: left; }
-.form__field { padding-bottom: 13px; *zoom: 1; }
+.form__field { padding-bottom: 13px; padding-right: 15px; *zoom: 1; }
 .form__field:after { content: " "; display: table; clear: both; }
 .form__field p { font-size: 12px; line-height: 16px; color: #373f46; word-wrap: break-word; }
 .form__field .textarea { max-width: 190px; min-width: 190px; max-height: 200px; min-height: 100px; }
