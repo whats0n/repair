@@ -475,7 +475,7 @@ body.is-close .info-fixed__inner { padding: 0; -moz-transition: padding 0.3s lin
 
 .sidebar { width: 20%; background-color: #424b53; position: fixed; top: 0; left: 0; bottom: 0; overflow: auto; -moz-transition: -moz-transform 0.3s linear; -o-transition: -o-transform 0.3s linear; -webkit-transition: -webkit-transform 0.3s linear; transition: transform 0.3s linear; z-index: 300; }
 @media only screen and (max-width: 1000px) { .sidebar { width: 192px; } }
-.sidebar__header { padding: 8px 16px 7px; background-color: #5f7583; }
+.sidebar__header { padding: 8px 16px 7px; background-color: #5f7583; position: relative; }
 .sidebar__header:after { content: ""; position: absolute; top: 5px; bottom: 5px; right: 0; border-right: 1px solid rgba(0, 0, 0, 0.14); }
 .sidebar__title { display: block; font-size: 16px; color: #caccce; line-height: 48px; background-color: #2f363f; background-image: -moz-linear-gradient(bottom, #2f363f 0%, #414c56 100%); background-image: -o-linear-gradient(bottom, #2f363f 0%, #414c56 100%); background-image: -webkit-linear-gradient(bottom, #2f363f 0%, #414c56 100%); background-image: linear-gradient(to top, #2f363f 0%, #414c56 100%); border-bottom: 1px solid #4f606c; padding: 0 50px 0 20px; position: relative; }
 .sidebar__title:hover, .sidebar__title.is-active { background: #2f363f; }
