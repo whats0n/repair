@@ -497,11 +497,15 @@ head.ready(function() {
 
 	$('.js-notification').each(function() {
 		$('.js-notification-btn').click(function() {
-			$('.js-notification').slideDown('fast');
-			setTimeout(function() {
-				$('.js-notification').slideUp('fast');
-			}, 3000);
-			return false;
+			if (!$('.js-notification').hasClass('is-active')) {
+				$('.js-notification').slideDown('fast');
+				$('.js-notification').addClass('is-active');
+				setTimeout(function() {
+					$('.js-notification').slideUp('fast');
+				$('.js-notification').removeClass('is-active');
+				}, 3000);
+				return false;
+			};			
 		});
 	});	
 
