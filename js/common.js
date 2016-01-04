@@ -495,4 +495,14 @@ head.ready(function() {
 		});
 	});
 
+	$('.js-notification').each(function() {
+		$('.js-notification-btn').click(function() {
+			$('.js-notification').slideDown('fast');
+			setTimeout(function() {
+				$('.js-notification').slideUp('fast');
+			}, 3000);
+			return false;
+		});
+	});	
+
 });
