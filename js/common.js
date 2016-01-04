@@ -502,10 +502,14 @@ head.ready(function() {
 				$('.js-notification').addClass('is-active');
 				setTimeout(function() {
 					$('.js-notification').slideUp('fast');
-				$('.js-notification').removeClass('is-active');
+					$('.js-notification').removeClass('is-active');
 				}, 3000);
 				return false;
 			};			
+		});
+		$(this).click(function() {
+			$('.js-notification').slideUp('fast');
+			$('.js-notification').removeClass('is-active');
 		});
 	});	
 
